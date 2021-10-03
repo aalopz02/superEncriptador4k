@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'romSelect[1]'
+Slack : -5.942
+TNS   : -39.701
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.370
+TNS   : -197.877
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -1.110
+TNS   : -70.535
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'romSelect[1]'
+Slack : 0.931
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -2.174
+TNS   : -521.115
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -319.671
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'romSelect[1]'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'romSelect[1]'
+Slack : -5.791
+TNS   : -39.190
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -3.419
+TNS   : -202.366
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -1.141
+TNS   : -72.577
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.751
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'romSelect[1]'
+Slack : 0.973
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -2.174
+TNS   : -520.727
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -320.304
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'romSelect[1]'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'romSelect[1]'
+Slack : -3.325
+TNS   : -21.393
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.973
+TNS   : -94.729
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -0.259
+TNS   : -16.295
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'romSelect[1]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -2.174
+TNS   : -518.351
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -323.038
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'romSelect[1]'
+Slack : -0.089
+TNS   : -0.664
+
+Type  : Fast 1100mV 0C Model Setup 'romSelect[1]'
+Slack : -2.951
+TNS   : -19.231
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.738
+TNS   : -85.540
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -0.241
+TNS   : -15.094
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'romSelect[1]'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -2.174
+TNS   : -518.415
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -2.174
+TNS   : -324.468
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'romSelect[1]'
+Slack : -0.078
+TNS   : -0.609
+
+------------------------------------------------------------
