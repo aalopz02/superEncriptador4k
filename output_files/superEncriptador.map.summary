@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Oct 02 21:55:46 2021
+Analysis & Synthesis Status : Successful - Mon Oct 04 13:40:10 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : superEncriptador
-Top-level Entity Name : superEncriptador
+Top-level Entity Name : superRam
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 7
-Total pins : 167
+Total registers : 0
+Total pins : 205
 Total virtual pins : 0
-Total block memory bits : 22,528
+Total block memory bits : 16,384
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -1,0 +1,37 @@
+module superRam(
+	input clk, 
+	input [15:0] address, 
+	input [2:0] spam,
+	input	[63:0] dataIn,
+	input wren,
+	
+	output logic [7:0] byte0,
+	output logic [7:0] byte1,
+	output logic [7:0] byte2,
+	output logic [7:0] byte3,
+	output logic [7:0] byte4,
+	output logic [7:0] byte5,
+	output logic [7:0] byte6,
+	output logic [7:0] byte7,
+	dataOut
+	);
+
+	output logic [63:0] dataOut = 64'd0;
+	
+	ram ram(address,clk,dataIn,wren,dataOut);
+
+	assign byte0 = (spam >= 3'd0) ? dataOut[7:0] : 8'd0;
+	assign byte1 = (spam >= 3'd1) ? dataOut[7:0] : 8'd0;
+	assign byte2 = (spam >= 3'd2) ? dataOut[7:0] : 8'd0;
+	assign byte3 = (spam >= 3'd3) ? dataOut[7:0] : 8'd0;
+	assign byte4 = (spam >= 3'd4) ? dataOut[7:0] : 8'd0;
+	assign byte5 = (spam >= 3'd5) ? dataOut[7:0] : 8'd0;
+	assign byte6 = (spam >= 3'd6) ? dataOut[7:0] : 8'd0;
+	assign byte7 = (spam >= 3'd7) ? dataOut[7:0] : 8'd0;
+
+endmodule
+
+module ramTB();
+
+
+endmodule

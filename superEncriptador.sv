@@ -1,13 +1,9 @@
 module superEncriptador(
 	input clk, 
+	input ramClk,
 	input [2:0]romSelect,
 	output done,
-	output [15:0] actualInst,
-	input	[15:0]  address,
-	input	  clock,
-	input	[63:0]  data,
-	input	  wren,
-	output	[63:0]  q);
+	output logic [15:0] actualInst);
 
 	logic [6:0] pc = 7'd0;
 	
@@ -36,6 +32,15 @@ module superEncriptador(
 	logic [2:0] selectDecShift = 3'd4;
 	logic [2:0] selectDecSwap = 3'd5;
 	
+	logic	[15:0] address = 16'b0;
+	
+	logic	[63:0] dataIn = 64'd0;
+	
+	logic wren = 1'b0;
+	
+	logic [63:0] dataOut = 64'd0;
+	
+	//logic	[63:0] dataOut = 64'd0;
 	
 	romXor romXor(pc,clk && flagXorRom,instXor);
 	
@@ -49,7 +54,12 @@ module superEncriptador(
 	
 	romDecSwap romDecSwap(pc,clk && flagDecSwapRom,instDecSwap);
 	
-	ram ram(address,clock,data,wren,q);
+	ram ram(address,ramClk,dataIn,wren,dataOut);
+	
+	always @ (posedge clk) begin
+		address = address + 1'd1;
+		//dataOutAux = dataOut;
+	end
 	
 	always @(*) begin
 		if (romSelect == selectXor) begin
@@ -115,3 +125,35 @@ module superEncriptador(
 	assign done = (pc == 7'd128);
 	
 endmodule
+
+
+`timescale 1 ps / 1 ps
+module TB();
+
+	logic mainClk = 1'b0;
+	always #100 mainClk = !mainClk;
+	
+	logic ramClk = 1'b1;
+	always #50 ramClk = !ramClk;
+	
+	logic [63:0] dataOut;
+	
+	localparam period = 100; 	
+
+	superEncriptador superEncriptador(mainClk,ramClk,x,y,z,dataOut);
+	
+endmodule
+/*
+
+do superEncriptador_run_msim_rtl_verilog.do
+vsim -gui -l msim_transcript rtl_work.TB -L altera_mf_ver
+add wave -position 0  sim:/TB/mainClk
+add wave -position 1  sim:/TB/ramClk
+add wave -position 2  sim:/TB/superEncriptador/address
+add wave -position 3  sim:/TB/superEncriptador/dataIn
+add wave -position 4  sim:/TB/superEncriptador/wren
+add wave -position 5  sim:/TB/superEncriptador/dataOutAux
+add wave -position 6  sim:/TB/dataOut
+run 100
+
+*/

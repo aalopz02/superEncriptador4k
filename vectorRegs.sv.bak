@@ -1,0 +1,14 @@
+module vectorRegs(
+	input clk,
+	input [1:0] dir,
+	input [63:0] value,
+	input wren,
+	output [63:0]value
+	);
+
+	reg [63:0] vector1 = 64'd0;
+	reg [63:0] vector2 = 64'd0;
+	reg [63:0] vector3 = 64'd0;
+	reg [63:0] vector4 = 64'd0;
+
+endmodule

@@ -1,0 +1,119 @@
+# Reading pref.tcl
+# do superEncriptador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/arquiProyecto2 {G:/arquiProyecto2/ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:39:43 on Oct 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/arquiProyecto2" G:/arquiProyecto2/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 13:39:43 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/arquiProyecto2 {G:/arquiProyecto2/superRam.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:39:43 on Oct 04,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/arquiProyecto2" G:/arquiProyecto2/superRam.sv 
+# -- Compiling module superRam
+# ** Error (suppressible): G:/arquiProyecto2/superRam.sv(19): (vlog-12003) Variable 'dataInAux' written by continuous and procedural assignments. See G:/arquiProyecto2/superRam.sv(21). 
+# -- Compiling module ramTB
+# End time: 13:39:43 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./superEncriptador_run_msim_rtl_verilog.do line 9
+# C:/intelFPGA_lite/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+G:/arquiProyecto2 {G:/arquiProyecto2/superRam.sv}"
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:14 on Oct 04,2021
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Refreshing module ram
+# -- Refreshing module ramTB
+# End time: 13:40:14 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:15 on Oct 04,2021
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping module ram
+# -- Skipping module ramTB
+# End time: 13:40:15 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do superEncriptador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/arquiProyecto2 {G:/arquiProyecto2/ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:17 on Oct 04,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/arquiProyecto2" G:/arquiProyecto2/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 13:40:17 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/arquiProyecto2 {G:/arquiProyecto2/superRam.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:17 on Oct 04,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/arquiProyecto2" G:/arquiProyecto2/superRam.sv 
+# -- Compiling module superRam
+# -- Compiling module ramTB
+# 
+# Top level modules:
+# 	ramTB
+# End time: 13:40:17 on Oct 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript rtl_work.ramTB -L altera_mf_ver
+# vsim -gui -l msim_transcript rtl_work.ramTB -L altera_mf_ver 
+# Start time: 13:40:17 on Oct 04,2021
+# Loading sv_std.std
+# Loading rtl_work.ramTB
+# Loading rtl_work.superRam
+# Loading rtl_work.ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave -position 0  sim:/ramTB/mainClk
+add wave -position 1  sim:/ramTB/ramClk
+add wave -position 2  sim:/ramTB/spam
+add wave -position 3  sim:/ramTB/dataIn
+add wave -position 4  sim:/ramTB/wren
+add wave -position 5  sim:/ramTB/byte0
+add wave -position 6  sim:/ramTB/byte1
+add wave -position 7  sim:/ramTB/byte2
+add wave -position 8  sim:/ramTB/byte3
+add wave -position 9  sim:/ramTB/byte4
+add wave -position 10  sim:/ramTB/byte5
+add wave -position 11  sim:/ramTB/byte6
+add wave -position 12  sim:/ramTB/byte7
+add wave -position 13  sim:/ramTB/dataOut
+add wave -position 5  sim:/ramTB/address
+run 100
+run all
+# Invalid time value: all
+run -all
+# ** Note: $stop    : G:/arquiProyecto2/superRam.sv(164)
+#    Time: 3600 ps  Iteration: 0  Instance: /ramTB
+# Break in Module ramTB at G:/arquiProyecto2/superRam.sv line 164
+# End time: 13:42:30 on Oct 04,2021, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
