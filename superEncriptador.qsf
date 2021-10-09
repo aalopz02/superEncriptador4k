@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY superEncriptador
+set_global_assignment -name TOP_LEVEL_ENTITY tbFetch
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:02  OCTOBER 02, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -54,6 +54,32 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE components/imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/flip_flop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fStage.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fPipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fiPipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tbFetch.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/xor_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/shift_right_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/shif_left_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/or_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/one_bit_half_adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/one_bit_full_adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/not_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/mux_four.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/mux_eight.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/and_gate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/adder_substractor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tbDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE superEncriptador.sv
 set_global_assignment -name QIP_FILE romXor.qip
 set_global_assignment -name QIP_FILE romShift.qip
@@ -61,8 +87,5 @@ set_global_assignment -name QIP_FILE romSwap.qip
 set_global_assignment -name QIP_FILE romDecXor.qip
 set_global_assignment -name QIP_FILE romDecShift.qip
 set_global_assignment -name QIP_FILE romDecSwap.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE ram.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

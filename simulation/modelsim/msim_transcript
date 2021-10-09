@@ -1,0 +1,170 @@
+# Reading pref.tcl
+# do superEncriptador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/FPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/flip_flop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:15 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/flip_flop.sv 
+# -- Compiling module flip_flop
+# 
+# Top level modules:
+# 	flip_flop
+# End time: 19:17:15 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/fStage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:16 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/fStage.sv 
+# -- Compiling module fStage
+# 
+# Top level modules:
+# 	fStage
+# End time: 19:17:16 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/fPipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:16 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/fPipe.sv 
+# -- Compiling module fPipe
+# 
+# Top level modules:
+# 	fPipe
+# End time: 19:17:16 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/fiPipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:16 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/fiPipe.sv 
+# -- Compiling module fiPipe
+# 
+# Top level modules:
+# 	fiPipe
+# End time: 19:17:16 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/tbFetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:16 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/tbFetch.sv 
+# -- Compiling module tbFetch
+# 
+# Top level modules:
+# 	tbFetch
+# End time: 19:17:16 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:16 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv 
+# -- Compiling module xor_gate
+# 
+# Top level modules:
+# 	xor_gate
+# End time: 19:17:16 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv 
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv 
+# -- Compiling module one_bit_half_adder
+# 
+# Top level modules:
+# 	one_bit_half_adder
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv 
+# -- Compiling module one_bit_full_adder
+# 
+# Top level modules:
+# 	one_bit_full_adder
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv 
+# -- Compiling module and_gate
+# 
+# Top level modules:
+# 	and_gate
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:17:17 on Oct 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 19:17:17 on Oct 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.tbFetch
+# vsim rtl_work.tbFetch 
+# Start time: 19:17:24 on Oct 08,2021
+# Loading sv_std.std
+# Loading rtl_work.tbFetch
+# Loading rtl_work.fiPipe
+# Loading rtl_work.fStage
+# Loading rtl_work.flip_flop
+# Loading rtl_work.adder
+# Loading rtl_work.imem
+# Loading rtl_work.fPipe
+# Loading rtl_work.one_bit_full_adder
+# Loading rtl_work.one_bit_half_adder
+# Loading rtl_work.xor_gate
+# Loading rtl_work.and_gate
+# Loading rtl_work.or_gate
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pc_adder'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetch/dut/pc_adder File: C:/OP-ProjectII/superEncriptador4k/fStage.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'bus_b_i'. The port definition is at: C:/OP-ProjectII/superEncriptador4k/components/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetch/dut/pc_adder File: C:/OP-ProjectII/superEncriptador4k/fStage.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'carry_i'. The port definition is at: C:/OP-ProjectII/superEncriptador4k/components/adder.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetch/dut/pc_adder File: C:/OP-ProjectII/superEncriptador4k/fStage.sv Line: 13
+# ** Warning: (vsim-3722) C:/OP-ProjectII/superEncriptador4k/fStage.sv(13): [TFMPC] - Missing connection for port 'carry_o'.
+add wave -position insertpoint  \
+sim:/tbFetch/clk \
+sim:/tbFetch/rst \
+sim:/tbFetch/next_pc_i \
+sim:/tbFetch/next_pc_o \
+sim:/tbFetch/instr_o
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: luisarturom  Hostname: MININT-JFHCT81  ProcessID: 7420
+#           Attempting to use alternate WLF file "./wlftziib4j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftziib4j
+run
+# End time: 19:19:50 on Oct 08,2021, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 6
