@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY tbFetch
+set_global_assignment -name TOP_LEVEL_ENTITY tbDecoder
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:02  OCTOBER 02, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -56,9 +56,9 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE dStage.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dRegisterFile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dPipe.sv
 set_global_assignment -name SYSTEMVERILOG_FILE components/imem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE components/flip_flop.sv
 set_global_assignment -name SYSTEMVERILOG_FILE fStage.sv
@@ -88,4 +88,7 @@ set_global_assignment -name QIP_FILE romDecXor.qip
 set_global_assignment -name QIP_FILE romDecShift.qip
 set_global_assignment -name QIP_FILE romDecSwap.qip
 set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
