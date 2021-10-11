@@ -207,3 +207,5 @@ sim:/tbExecute/rt_i \
 sim:/tbExecute/alu_res_p \
 sim:/tbExecute/alu_res_o
 run
+# End time: 20:43:27 on Oct 10,2021, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 5

@@ -8,6 +8,7 @@ module eStage #(
     output logic [3:0]   flags_o
 );
 
+    // Scalar ALU
     alu #(D) 
         fu(.bus_a_i(rs_i), 
         .bus_b_i(rt_i),
@@ -16,4 +17,6 @@ module eStage #(
         .flags_o(flags_o)
         );
 
+    // TODO Vector ALU
+    
 endmodule

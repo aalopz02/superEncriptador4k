@@ -15,7 +15,7 @@ module tbExecute#(
             .alu_res_o(alu_res_p)
             //.flags_o(flags_o)
             );
-
+            
     ePipe #(D)
         exmem_pipe(.clk_i(clk), .rst_i(rst),
         .alu_res_i(alu_res_p),
