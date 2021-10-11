@@ -1,4 +1,4 @@
-module fStage #(parameter IWIDTH = 24, parameter PWIDTH = 16)
+module mStage #(parameter IWIDTH = 24, parameter PWIDTH = 16)
 (
 	 input logic              clk_i, rst_i,
      input logic [PWIDTH-1:0] next_pc_i,
