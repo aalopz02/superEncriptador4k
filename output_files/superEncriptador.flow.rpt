@@ -1,5 +1,5 @@
 Flow report for superEncriptador
-Sun Oct 10 19:05:46 2021
+Sun Oct 10 20:40:12 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Oct 10 19:05:46 2021       ;
+; Flow Status                 ; Successful - Sun Oct 10 20:40:12 2021       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; superEncriptador                            ;
-; Top-level Entity Name       ; tbDecoder                                   ;
+; Top-level Entity Name       ; tbExecute                                   ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/10/2021 19:05:30 ;
+; Start date & time ; 10/10/2021 20:40:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; superEncriptador    ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 66939771117606.163391433005012         ; --               ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 66939771117606.163392000226312         ; --               ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_signal_integrity ;
@@ -91,13 +91,13 @@ https://fpgasoftware.intel.com/eula.
 ; MISC_FILE                           ; romDecShift_bb.v                       ; --               ; --          ; --                                ;
 ; MISC_FILE                           ; romDecSwap_bb.v                        ; --               ; --          ; --                                ;
 ; MISC_FILE                           ; ram_bb.v                               ; --               ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; tbDecoder   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; tbDecoder   ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; tbDecoder   ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; tbExecute   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; tbExecute   ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; tbExecute   ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; tbDecoder                              ; superEncriptador ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; tbExecute                              ; superEncriptador ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
 
 
@@ -106,8 +106,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:17     ; 1.0                     ; 4770 MB             ; 00:00:20                           ;
-; Total                  ; 00:00:17     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4770 MB             ; 00:00:21                           ;
+; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:21                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

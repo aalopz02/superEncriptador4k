@@ -1,5 +1,5 @@
 Analysis & Elaboration report for superEncriptador
-Sun Oct 10 19:05:46 2021
+Sun Oct 10 20:40:12 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,14 +9,112 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |tbDecoder
-  5. Parameter Settings for User Entity Instance: dStage:dut
-  6. Parameter Settings for User Entity Instance: dStage:dut|dRegisterFile:RegisterFile
-  7. Parameter Settings for User Entity Instance: dPipe:idex_pipe
-  8. Analysis & Elaboration Settings
-  9. Port Connectivity Checks: "dPipe:idex_pipe"
- 10. Port Connectivity Checks: "dStage:dut"
- 11. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |tbExecute
+  5. Parameter Settings for User Entity Instance: eStage:dut
+  6. Parameter Settings for User Entity Instance: eStage:dut|alu:fu
+  7. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub
+  8. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|xor_gate:oper
+  9. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr
+ 10. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 11. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 12. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 13. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 14. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|or_gate:getCarry
+ 15. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 16. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 17. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 18. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 19. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|or_gate:getCarry
+ 20. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 21. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 22. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 23. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 24. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|or_gate:getCarry
+ 25. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 26. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 27. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 28. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 29. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|or_gate:getCarry
+ 30. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 31. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 32. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 33. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 34. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|or_gate:getCarry
+ 35. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 36. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 37. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 38. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 39. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|or_gate:getCarry
+ 40. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 41. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 42. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 43. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 44. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|or_gate:getCarry
+ 45. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 46. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 47. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 48. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 49. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|or_gate:getCarry
+ 50. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 51. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 52. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 53. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 54. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|or_gate:getCarry
+ 55. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 56. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 57. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 58. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 59. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|or_gate:getCarry
+ 60. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 61. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 62. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 63. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 64. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|or_gate:getCarry
+ 65. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 66. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 67. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 68. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 69. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|or_gate:getCarry
+ 70. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 71. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 72. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 73. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 74. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|or_gate:getCarry
+ 75. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 76. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 77. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 78. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 79. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|or_gate:getCarry
+ 80. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 81. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 82. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 83. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 84. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|or_gate:getCarry
+ 85. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|xor_gate:sum
+ 86. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|and_gate:car
+ 87. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|xor_gate:sum
+ 88. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|and_gate:car
+ 89. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|or_gate:getCarry
+ 90. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|and_gate:and_op
+ 91. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|or_gate:xor_op
+ 92. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|shift_left_gate:shift_left_gate
+ 93. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|shift_right_gate:shift_right_gate
+ 94. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector
+ 95. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1
+ 96. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_1
+ 97. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_2
+ 98. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_2_0
+ 99. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2
+100. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_1
+101. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_2
+102. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_2_0
+103. Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux2:stage_2_0
+104. Parameter Settings for User Entity Instance: ePipe:exmem_pipe
+105. Analysis & Elaboration Settings
+106. Port Connectivity Checks: "ePipe:exmem_pipe"
+107. Port Connectivity Checks: "eStage:dut|alu:fu|mux_eight:opSelector"
+108. Port Connectivity Checks: "eStage:dut"
+109. Analysis & Elaboration Messages
 
 
 
@@ -43,10 +141,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Oct 10 19:05:46 2021       ;
+; Analysis & Elaboration Status ; Successful - Sun Oct 10 20:40:12 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; superEncriptador                            ;
-; Top-level Entity Name         ; tbDecoder                                   ;
+; Top-level Entity Name         ; tbExecute                                   ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -75,54 +173,1012 @@ https://fpgasoftware.intel.com/eula.
 
 
 +---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |tbDecoder ;
+; Parameter Settings for User Entity Instance: Top-level Entity: |tbExecute ;
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
-; I              ; 16    ; Signed Integer                                   ;
-; P              ; 16    ; Signed Integer                                   ;
 ; D              ; 16    ; Signed Integer                                   ;
-; R              ; 4     ; Signed Integer                                   ;
-; F              ; 4     ; Signed Integer                                   ;
 +----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dStage:dut ;
+; Parameter Settings for User Entity Instance: eStage:dut ;
 +----------------+-------+--------------------------------+
 ; Parameter Name ; Value ; Type                           ;
 +----------------+-------+--------------------------------+
-; I              ; 16    ; Signed Integer                 ;
-; P              ; 16    ; Signed Integer                 ;
 ; D              ; 16    ; Signed Integer                 ;
-; R              ; 4     ; Signed Integer                 ;
-; F              ; 4     ; Signed Integer                 ;
 +----------------+-------+--------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dStage:dut|dRegisterFile:RegisterFile ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; F              ; 4     ; Signed Integer                                            ;
-; D              ; 16    ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dPipe:idex_pipe ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; P              ; 16    ; Signed Integer                      ;
-; D              ; 16    ; Signed Integer                      ;
-; R              ; 4     ; Signed Integer                      ;
-; F              ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|xor_gate:oper ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|or_gate:getCarry ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|xor_gate:sum ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|and_gate:car ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|or_gate:getCarry ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 1     ; Signed Integer                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|and_gate:and_op ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|or_gate:xor_op ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|shift_left_gate:shift_left_gate ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|shift_right_gate:shift_right_gate ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_2_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2 ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_2_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: eStage:dut|alu:fu|mux_eight:opSelector|mux2:stage_2_0 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ePipe:exmem_pipe ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; D              ; 16    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -132,7 +1188,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; tbDecoder          ; superEncriptador   ;
+; Top-level entity name                                                           ; tbExecute          ; superEncriptador   ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -214,24 +1270,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dPipe:idex_pipe"                                                                         ;
+; Port Connectivity Checks: "ePipe:exmem_pipe"                                                                        ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
-; next_pc_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; funct4_o  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rs_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rt_o      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; alu_res_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------+
-; Port Connectivity Checks: "dStage:dut"  ;
-+-------+-------+----------+--------------+
-; Port  ; Type  ; Severity ; Details      ;
-+-------+-------+----------+--------------+
-; clk_i ; Input ; Info     ; Stuck at GND ;
-+-------+-------+----------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eStage:dut|alu:fu|mux_eight:opSelector"                                                                                                        ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                      ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; bus_g_i ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; bus_h_i ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eStage:dut"                                                                                                 ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                  ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; clk_i   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags_o ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -240,10 +1304,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 10 19:05:29 2021
+    Info: Processing started: Sun Oct 10 20:40:02 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off superEncriptador -c superEncriptador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tbexecute.sv
+    Info (12023): Found entity 1: tbExecute File: C:/OP-ProjectII/superEncriptador4k/tbExecute.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file estage.sv
+    Info (12023): Found entity 1: eStage File: C:/OP-ProjectII/superEncriptador4k/eStage.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file epipe.sv
+    Info (12023): Found entity 1: ePipe File: C:/OP-ProjectII/superEncriptador4k/ePipe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dstage.sv
     Info (12023): Found entity 1: dStage File: C:/OP-ProjectII/superEncriptador4k/dStage.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dregisterfile.sv
@@ -309,22 +1379,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file romdecs
     Info (12023): Found entity 1: romDecSwap File: C:/OP-ProjectII/superEncriptador4k/romDecSwap.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file ram.v
     Info (12023): Found entity 1: ram File: C:/OP-ProjectII/superEncriptador4k/ram.v Line: 40
-Info (12127): Elaborating entity "tbDecoder" for the top level hierarchy
-Info (12128): Elaborating entity "dStage" for hierarchy "dStage:dut" File: C:/OP-ProjectII/superEncriptador4k/tbDecoder.sv Line: 57
-Warning (10230): Verilog HDL assignment warning at dStage.sv(19): truncated value with size 5 to match size of target (4) File: C:/OP-ProjectII/superEncriptador4k/dStage.sv Line: 19
-Warning (10230): Verilog HDL assignment warning at dStage.sv(20): truncated value with size 5 to match size of target (4) File: C:/OP-ProjectII/superEncriptador4k/dStage.sv Line: 20
-Warning (10230): Verilog HDL assignment warning at dStage.sv(22): truncated value with size 5 to match size of target (4) File: C:/OP-ProjectII/superEncriptador4k/dStage.sv Line: 22
-Info (12128): Elaborating entity "dRegisterFile" for hierarchy "dStage:dut|dRegisterFile:RegisterFile" File: C:/OP-ProjectII/superEncriptador4k/dStage.sv Line: 30
-Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(15): truncated value with size 16 to match size of target (4) File: C:/OP-ProjectII/superEncriptador4k/dRegisterFile.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(17): truncated value with size 32 to match size of target (16) File: C:/OP-ProjectII/superEncriptador4k/dRegisterFile.sv Line: 17
-Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(18): truncated value with size 32 to match size of target (16) File: C:/OP-ProjectII/superEncriptador4k/dRegisterFile.sv Line: 18
-Info (12128): Elaborating entity "dPipe" for hierarchy "dPipe:idex_pipe" File: C:/OP-ProjectII/superEncriptador4k/tbDecoder.sv Line: 67
+Info (12127): Elaborating entity "tbExecute" for the top level hierarchy
+Info (12128): Elaborating entity "eStage" for hierarchy "eStage:dut" File: C:/OP-ProjectII/superEncriptador4k/tbExecute.sv Line: 17
+Info (12128): Elaborating entity "alu" for hierarchy "eStage:dut|alu:fu" File: C:/OP-ProjectII/superEncriptador4k/eStage.sv Line: 17
+Info (12128): Elaborating entity "adder_substractor" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 24
+Info (12128): Elaborating entity "xor_gate" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|xor_gate:oper" File: C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv Line: 28
+Info (12128): Elaborating entity "adder" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr" File: C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv Line: 33
+Info (12128): Elaborating entity "one_bit_full_adder" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr" File: C:/OP-ProjectII/superEncriptador4k/components/adder.sv Line: 14
+Info (12128): Elaborating entity "one_bit_half_adder" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA" File: C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv Line: 17
+Info (12128): Elaborating entity "xor_gate" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|xor_gate:sum" File: C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv Line: 16
+Info (12128): Elaborating entity "and_gate" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|and_gate:car" File: C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv Line: 17
+Info (12128): Elaborating entity "or_gate" for hierarchy "eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|or_gate:getCarry" File: C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv Line: 19
+Info (12128): Elaborating entity "and_gate" for hierarchy "eStage:dut|alu:fu|and_gate:and_op" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 26
+Info (12128): Elaborating entity "or_gate" for hierarchy "eStage:dut|alu:fu|or_gate:xor_op" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 28
+Info (12128): Elaborating entity "shift_left_gate" for hierarchy "eStage:dut|alu:fu|shift_left_gate:shift_left_gate" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 30
+Info (12128): Elaborating entity "shift_right_gate" for hierarchy "eStage:dut|alu:fu|shift_right_gate:shift_right_gate" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 32
+Info (12128): Elaborating entity "mux_eight" for hierarchy "eStage:dut|alu:fu|mux_eight:opSelector" File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 41
+Info (12128): Elaborating entity "mux_four" for hierarchy "eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1" File: C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv Line: 19
+Info (12128): Elaborating entity "mux2" for hierarchy "eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_1" File: C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv Line: 19
+Info (12128): Elaborating entity "ePipe" for hierarchy "ePipe:exmem_pipe" File: C:/OP-ProjectII/superEncriptador4k/tbExecute.sv Line: 23
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "rst" is missing source, defaulting to GND File: C:/OP-ProjectII/superEncriptador4k/tbDecoder.sv Line: 8
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Warning (12110): Net "rst" is missing source, defaulting to GND File: C:/OP-ProjectII/superEncriptador4k/tbExecute.sv Line: 6
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Sun Oct 10 19:05:46 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Sun Oct 10 20:40:12 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
