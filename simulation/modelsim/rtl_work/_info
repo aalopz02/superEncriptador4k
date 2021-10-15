@@ -8,423 +8,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/OP-ProjectII/superEncriptador4k/simulation/modelsim
-vadder
+Z0 dG:/superEncriptador4k/simulation/modelsim
+vvRegisterFile
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1633920029
+Z2 !s110 1634319745
 !i10b 1
-!s100 OMdnGYdbafkHn:i<e;MVN2
+!s100 hZY3eeU[d8ajB2<eg9En^3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IME=AGOb[S^zF7OEH[Ugbm2
+ITjk2n6<UXlH94]7VbT>Y52
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1621480280
-8C:/OP-ProjectII/superEncriptador4k/components/adder.sv
-FC:/OP-ProjectII/superEncriptador4k/components/adder.sv
-!i122 15
-L0 1 17
-Z5 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z6 !s108 1633920029.000000
-!s107 C:/OP-ProjectII/superEncriptador4k/components/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/adder.sv|
-!i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components
-Z9 tCvgOpt 0
-vadder_substractor
-R1
-R2
-!i10b 1
-!s100 IZZ<DTbc0mm783P@;CAM_3
-R3
-IE>nD]<0Ll2?^8bJT^XI@B0
-R4
-S1
-R0
-Z10 w1540587888
-8C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv
-FC:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv
-!i122 14
-L0 11 24
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv|
-!i113 1
-R7
-R8
-R9
-valu
-R1
-R2
-!i10b 1
-!s100 z:cJ5oEE066<V9W2ZPNhW1
-R3
-I[RkVX9RC6FGU]J<PgaRIc3
-R4
-S1
-R0
-w1621651034
-8C:/OP-ProjectII/superEncriptador4k/components/alu.sv
-FC:/OP-ProjectII/superEncriptador4k/components/alu.sv
-!i122 13
-L0 11 44
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/OP-ProjectII/superEncriptador4k/components/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/alu.sv|
-!i113 1
-R7
-R8
-R9
-vand_gate
-R1
-R2
-!i10b 1
-!s100 59V1dTzB[GGmZOI]o7A6d1
-R3
-I8USd`kR6f``2oW1Td^lVF0
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv
-FC:/OP-ProjectII/superEncriptador4k/components/and_gate.sv
-!i122 12
-Z11 L0 11 7
-R5
-r1
-!s85 0
-31
-Z12 !s108 1633920028.000000
-!s107 C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv|
-!i113 1
-R7
-R8
-R9
-vePipe
-R1
-Z13 !s110 1633920027
-!i10b 1
-!s100 fW;W_HR<CTn@4E>dVPBZ12
-R3
-I1^e7P^HZBW1cD9@9logn<3
-R4
-S1
-R0
-w1633918563
-8C:/OP-ProjectII/superEncriptador4k/ePipe.sv
-FC:/OP-ProjectII/superEncriptador4k/ePipe.sv
-!i122 2
-L0 1 16
-R5
-r1
-!s85 0
-31
-Z14 !s108 1633920027.000000
-!s107 C:/OP-ProjectII/superEncriptador4k/ePipe.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k|C:/OP-ProjectII/superEncriptador4k/ePipe.sv|
-!i113 1
-R7
-Z15 !s92 -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k
-R9
-ne@pipe
-veStage
-R1
-R13
-!i10b 1
-!s100 8;l:lj^nl[lAOz:VgeA]>2
-R3
-Il=zPNei==chRJa90;^fm42
-R4
-S1
-R0
-w1633919477
-8C:/OP-ProjectII/superEncriptador4k/eStage.sv
-FC:/OP-ProjectII/superEncriptador4k/eStage.sv
-!i122 1
-L0 1 19
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/OP-ProjectII/superEncriptador4k/eStage.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k|C:/OP-ProjectII/superEncriptador4k/eStage.sv|
-!i113 1
-R7
-R15
-R9
-ne@stage
-vmux2
-R1
-Z16 !s110 1633920028
-!i10b 1
-!s100 E]z]ReG03?lPNc<:V^XmA1
-R3
-If1=zbB7=SRJiQ[G]eAY8J2
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/mux2.sv
-FC:/OP-ProjectII/superEncriptador4k/components/mux2.sv
-!i122 9
-Z17 L0 11 8
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/mux2.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/mux2.sv|
-!i113 1
-R7
-R8
-R9
-vmux_eight
-R1
-R16
-!i10b 1
-!s100 ?PZAnjkj[66LPEjGIYjJ72
-R3
-IJkLOTii@PhIeG4DN`J[oO3
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv
-FC:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv
-!i122 11
-L0 11 12
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv|
-!i113 1
-R7
-R8
-R9
-vmux_four
-R1
-R16
-!i10b 1
-!s100 >L_OI3hfHd9aY_Qk3Pb5G2
-R3
-InAKH2YMCSg:1UV==>g@:23
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv
-FC:/OP-ProjectII/superEncriptador4k/components/mux_four.sv
-!i122 10
-L0 11 13
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv|
-!i113 1
-R7
-R8
-R9
-vone_bit_full_adder
-R1
-R16
-!i10b 1
-!s100 b7L4HC71mTAoTkDeiCdWl2
-R3
-ICVki4d1FCAf2]26TIkN:n1
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv
-FC:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv
-!i122 8
-L0 11 10
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv|
-!i113 1
-R7
-R8
-R9
-vone_bit_half_adder
-R1
-R16
-!i10b 1
-!s100 `ZS?@EojFn6YY<o6[:BfS2
-R3
-Il1cJbQkIj=io5l;o0OVZY0
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv
-FC:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv
-!i122 7
-R17
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv|
-!i113 1
-R7
-R8
-R9
-vor_gate
-R1
-R16
-!i10b 1
-!s100 ;aD@K2L:Vk2ADLOJRUmcN2
-R3
-IS@lJkBagWzY6Yk9cjiC[c2
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv
-FC:/OP-ProjectII/superEncriptador4k/components/or_gate.sv
-!i122 6
-R11
-R5
-r1
-!s85 0
-31
-R12
-!s107 C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv|
-!i113 1
-R7
-R8
-R9
-vshift_left_gate
-R1
-R16
-!i10b 1
-!s100 _^@EJ1PdB9z8kX`;H019N1
-R3
-Iz2dX:2omE9e]jEYc_F:FV3
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv
-FC:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv
-!i122 5
-R17
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv|
-!i113 1
-R7
-R8
-R9
-vshift_right_gate
-R1
-R13
-!i10b 1
-!s100 5_5RzD9SboPHCMjMh:0kh2
-R3
-I>SlG42ClHE?j4GFGoU[=z0
-R4
-S1
-R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv
-FC:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv
-!i122 4
-R17
-R5
-r1
-!s85 0
-31
-R14
-!s107 C:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv|
-!i113 1
-R7
-R8
-R9
-vtbExecute
-R1
-R13
-!i10b 1
-!s100 QhO[e`zZi3eeZX9X;8R=23
-R3
-IAbm_>J472:J>C>a9X]ATL1
-R4
-S1
-R0
-w1633919988
-8C:/OP-ProjectII/superEncriptador4k/tbExecute.sv
-FC:/OP-ProjectII/superEncriptador4k/tbExecute.sv
+Z5 w1634319723
+Z6 8G:/superEncriptador4k/vRegisterFile.sv
+Z7 FG:/superEncriptador4k/vRegisterFile.sv
 !i122 0
-L0 1 55
-R5
+L0 1 24
+Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1633920026.000000
-!s107 C:/OP-ProjectII/superEncriptador4k/tbExecute.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k|C:/OP-ProjectII/superEncriptador4k/tbExecute.sv|
+Z9 !s108 1634319745.000000
+!s107 G:/superEncriptador4k/vRegisterFile.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vRegisterFile.sv|
 !i113 1
-R7
-R15
-R9
-ntb@execute
-vxor_gate
+Z11 o-sv -work work
+Z12 !s92 -sv -work work +incdir+G:/superEncriptador4k
+Z13 tCvgOpt 0
+nv@register@file
+vvREgTB
 R1
-R13
+R2
 !i10b 1
-!s100 ^dY;A3f<:aIYGmLS8JCh=0
+!s100 ZD:EVEL7N7IeRUIQ`OI1T2
 R3
-I4Hm:o8EVRnkaP;C;1I;=a2
+IKNzEkZ3WifCceaAzCie7`2
 R4
 S1
 R0
-R10
-8C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv
-FC:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv
-!i122 3
-R11
 R5
+R6
+R7
+!i122 0
+L0 26 44
+R8
 r1
 !s85 0
 31
-R14
-!s107 C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/OP-ProjectII/superEncriptador4k/components|C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv|
-!i113 1
-R7
-R8
 R9
+Z14 !s107 G:/superEncriptador4k/vRegisterFile.sv|
+R10
+!i113 1
+R11
+R12
+R13
+nv@r@eg@t@b

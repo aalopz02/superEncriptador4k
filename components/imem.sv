@@ -4,7 +4,7 @@ module imem(input  logic [15:0] a,
   logic [15:0] RAM[63:0];
 
   initial
-      $readmemh("C:/OP-ProjectII/superEncriptador4k/dataReg.dat", RAM);
+      $readmemh("G:/superEncriptador4k/dataReg.dat", RAM);
 
   assign rd = RAM[a]; // word aligned
 endmodule

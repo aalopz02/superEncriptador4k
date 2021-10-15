@@ -7,205 +7,50 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/FPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/tbExecute.sv}
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vRegisterFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:26 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/tbExecute.sv 
-# -- Compiling module tbExecute
+# Start time: 11:42:25 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vRegisterFile.sv 
+# -- Compiling module vRegisterFile
+# -- Compiling module vREgTB
 # 
 # Top level modules:
-# 	tbExecute
-# End time: 20:40:27 on Oct 10,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/eStage.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:27 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/eStage.sv 
-# -- Compiling module eStage
-# 
-# Top level modules:
-# 	eStage
-# End time: 20:40:27 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k {C:/OP-ProjectII/superEncriptador4k/ePipe.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:27 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k" C:/OP-ProjectII/superEncriptador4k/ePipe.sv 
-# -- Compiling module ePipe
-# 
-# Top level modules:
-# 	ePipe
-# End time: 20:40:27 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:27 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/xor_gate.sv 
-# -- Compiling module xor_gate
-# 
-# Top level modules:
-# 	xor_gate
-# End time: 20:40:27 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:27 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/shift_right_gate.sv 
-# -- Compiling module shift_right_gate
-# 
-# Top level modules:
-# 	shift_right_gate
-# End time: 20:40:27 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:27 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/shif_left_gate.sv 
-# -- Compiling module shift_left_gate
-# 
-# Top level modules:
-# 	shift_left_gate
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/or_gate.sv 
-# -- Compiling module or_gate
-# 
-# Top level modules:
-# 	or_gate
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/one_bit_half_adder.sv 
-# -- Compiling module one_bit_half_adder
-# 
-# Top level modules:
-# 	one_bit_half_adder
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/one_bit_full_adder.sv 
-# -- Compiling module one_bit_full_adder
-# 
-# Top level modules:
-# 	one_bit_full_adder
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/mux2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/mux2.sv 
-# -- Compiling module mux2
-# 
-# Top level modules:
-# 	mux2
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/mux_four.sv 
-# -- Compiling module mux_four
-# 
-# Top level modules:
-# 	mux_four
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/mux_eight.sv 
-# -- Compiling module mux_eight
-# 
-# Top level modules:
-# 	mux_eight
-# End time: 20:40:28 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:28 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/and_gate.sv 
-# -- Compiling module and_gate
-# 
-# Top level modules:
-# 	and_gate
-# End time: 20:40:29 on Oct 10,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/alu.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:29 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/alu.sv 
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# End time: 20:40:29 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:29 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/adder_substractor.sv 
-# -- Compiling module adder_substractor
-# 
-# Top level modules:
-# 	adder_substractor
-# End time: 20:40:29 on Oct 10,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/OP-ProjectII/superEncriptador4k/components {C:/OP-ProjectII/superEncriptador4k/components/adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:40:29 on Oct 10,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/OP-ProjectII/superEncriptador4k/components" C:/OP-ProjectII/superEncriptador4k/components/adder.sv 
-# -- Compiling module adder
-# 
-# Top level modules:
-# 	adder
-# End time: 20:40:29 on Oct 10,2021, Elapsed time: 0:00:00
+# 	vREgTB
+# End time: 11:42:25 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim rtl_work.tbExecute
-# vsim rtl_work.tbExecute 
-# Start time: 20:40:32 on Oct 10,2021
+vsim work.vRegisterFile
+# vsim work.vRegisterFile 
+# Start time: 11:42:55 on Oct 15,2021
 # Loading sv_std.std
-# Loading rtl_work.tbExecute
-# Loading rtl_work.eStage
-# Loading rtl_work.alu
-# Loading rtl_work.adder_substractor
-# Loading rtl_work.xor_gate
-# Loading rtl_work.adder
-# Loading rtl_work.and_gate
-# Loading rtl_work.or_gate
-# Loading rtl_work.shift_left_gate
-# Loading rtl_work.shift_right_gate
-# Loading rtl_work.mux_eight
-# Loading rtl_work.mux_four
-# Loading rtl_work.mux2
-# Loading rtl_work.ePipe
-# Loading rtl_work.one_bit_full_adder
-# Loading rtl_work.one_bit_half_adder
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tbExecute/dut File: C:/OP-ProjectII/superEncriptador4k/tbExecute.sv Line: 12
-# ** Warning: (vsim-3722) C:/OP-ProjectII/superEncriptador4k/tbExecute.sv(12): [TFMPC] - Missing connection for port 'flags_o'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /tbExecute/dut/fu/opSelector File: C:/OP-ProjectII/superEncriptador4k/components/alu.sv Line: 34
-# ** Warning: (vsim-3722) C:/OP-ProjectII/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
-# ** Warning: (vsim-3722) C:/OP-ProjectII/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
-add wave -position insertpoint  \
-sim:/tbExecute/clk \
-sim:/tbExecute/rst \
-sim:/tbExecute/control_i \
-sim:/tbExecute/rs_i \
-sim:/tbExecute/rt_i \
-sim:/tbExecute/alu_res_p \
-sim:/tbExecute/alu_res_o
-run
-# End time: 20:43:27 on Oct 10,2021, Elapsed time: 0:02:55
-# Errors: 0, Warnings: 5
+# Loading work.vRegisterFile
+vsim work.vREgTB
+# End time: 11:43:02 on Oct 15,2021, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim work.vREgTB 
+# Start time: 11:43:02 on Oct 15,2021
+# Loading sv_std.std
+# Loading work.vREgTB
+# Loading work.vRegisterFile
+add wave -position end  sim:/vREgTB/period
+add wave -position end  sim:/vREgTB/clk
+add wave -position end  sim:/vREgTB/wEnable
+add wave -position end  sim:/vREgTB/voper1
+add wave -position end  sim:/vREgTB/voper2
+add wave -position end  sim:/vREgTB/vresult
+add wave -position end  sim:/vREgTB/dataIn
+add wave -position end  sim:/vREgTB/oper1
+add wave -position end  sim:/vREgTB/oper2
+run 100
+add wave -position end  sim:/vREgTB/VRegisterFile/matrix
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+# End time: 11:45:19 on Oct 15,2021, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 0
