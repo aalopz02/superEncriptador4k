@@ -9,57 +9,395 @@ z2
 !i10f 100
 cModel Technology
 Z0 dG:/superEncriptador4k/simulation/modelsim
-vvRegisterFile
+vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1634319745
+Z2 !s110 1634360893
 !i10b 1
-!s100 hZY3eeU[d8ajB2<eg9En^3
+!s100 OMdnGYdbafkHn:i<e;MVN2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ITjk2n6<UXlH94]7VbT>Y52
+IM6`:`]^@nEM^EOdiX^S]D2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1634319723
-Z6 8G:/superEncriptador4k/vRegisterFile.sv
-Z7 FG:/superEncriptador4k/vRegisterFile.sv
-!i122 0
-L0 1 24
-Z8 OV;L;2020.1;71
+Z5 w1634056109
+8G:/superEncriptador4k/components/adder.sv
+FG:/superEncriptador4k/components/adder.sv
+!i122 12
+L0 1 17
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1634319745.000000
-!s107 G:/superEncriptador4k/vRegisterFile.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vRegisterFile.sv|
+Z7 !s108 1634360893.000000
+!s107 G:/superEncriptador4k/components/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/adder.sv|
 !i113 1
-Z11 o-sv -work work
-Z12 !s92 -sv -work work +incdir+G:/superEncriptador4k
-Z13 tCvgOpt 0
-nv@register@file
-vvREgTB
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+G:/superEncriptador4k/components
+Z10 tCvgOpt 0
+vadder_substractor
 R1
-R2
+Z11 !s110 1634360892
 !i10b 1
-!s100 ZD:EVEL7N7IeRUIQ`OI1T2
+!s100 IZZ<DTbc0mm783P@;CAM_3
 R3
-IKNzEkZ3WifCceaAzCie7`2
+I4fWOk^UNLQ<CSk=oc5kVY0
 R4
 S1
 R0
 R5
+8G:/superEncriptador4k/components/adder_substractor.sv
+FG:/superEncriptador4k/components/adder_substractor.sv
+!i122 11
+L0 11 24
 R6
-R7
-!i122 0
-L0 26 44
-R8
 r1
 !s85 0
 31
-R9
-Z14 !s107 G:/superEncriptador4k/vRegisterFile.sv|
-R10
+Z12 !s108 1634360892.000000
+!s107 G:/superEncriptador4k/components/adder_substractor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/adder_substractor.sv|
 !i113 1
+R8
+R9
+R10
+valu
+R1
 R11
+!i10b 1
+!s100 z:cJ5oEE066<V9W2ZPNhW1
+R3
+IIgcilb_b<fcaV>jkNL4`X0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/alu.sv
+FG:/superEncriptador4k/components/alu.sv
+!i122 10
+L0 11 44
+R6
+r1
+!s85 0
+31
 R12
+!s107 G:/superEncriptador4k/components/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/alu.sv|
+!i113 1
+R8
+R9
+R10
+vand_gate
+R1
+R11
+!i10b 1
+!s100 59V1dTzB[GGmZOI]o7A6d1
+R3
+IdFCU:iWTGU?Ml?K>H_SnI2
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/and_gate.sv
+FG:/superEncriptador4k/components/and_gate.sv
+!i122 9
+Z13 L0 11 7
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/and_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/and_gate.sv|
+!i113 1
+R8
+R9
+R10
+vmux2
+R1
+R11
+!i10b 1
+!s100 E]z]ReG03?lPNc<:V^XmA1
+R3
+IzS[^bmN=He1^C]1Jh8KdL2
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux2.sv
+FG:/superEncriptador4k/components/mux2.sv
+!i122 6
+Z14 L0 11 8
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/mux2.sv|
+!i113 1
+R8
+R9
+R10
+vmux_eight
+R1
+R11
+!i10b 1
+!s100 ?PZAnjkj[66LPEjGIYjJ72
+R3
+IRSJR5HClRI3lGIM=GYS;^0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux_eight.sv
+FG:/superEncriptador4k/components/mux_eight.sv
+!i122 8
+L0 11 12
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/mux_eight.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/mux_eight.sv|
+!i113 1
+R8
+R9
+R10
+vmux_four
+R1
+R11
+!i10b 1
+!s100 >L_OI3hfHd9aY_Qk3Pb5G2
+R3
+IN33E;KjX;z?S:^U7lS55S1
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux_four.sv
+FG:/superEncriptador4k/components/mux_four.sv
+!i122 7
+L0 11 13
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/mux_four.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/mux_four.sv|
+!i113 1
+R8
+R9
+R10
+vone_bit_full_adder
+R1
+R11
+!i10b 1
+!s100 b7L4HC71mTAoTkDeiCdWl2
+R3
+I^P?oj7GJmI17><LK_206M2
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/one_bit_full_adder.sv
+FG:/superEncriptador4k/components/one_bit_full_adder.sv
+!i122 5
+L0 11 10
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/one_bit_full_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/one_bit_full_adder.sv|
+!i113 1
+R8
+R9
+R10
+vone_bit_half_adder
+R1
+R11
+!i10b 1
+!s100 `ZS?@EojFn6YY<o6[:BfS2
+R3
+Idk6Q:Vd1I8TG]P_?9B]ZO0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/one_bit_half_adder.sv
+FG:/superEncriptador4k/components/one_bit_half_adder.sv
+!i122 4
+R14
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/one_bit_half_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/one_bit_half_adder.sv|
+!i113 1
+R8
+R9
+R10
+vor_gate
+R1
+R11
+!i10b 1
+!s100 ;aD@K2L:Vk2ADLOJRUmcN2
+R3
+IZ2fTY^z:IMSh0[;V_BC=<0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/or_gate.sv
+FG:/superEncriptador4k/components/or_gate.sv
+!i122 3
 R13
-nv@r@eg@t@b
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/or_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/or_gate.sv|
+!i113 1
+R8
+R9
+R10
+vshift_left_gate
+R1
+R11
+!i10b 1
+!s100 _^@EJ1PdB9z8kX`;H019N1
+R3
+ICO[4OWzU<Z5WVQ@NBGlUK1
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/shif_left_gate.sv
+FG:/superEncriptador4k/components/shif_left_gate.sv
+!i122 2
+R14
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/shif_left_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/shif_left_gate.sv|
+!i113 1
+R8
+R9
+R10
+vshift_right_gate
+R1
+R11
+!i10b 1
+!s100 5_5RzD9SboPHCMjMh:0kh2
+R3
+Io<FE9bKmg_9N5n9nGXB511
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/shift_right_gate.sv
+FG:/superEncriptador4k/components/shift_right_gate.sv
+!i122 1
+R14
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/shift_right_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/shift_right_gate.sv|
+!i113 1
+R8
+R9
+R10
+vvAluBlock
+R1
+R2
+!i10b 1
+!s100 lL;zEMikhCf5@k=X]kEO<1
+R3
+I`CI2^1o6LDnY@U@W]cV;c0
+R4
+S1
+R0
+Z15 w1634360870
+Z16 8G:/superEncriptador4k/vAluBlock.sv
+Z17 FG:/superEncriptador4k/vAluBlock.sv
+!i122 13
+L0 1 41
+R6
+r1
+!s85 0
+31
+R7
+!s107 G:/superEncriptador4k/vAluBlock.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vAluBlock.sv|
+!i113 1
+R8
+Z19 !s92 -sv -work work +incdir+G:/superEncriptador4k
+R10
+nv@alu@block
+vvAluTest
+R1
+R2
+!i10b 1
+!s100 LkV^=;BSUA^fog^k0KYZZ2
+R3
+I_J[G?=;aBYPg5T2_GUfQQ0
+R4
+S1
+R0
+R15
+R16
+R17
+!i122 13
+L0 43 44
+R6
+r1
+!s85 0
+31
+R7
+Z20 !s107 G:/superEncriptador4k/vAluBlock.sv|
+R18
+!i113 1
+R8
+R19
+R10
+nv@alu@test
+vxor_gate
+R1
+R11
+!i10b 1
+!s100 ^dY;A3f<:aIYGmLS8JCh=0
+R3
+ITYinGH40DA6Y7ebLlOPDD0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/xor_gate.sv
+FG:/superEncriptador4k/components/xor_gate.sv
+!i122 0
+R13
+R6
+r1
+!s85 0
+31
+R12
+!s107 G:/superEncriptador4k/components/xor_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k/components|G:/superEncriptador4k/components/xor_gate.sv|
+!i113 1
+R8
+R9
+R10

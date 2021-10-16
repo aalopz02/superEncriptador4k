@@ -10,47 +10,299 @@
 # Copying C:/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vRegisterFile.sv}
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/xor_gate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:42:25 on Oct 15,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vRegisterFile.sv 
-# -- Compiling module vRegisterFile
-# -- Compiling module vREgTB
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/xor_gate.sv 
+# -- Compiling module xor_gate
 # 
 # Top level modules:
-# 	vREgTB
-# End time: 11:42:25 on Oct 15,2021, Elapsed time: 0:00:00
+# 	xor_gate
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/shift_right_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/shift_right_gate.sv 
+# -- Compiling module shift_right_gate
+# 
+# Top level modules:
+# 	shift_right_gate
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/shif_left_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/shif_left_gate.sv 
+# -- Compiling module shift_left_gate
+# 
+# Top level modules:
+# 	shift_left_gate
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/or_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/or_gate.sv 
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/one_bit_half_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/one_bit_half_adder.sv 
+# -- Compiling module one_bit_half_adder
+# 
+# Top level modules:
+# 	one_bit_half_adder
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/one_bit_full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/one_bit_full_adder.sv 
+# -- Compiling module one_bit_full_adder
+# 
+# Top level modules:
+# 	one_bit_full_adder
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/mux_four.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/mux_four.sv 
+# -- Compiling module mux_four
+# 
+# Top level modules:
+# 	mux_four
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/mux_eight.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/mux_eight.sv 
+# -- Compiling module mux_eight
+# 
+# Top level modules:
+# 	mux_eight
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/and_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/and_gate.sv 
+# -- Compiling module and_gate
+# 
+# Top level modules:
+# 	and_gate
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/adder_substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:12 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/adder_substractor.sv 
+# -- Compiling module adder_substractor
+# 
+# Top level modules:
+# 	adder_substractor
+# End time: 23:08:12 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k/components {G:/superEncriptador4k/components/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:13 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k/components" G:/superEncriptador4k/components/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 23:08:13 on Oct 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vAluBlock.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:08:13 on Oct 15,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vAluBlock.sv 
+# -- Compiling module vAluBlock
+# -- Compiling module vAluTest
+# 
+# Top level modules:
+# 	vAluTest
+# End time: 23:08:13 on Oct 15,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.vRegisterFile
-# vsim work.vRegisterFile 
-# Start time: 11:42:55 on Oct 15,2021
+vsim work.vAluBlock
+# vsim work.vAluBlock 
+# Start time: 23:08:18 on Oct 15,2021
 # Loading sv_std.std
-# Loading work.vRegisterFile
-vsim work.vREgTB
-# End time: 11:43:02 on Oct 15,2021, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 0
-# vsim work.vREgTB 
-# Start time: 11:43:02 on Oct 15,2021
+# Loading work.vAluBlock
+# Loading work.alu
+# Loading work.adder_substractor
+# Loading work.xor_gate
+# Loading work.adder
+# Loading work.and_gate
+# Loading work.or_gate
+# Loading work.shift_left_gate
+# Loading work.shift_right_gate
+# Loading work.mux_eight
+# Loading work.mux_four
+# Loading work.mux2
+# Loading work.one_bit_full_adder
+# Loading work.one_bit_half_adder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[0]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[0]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[1]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[1]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[2]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[2]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[3]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[3]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[4]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[4]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[5]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[5]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[6]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[6]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[7]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluBlock/forloop[7]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+vsim work.vAluTest
+# End time: 23:08:28 on Oct 15,2021, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 32
+# vsim work.vAluTest 
+# Start time: 23:08:28 on Oct 15,2021
 # Loading sv_std.std
-# Loading work.vREgTB
-# Loading work.vRegisterFile
-add wave -position end  sim:/vREgTB/period
-add wave -position end  sim:/vREgTB/clk
-add wave -position end  sim:/vREgTB/wEnable
-add wave -position end  sim:/vREgTB/voper1
-add wave -position end  sim:/vREgTB/voper2
-add wave -position end  sim:/vREgTB/vresult
-add wave -position end  sim:/vREgTB/dataIn
-add wave -position end  sim:/vREgTB/oper1
-add wave -position end  sim:/vREgTB/oper2
+# Loading work.vAluTest
+# Loading work.vAluBlock
+# Loading work.alu
+# Loading work.adder_substractor
+# Loading work.xor_gate
+# Loading work.adder
+# Loading work.and_gate
+# Loading work.or_gate
+# Loading work.shift_left_gate
+# Loading work.shift_right_gate
+# Loading work.mux_eight
+# Loading work.mux_four
+# Loading work.mux2
+# Loading work.one_bit_full_adder
+# Loading work.one_bit_half_adder
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[0]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[0]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[1]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[1]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[2]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[2]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[3]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[3]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[4]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[4]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[5]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[5]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[6]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[6]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[7]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /vAluTest/vAluBlock/forloop[7]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+add wave -position end  sim:/vAluTest/clk
+add wave -position end  sim:/vAluTest/vAluBlock/vectorOper1
+add wave -position end  sim:/vAluTest/vAluBlock/vectorOper1Aux
+add wave -position end  sim:/vAluTest/vAluBlock/vectorOper2
+add wave -position end  sim:/vAluTest/vAluBlock/vectorOper2Aux
+add wave -position end  sim:/vAluTest/vAluBlock/resultAux
+add wave -position end  sim:/vAluTest/vAluBlock/result
+add wave -position end  sim:/vAluTest/vAluBlock/opCode
+add wave -position end  sim:/vAluTest/vAluBlock/opCodeAux
 run 100
-add wave -position end  sim:/vREgTB/VRegisterFile/matrix
 run 100
 run 100
 run 100
 run 100
 run 100
 run 100
-# End time: 11:45:19 on Oct 15,2021, Elapsed time: 0:02:17
-# Errors: 0, Warnings: 0
+run 100
+# End time: 23:11:06 on Oct 15,2021, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 32

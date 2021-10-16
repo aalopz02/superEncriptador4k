@@ -18,9 +18,6 @@ module vRegisterFile #(
   assign oper1 = matrix[voper1];
   assign oper2 = matrix[voper2];
   
-  //assign voper1 = (ra1 != 0) ? matrix[ra1] : 0;
-  //assign voper2 = (ra2 != 0) ? matrix[ra2] : 0;
-  
 endmodule
 
 module vREgTB();
