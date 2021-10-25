@@ -8,33 +8,34 @@ module superDecoder(
 	flagNop,
 	flagMemRead,
 	flagMemWrite,
-	swapBitOrigin,swapBitDest
+	swapBitOrigin,swapBitDest,
+	intRegDest,vRegDest,aluOpcode,enableSwap
 	);
 
 	input clk;
 	input [15:0] instruction;
-	output [3:0] intOper1;
-	output [3:0] intOper2;
-	output [1:0] vOper1;
-	output [1:0] vOper2;
-	output [3:0] intRegDest;
-	output [1:0] vRegDest; 
-	output [1:0] cond;
-	output enableAluInt;
-	output enableAluV;
-	output enableMem;
-	output enableJump;
-	output enableSwap;
-	output flagEnd;
-	output flagNop;
-	output flagImm;
-	output [7:0] ImmOut;
-	output [1:0] aluOpcode;
-	output [9:0] jumpAddress;
-	output flagMemRead;
-	output flagMemWrite;
-	output [2:0] swapBitOrigin;
-	output [2:0] swapBitDest;
+	output logic [3:0] intOper1;
+	output logic [3:0] intOper2;
+	output logic [1:0] vOper1;
+	output logic [1:0] vOper2;
+	output logic [3:0] intRegDest;
+	output logic [1:0] vRegDest; 
+	output logic [1:0] cond;
+	output logic enableAluInt;
+	output logic enableAluV;
+	output logic enableMem;
+	output logic enableJump;
+	output logic enableSwap;
+	output logic flagEnd;
+	output logic flagNop;
+	output logic flagImm;
+	output logic [7:0] ImmOut;
+	output logic [2:0] aluOpcode;
+	output logic [9:0] jumpAddress;
+	output logic flagMemRead;
+	output logic flagMemWrite;
+	output logic [2:0] swapBitOrigin;
+	output logic [2:0] swapBitDest;
 	
 	reg [3:0] intOper1Aux = 4'd0;
 	reg [3:0] intOper2Aux = 4'd0;
@@ -52,7 +53,7 @@ module superDecoder(
 	reg flagNopAux = 1'b0;
 	reg flagImmAux = 1'b0;
 	reg [7:0] ImmOutAux = 8'd0;
-	reg [1:0] aluOpcodeAux = 2'd0;
+	reg [2:0] aluOpcodeAux = 2'd0;
 	reg [9:0] jumpAddressAux = 10'd0;
 	reg flagMemReadAux = 1'b0;
 	reg flagMemWriteAux = 1'b0;
@@ -141,7 +142,7 @@ module superDecoder(
 						ImmOutAux[4:0] <= instruction[8:4];
 						ImmOutAux[7:5] <= 3'd0;
 						vOper1Aux <= instruction[12:11];
-						vRegDestAux <= intruction[10:9];
+						vRegDestAux <= instruction[10:9];
 						enableSwapAux <= 1'd0;
 					end
 				opCodeVLD: begin
@@ -304,6 +305,13 @@ module superDecoder(
 						flagEndAux <= 1'b1;
 						flagNopAux <= 1'b0;
 					end
+				default : begin
+						enableAluIntAux <= 1'b0;
+						enableAluVAux <= 1'b0;
+						enableMemAux <= 1'b0;
+						enableJumpAux <= 1'b0;
+						enableSwapAux <= 1'd0;
+				end
 			endcase
 	end
 	
@@ -336,7 +344,7 @@ endmodule
 
 module decoderTB();
 
-	logic clk = 1'b1;
+	logic clk = 1'b0;
 	
 	always #100 clk = !clk;
 	localparam period = 100;
@@ -358,7 +366,7 @@ module decoderTB();
 	logic flagNop;
 	logic flagImm;
 	logic [7:0] ImmOut;
-	logic [1:0] aluOpcode;
+	logic [2:0] aluOpcode;
 	logic [9:0] jumpAddress;
 	logic flagMemRead;
 	logic flagMemWrite;
@@ -375,13 +383,56 @@ module decoderTB();
 	flagNop,
 	flagMemRead,
 	flagMemWrite,
-	swapBitOrigin,swapBitDest
+	swapBitOrigin,swapBitDest,
+	intRegDest,vRegDest,aluOpcode,enableSwap
 	);
 	
 	initial begin
-		
 		#period;
-	
+		instruction = 16'b0000100011000000;//cmp r2, r3 
+		#period;
+		#period;
+		instruction = 16'b0000000000000001;//jne #1
+		#period;
+		#period;
+		instruction = 16'b0000110001100010;//vxoreq v1, v2, r3
+		#period;
+		#period;
+		instruction = 16'b0110011111100011;//vxorigt v0, v3, #30
+		#period;
+		#period;
+		instruction = 16'b1010100001100100;//vldal r10, v0, #3
+		#period;
+		#period;
+		instruction = 16'b0010010111100101;//vstreq r9, v1, #7
+		#period;
+		#period;
+		instruction = 16'b0101011100000110;//vsrgt v2, v3, r8
+		#period;
+		#period;
+		instruction = 16'b1001011100000111;//vslal v2, v3, r8
+		#period;
+		#period;
+		instruction = 16'b1110111010011000;//vswapne v2, v3, #5, #1
+		#period;
+		#period;
+		instruction = 16'b0111111111101001;//add r7, r15, r14
+		#period;
+		#period;
+		instruction = 16'b1101110010111010;//sub r13, r12, r11
+		#period;
+		instruction = 16'b0110010111101011;//addi r6, r5, #14
+		#period;
+		#period;
+		instruction = 16'b0011001010011100;//subi r3, r2, #9
+		#period;
+		#period;
+		instruction = 16'b0000000000001101;//nop
+		#period;
+		#period;
+		instruction = 16'b0000000000001110;//end
+		#period;
+		#period;
 	end
 endmodule
 	

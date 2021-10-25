@@ -4,259 +4,207 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "result[0]",
+					"name" : "intOper1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[1]",
+					"name" : "intOper1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[2]",
+					"name" : "intOper1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[3]",
+					"name" : "intOper1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "result[4]",
+					"name" : "intOper2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[5]",
+					"name" : "intOper2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[6]",
+					"name" : "intOper2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[7]",
+					"name" : "intOper2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "result[8]",
+					"name" : "vOper1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[9]",
+					"name" : "vOper1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[10]",
+					"name" : "cond[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[11]",
+					"name" : "cond[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[12]",
+					"name" : "enableAluInt",
 					"strict" : false
 				},
 				{
-					"name" : "result[13]",
+					"name" : "enableAluV",
 					"strict" : false
 				},
 				{
-					"name" : "result[14]",
+					"name" : "enableMem",
 					"strict" : false
 				},
 				{
-					"name" : "result[15]",
+					"name" : "enableJump",
 					"strict" : false
 				},
 				{
-					"name" : "result[16]",
+					"name" : "flagImm",
 					"strict" : false
 				},
 				{
-					"name" : "result[17]",
+					"name" : "ImmOut[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[18]",
+					"name" : "ImmOut[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[19]",
+					"name" : "ImmOut[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[20]",
+					"name" : "ImmOut[3]",
 					"strict" : false
 				},
 				{
-					"name" : "result[21]",
+					"name" : "ImmOut[4]",
 					"strict" : false
 				},
 				{
-					"name" : "result[22]",
+					"name" : "jumpAddress[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[23]",
+					"name" : "jumpAddress[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[24]",
+					"name" : "jumpAddress[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[25]",
+					"name" : "jumpAddress[3]",
 					"strict" : false
 				},
 				{
-					"name" : "result[26]",
+					"name" : "jumpAddress[4]",
 					"strict" : false
 				},
 				{
-					"name" : "result[27]",
+					"name" : "jumpAddress[5]",
 					"strict" : false
 				},
 				{
-					"name" : "result[28]",
+					"name" : "jumpAddress[6]",
 					"strict" : false
 				},
 				{
-					"name" : "result[29]",
+					"name" : "jumpAddress[7]",
 					"strict" : false
 				},
 				{
-					"name" : "result[30]",
+					"name" : "jumpAddress[8]",
 					"strict" : false
 				},
 				{
-					"name" : "result[31]",
+					"name" : "jumpAddress[9]",
 					"strict" : false
 				},
 				{
-					"name" : "result[32]",
+					"name" : "flagEnd",
 					"strict" : false
 				},
 				{
-					"name" : "result[33]",
+					"name" : "flagMemRead",
 					"strict" : false
 				},
 				{
-					"name" : "result[34]",
+					"name" : "flagMemWrite",
 					"strict" : false
 				},
 				{
-					"name" : "result[35]",
+					"name" : "swapBitOrigin[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[36]",
+					"name" : "swapBitOrigin[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[37]",
+					"name" : "swapBitOrigin[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[38]",
+					"name" : "swapBitDest[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[39]",
+					"name" : "swapBitDest[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[40]",
+					"name" : "swapBitDest[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[41]",
+					"name" : "intRegDest[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[42]",
+					"name" : "intRegDest[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[43]",
+					"name" : "intRegDest[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[44]",
+					"name" : "intRegDest[3]",
 					"strict" : false
 				},
 				{
-					"name" : "result[45]",
+					"name" : "vRegDest[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[46]",
+					"name" : "vRegDest[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[47]",
+					"name" : "aluOpcode[0]",
 					"strict" : false
 				},
 				{
-					"name" : "result[48]",
+					"name" : "aluOpcode[1]",
 					"strict" : false
 				},
 				{
-					"name" : "result[49]",
+					"name" : "aluOpcode[2]",
 					"strict" : false
 				},
 				{
-					"name" : "result[50]",
-					"strict" : false
-				},
-				{
-					"name" : "result[51]",
-					"strict" : false
-				},
-				{
-					"name" : "result[52]",
-					"strict" : false
-				},
-				{
-					"name" : "result[53]",
-					"strict" : false
-				},
-				{
-					"name" : "result[54]",
-					"strict" : false
-				},
-				{
-					"name" : "result[55]",
-					"strict" : false
-				},
-				{
-					"name" : "result[56]",
-					"strict" : false
-				},
-				{
-					"name" : "result[57]",
-					"strict" : false
-				},
-				{
-					"name" : "result[58]",
-					"strict" : false
-				},
-				{
-					"name" : "result[59]",
-					"strict" : false
-				},
-				{
-					"name" : "result[60]",
-					"strict" : false
-				},
-				{
-					"name" : "result[61]",
-					"strict" : false
-				},
-				{
-					"name" : "result[62]",
-					"strict" : false
-				},
-				{
-					"name" : "result[63]",
+					"name" : "enableSwap",
 					"strict" : false
 				},
 				{
@@ -264,527 +212,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "opCode[0]",
+					"name" : "instruction[12]",
 					"strict" : false
 				},
 				{
-					"name" : "opCode[1]",
+					"name" : "instruction[0]",
 					"strict" : false
 				},
 				{
-					"name" : "opCode[2]",
+					"name" : "instruction[1]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper1[0]",
+					"name" : "instruction[2]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[0]",
+					"name" : "instruction[3]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper1[4]",
+					"name" : "instruction[5]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper1[6]",
+					"name" : "instruction[10]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper1[5]",
+					"name" : "instruction[13]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper1[7]",
+					"name" : "instruction[6]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[1]",
+					"name" : "instruction[11]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[2]",
+					"name" : "instruction[14]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[3]",
+					"name" : "instruction[7]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[4]",
+					"name" : "instruction[15]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[5]",
+					"name" : "instruction[8]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[6]",
+					"name" : "instruction[4]",
 					"strict" : false
 				},
 				{
-					"name" : "vectorOper2[7]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[8]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[9]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[10]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[11]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[12]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[13]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[14]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[15]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[16]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[16]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[20]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[22]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[21]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[23]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[17]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[18]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[19]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[20]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[21]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[22]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[23]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[18]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[17]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[19]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[24]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[24]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[28]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[30]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[29]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[31]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[25]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[26]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[27]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[28]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[29]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[30]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[31]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[26]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[25]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[27]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[32]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[32]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[36]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[38]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[37]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[39]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[33]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[34]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[35]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[36]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[37]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[38]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[39]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[34]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[33]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[35]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[40]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[40]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[44]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[46]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[45]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[47]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[41]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[42]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[43]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[44]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[45]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[46]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[47]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[42]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[41]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[43]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[48]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[48]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[52]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[54]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[53]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[55]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[49]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[50]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[51]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[52]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[53]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[54]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[55]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[50]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[49]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[51]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[56]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[56]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[60]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[62]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[61]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[63]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[57]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[58]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[59]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[60]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[61]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[62]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper2[63]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[58]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[57]",
-					"strict" : false
-				},
-				{
-					"name" : "vectorOper1[59]",
+					"name" : "instruction[9]",
 					"strict" : false
 				}
 			]

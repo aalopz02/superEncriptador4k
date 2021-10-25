@@ -61,9 +61,9 @@ def writeMif(instList):
             elif "cmp" in inst[0]:
                 processCmp(binLines,inst,"00")
             elif "nop" in inst[0]:
-                binLines.append("0000000000000000")
-            elif "end" in inst[0]:
                 binLines.append("0000000000001101")
+            elif "end" in inst[0]:
+                binLines.append("0000000000001110")
             else:
                 print("Incorrect Structure, please review")
                 print("Inst:",inst)
