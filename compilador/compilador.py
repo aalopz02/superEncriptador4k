@@ -22,6 +22,7 @@ def complement16(binLines):
                 binLines[i] = binLines[i] + "0"
         elif lenLine > 16:
             print("Incorrect Structure, please review")
+            print("0 fill")
             quit()
     
 
@@ -51,6 +52,8 @@ def writeMif(instList):
                 processVstr(binLines,inst,"00")
             elif "vsr" in inst[0]:
                 processVsr(binLines,inst,"00")
+            elif "vsl" in inst[0]:
+                processVsr(binLines,inst,"00")
             elif "vswap" in inst[0]:
                 processVswap(binLines,inst,"00")
             elif "j" in inst[0]:
@@ -63,6 +66,8 @@ def writeMif(instList):
                 binLines.append("0000000000001101")
             else:
                 print("Incorrect Structure, please review")
+                print("Inst:",inst)
+                print("mif fill")
                 quit()
     complement16(binLines)
     lenBinLines = len(binLines)
@@ -87,14 +92,16 @@ def processCondCode(inst):
     elif "eq" in inst[0]:
         inst[0] = inst[0].replace("eq",'')
         return "00"
-    elif "lt" in inst[0]:
-        inst[0] = inst[0].replace("lt",'')
-        return "10"
     elif "gt" in inst[0]:
         inst[0] = inst[0].replace("gt",'')
         return "01"
+    elif "al" in inst[0]:
+        inst[0] = inst[0].replace("al",'')
+        return "10"
     else:
         print("Incorrect Structure, please review")
+        print("cond code")
+        print("Inst:",inst)
         quit()
 
 def processReg(reg):
@@ -132,6 +139,8 @@ def processReg(reg):
         return '1001'
     else:
         print("Incorrect Structure, please review")
+        print("reg code")
+        print("Inst:",inst)
         quit()
 
 def processVect(vect):
@@ -156,6 +165,8 @@ def processImm(imm, bits):
             binStr = '0' + binStr
     elif binLen > bits:
         print("Incorrect Structure, please review")
+        print("imm code")
+        print("Inst:",inst)
         quit()
     return binStr
         
@@ -176,6 +187,8 @@ def processAdd(binLines,inst):
         binLines.append(res)
     else:
         print("Incorrect Structure, please review")
+        print("add code")
+        print("Inst:",inst)
         quit()
 
 def processSub(binLines,inst):
@@ -195,6 +208,8 @@ def processSub(binLines,inst):
         binLines.append(res)
     else:
         print("Incorrect Structure, please review")
+        print("sub code")
+        print("Inst:",inst)
         quit()
 
 def processVxor(binLines,inst,condCode):
@@ -248,12 +263,12 @@ def processVsr(binLines,inst,condCode):
         post = "00110"
         res = condCode + "0" + vregoper + vregres + reg + post
         binLines.append(res)
-    elif inst[0] == "vsri":
+    elif inst[0] == "vsl":
         vregoper = processVect(inst[1])
         vregres = processVect(inst[2])
-        imm = processImm(inst[3],5)
-        post = "0111"
-        res = condCode + "1" + vregoper + vregres + imm + post
+        reg = processReg(inst[3])
+        post = "00111"
+        res = condCode + "0" + vregoper + vregres + reg + post
         binLines.append(res)
     else:
         condCode = processCondCode(inst)
@@ -286,9 +301,11 @@ def processCmp(binLines,inst,condCode):
     if inst[0] == "cmp":
         op1 = processReg(inst[1])
         op2 = processReg(inst[2])
-        post = "001111"
+        post = "000000"
         res = condCode + op1 + op2 + post
         binLines.append(res)
     else:
         condCode = processCondCode(inst)
         processCmp(binLines,inst,condCode)
+
+getInst("demo.txt")

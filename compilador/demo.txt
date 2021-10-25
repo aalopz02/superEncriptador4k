@@ -3,10 +3,10 @@ cmp r2, r3
 jne demo
 vxoreq v1, v2, r3
 vxorigt v0, v3, #30
-vldlt r10, v0, #3
+vldal r10, v0, #3
 vstreq r9, v1, #7
 vsrgt v2, v3, r8
-vsrilt v0, v1, #27
+vslal v2, v3, r8
 vswapne v2, v3, #5, #1
 add r7, r15, r14
 sub r13, r12, r11
