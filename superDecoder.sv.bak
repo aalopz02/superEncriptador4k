@@ -1,0 +1,42 @@
+module superDecoder(
+	clk, instruction, 
+	intOper1, intOper2, 
+	vOper1, vOper2, 
+	cond, enableAluInt, enableAluV, enableMem, enableJump, flagImm, ImmOut
+	);
+
+	input clk;
+	input [15:0] instruction;
+	output [7:0] intOper1;
+	output [7:0] intOper2;
+	output [63:0] vOper1;
+	output [63:0] vOper2;
+	output [3:0] intRegDest;
+	output [1:0] vRegDest; 
+	output [1:0] cond;
+	output enableAluInt;
+	output enableAluV;
+	output enableMem;
+	output enableJump;
+	output flagImm;
+	output [7:0] ImmOut;
+	output [1:0] aluOpcode;
+	
+	reg [7:0] intOper1Aux;
+	reg [7:0] intOper2Aux;
+	reg [63:0] vOper1Aux;
+	reg [63:0] vOper2Aux;
+	reg [3:0] intRegDestAux;
+	reg [1:0] vRegDestAux; 
+	reg [1:0] condAux;
+	reg enableAluIntAux;
+	reg enableAluVAux;
+	reg enableMemAux;
+	reg enableJumpAux;
+	reg flagImmAux;
+	reg [7:0] ImmOutAux;
+	reg [1:0] aluOpcodeAux;
+	
+	//vRegisterFile#(8, 8, 4) VRegisterFile(clk,wEnable, voper1, voper2, vresult,dataIn, oper1, oper2);
+	
+endmodule
