@@ -9,57 +9,191 @@ z2
 !i10f 100
 cModel Technology
 Z0 dG:/superEncriptador4k/simulation/modelsim
-vdecoderTB
+vdecoder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1635187339
+Z2 !s110 1635839209
 !i10b 1
-!s100 SV=[O7[;SjDUfRXlk^;K50
+!s100 OYMAoa?1j78MWegzM7_N?1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[8Y_1?aKd5=`2RU=dcGTm3
+IilN5j3k]REFAcB9hN=B`_2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1635187330
-Z6 8G:/superEncriptador4k/superDecoder.sv
-Z7 FG:/superEncriptador4k/superDecoder.sv
-!i122 0
-L0 345 93
+Z5 w1635838979
+Z6 8G:/superEncriptador4k/decoder.sv
+Z7 FG:/superEncriptador4k/decoder.sv
+!i122 4
+L0 1 452
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1635187339.000000
-!s107 G:/superEncriptador4k/superDecoder.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/superDecoder.sv|
+Z9 !s108 1635839209.000000
+!s107 G:/superEncriptador4k/decoder.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/decoder.sv|
 !i113 1
 Z11 o-sv -work work
 Z12 !s92 -sv -work work +incdir+G:/superEncriptador4k
 Z13 tCvgOpt 0
-ndecoder@t@b
-vsuperDecoder
+vdecoderTB
 R1
 R2
 !i10b 1
-!s100 J`VaR>EHc?ORgBf0O52251
+!s100 HGH4nD[Ke45Q]5io=8ZR21
 R3
-I_jRUn>oF6a7UN0GECJ=n?2
+IZcfK9NDT?@;Mj3WBb?Fed0
 R4
 S1
 R0
 R5
 R6
 R7
-!i122 0
-L0 1 343
+!i122 4
+L0 454 105
 R8
 r1
 !s85 0
 31
 R9
-Z14 !s107 G:/superEncriptador4k/superDecoder.sv|
+Z14 !s107 G:/superEncriptador4k/decoder.sv|
 R10
 !i113 1
 R11
 R12
 R13
+ndecoder@t@b
+vdPipe
+R1
+R2
+!i10b 1
+!s100 B][dP0G`@_G;dzI7IUn_<1
+R3
+Ie7:c2XX3[?dHV^84AgAfY1
+R4
+S1
+R0
+Z15 w1635874193
+8G:/superEncriptador4k/dPipe.sv
+FG:/superEncriptador4k/dPipe.sv
+!i122 1
+L0 1 30
+R8
+r1
+!s85 0
+31
+R9
+!s107 G:/superEncriptador4k/dPipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/dPipe.sv|
+!i113 1
+R11
+R12
+R13
+nd@pipe
+vdRegisterFile
+R1
+R2
+!i10b 1
+!s100 UoFC?DzjCO`=IAm]l8a:D2
+R3
+I[Ba7?e54YnGJoj[56]R<32
+R4
+S1
+R0
+R15
+8G:/superEncriptador4k/dRegisterFile.sv
+FG:/superEncriptador4k/dRegisterFile.sv
+!i122 0
+L0 1 23
+R8
+r1
+!s85 0
+31
+R9
+!s107 G:/superEncriptador4k/dRegisterFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/dRegisterFile.sv|
+!i113 1
+R11
+R12
+R13
+nd@register@file
+vsuperDecoder
+R1
+R2
+!i10b 1
+!s100 1PnS>TJPYE1>KHcEeVBcL3
+R3
+IU6VQQ;J:J@9>]5R?8Ud772
+R4
+S1
+R0
+w1635839084
+8G:/superEncriptador4k/superDecoder.sv
+FG:/superEncriptador4k/superDecoder.sv
+!i122 3
+L0 1 117
+R8
+r1
+!s85 0
+31
+R9
+!s107 G:/superEncriptador4k/superDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/superDecoder.sv|
+!i113 1
+R11
+R12
+R13
 nsuper@decoder
+vvRegisterFile
+R1
+R2
+!i10b 1
+!s100 JCa?MzCESI^JJ0B7?P]zg3
+R3
+IC74g5bBPa:@XBgIY:=T9k1
+R4
+S1
+R0
+Z16 w1635874194
+Z17 8G:/superEncriptador4k/vRegisterFile.sv
+Z18 FG:/superEncriptador4k/vRegisterFile.sv
+!i122 2
+L0 1 21
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 G:/superEncriptador4k/vRegisterFile.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vRegisterFile.sv|
+!i113 1
+R11
+R12
+R13
+nv@register@file
+vvREgTB
+R1
+R2
+!i10b 1
+!s100 :]VCZ?3?O6HO=?G?@GH?J3
+R3
+IT558Ezfi8iM3bZmJP?C8Y1
+R4
+S1
+R0
+R16
+R17
+R18
+!i122 2
+L0 23 44
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R11
+R12
+R13
+nv@r@eg@t@b

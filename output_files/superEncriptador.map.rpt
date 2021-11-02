@@ -1,5 +1,5 @@
 Analysis & Synthesis report for superEncriptador
-Mon Oct 25 12:42:18 2021
+Tue Nov 02 01:50:33 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,13 +13,25 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |superDecoder
+ 16. Parameter Settings for User Entity Instance: decoder:miniDecoder
+ 17. Parameter Settings for User Entity Instance: vRegisterFile:vec_regfile
+ 18. Parameter Settings for User Entity Instance: dRegisterFile:int_regfile
+ 19. Parameter Settings for User Entity Instance: dPipe:idex_pipe
+ 20. Parameter Settings for Inferred Entity Instance: vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "dPipe:idex_pipe"
+ 23. Port Connectivity Checks: "decoder:miniDecoder"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +58,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 25 12:42:18 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 02 01:50:33 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; superEncriptador                            ;
 ; Top-level Entity Name           ; superDecoder                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 102                                         ;
-; Total pins                      ; 74                                          ;
+; Total registers                 ; 462                                         ;
+; Total pins                      ; 339                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
+; Total block memory bits         ; 256                                         ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -166,17 +178,38 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
-; superDecoder.sv                  ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/superDecoder.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/decoder.sv                                             ;         ;
+; dRegisterFile.sv                 ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/dRegisterFile.sv                                       ;         ;
+; dPipe.sv                         ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/dPipe.sv                                               ;         ;
+; vRegisterFile.sv                 ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/vRegisterFile.sv                                       ;         ;
+; superDecoder.sv                  ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/superDecoder.sv                                        ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_63j1.tdf           ; yes             ; Auto-Generated Megafunction  ; G:/superEncriptador4k/db/altsyncram_63j1.tdf                                 ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -184,36 +217,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 53        ;
+; Estimate of Logic utilization (ALMs needed) ; 306       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 42        ;
+; Combinational ALUT usage for logic          ; 224       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 6         ;
-;     -- 5 input functions                    ; 19        ;
-;     -- 4 input functions                    ; 15        ;
-;     -- <=3 input functions                  ; 2         ;
+;     -- 6 input functions                    ; 166       ;
+;     -- 5 input functions                    ; 39        ;
+;     -- 4 input functions                    ; 16        ;
+;     -- <=3 input functions                  ; 3         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 102       ;
+; Dedicated logic registers                   ; 462       ;
 ;                                             ;           ;
-; I/O pins                                    ; 74        ;
+; I/O pins                                    ; 339       ;
+; Total MLAB memory bits                      ; 0         ;
+; Total block memory bits                     ; 256       ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 102       ;
-; Total fan-out                               ; 560       ;
-; Average fan-out                             ; 1.92      ;
+; Maximum fan-out                             ; 417       ;
+; Total fan-out                               ; 3566      ;
+; Average fan-out                             ; 2.50      ;
 +---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |superDecoder              ; 42 (42)             ; 102 (102)                 ; 0                 ; 0          ; 74   ; 0            ; |superDecoder       ; superDecoder ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |superDecoder                             ; 224 (1)             ; 462 (0)                   ; 256               ; 0          ; 339  ; 0            ; |superDecoder                                                                                  ; superDecoder    ; work         ;
+;    |dPipe:idex_pipe|                      ; 162 (162)           ; 96 (96)                   ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dPipe:idex_pipe                                                                  ; dPipe           ; work         ;
+;    |dRegisterFile:int_regfile|            ; 15 (15)             ; 256 (256)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dRegisterFile:int_regfile                                                        ; dRegisterFile   ; work         ;
+;    |decoder:miniDecoder|                  ; 46 (46)             ; 110 (110)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|decoder:miniDecoder                                                              ; decoder         ; work         ;
+;    |vRegisterFile:vec_regfile|            ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile                                                        ; vRegisterFile   ; work         ;
+;       |altsyncram:matrix_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_63j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated ; altsyncram_63j1 ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4            ; 64           ; 4            ; 64           ; 256  ; None ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +---------------------------------------------------------------------------------+
@@ -221,32 +271,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; vOper2[1]~reg0                         ; Stuck at GND due to stuck port data_in ;
-; vOper2[0]~reg0                         ; Stuck at GND due to stuck port data_in ;
-; ImmOutAux[5..7]                        ; Stuck at GND due to stuck port data_in ;
-; flagNopAux                             ; Stuck at GND due to stuck port data_in ;
-; flagNop~reg0                           ; Stuck at GND due to stuck port data_in ;
-; ImmOut[7]~reg0                         ; Stuck at GND due to stuck port data_in ;
-; ImmOut[6]~reg0                         ; Stuck at GND due to stuck port data_in ;
-; ImmOut[5]~reg0                         ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|ImmOutAux[5..7]    ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|isOper2VAux        ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|flagNopAux         ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|isOper2V           ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|flagNop            ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|ImmOut[5..7]       ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 10 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                        ;
-+---------------+---------------------------+----------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
-+---------------+---------------------------+----------------------------------------+
-; ImmOutAux[5]  ; Stuck at GND              ; ImmOut[5]~reg0                         ;
-;               ; due to stuck port data_in ;                                        ;
-; ImmOutAux[6]  ; Stuck at GND              ; ImmOut[6]~reg0                         ;
-;               ; due to stuck port data_in ;                                        ;
-; ImmOutAux[7]  ; Stuck at GND              ; ImmOut[7]~reg0                         ;
-;               ; due to stuck port data_in ;                                        ;
-; flagNopAux    ; Stuck at GND              ; flagNop~reg0                           ;
-;               ; due to stuck port data_in ;                                        ;
-+---------------+---------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                           ;
++----------------------------------+---------------------------+----------------------------------------+
+; Register name                    ; Reason for Removal        ; Registers Removed due to This Register ;
++----------------------------------+---------------------------+----------------------------------------+
+; decoder:miniDecoder|ImmOutAux[5] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[5]          ;
+;                                  ; due to stuck port data_in ;                                        ;
+; decoder:miniDecoder|ImmOutAux[6] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[6]          ;
+;                                  ; due to stuck port data_in ;                                        ;
+; decoder:miniDecoder|ImmOutAux[7] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[7]          ;
+;                                  ; due to stuck port data_in ;                                        ;
+; decoder:miniDecoder|isOper2VAux  ; Stuck at GND              ; decoder:miniDecoder|isOper2V           ;
+;                                  ; due to stuck port data_in ;                                        ;
+; decoder:miniDecoder|flagNopAux   ; Stuck at GND              ; decoder:miniDecoder|flagNop            ;
+;                                  ; due to stuck port data_in ;                                        ;
++----------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -254,27 +304,220 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 102   ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 462   ;
+; Number of registers using Synchronous Clear  ; 96    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 35    ;
+; Number of registers using Clock Enable       ; 291   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |superDecoder|intOper2Aux[0] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |superDecoder|ImmOutAux[0]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|vRegDestAux[0] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|vOper1Aux[0]   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|intOper1Aux[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                  ;
++-----------------------------------------------+----------------------------------------+------+
+; Register Name                                 ; Megafunction                           ; Type ;
++-----------------------------------------------+----------------------------------------+------+
+; vRegisterFile:vec_regfile|matrix[0..3][0..63] ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
+; decoder:miniDecoder|vOper1[0,1]               ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
++-----------------------------------------------+----------------------------------------+------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|ImmOutAux[0]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper2Aux[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vOper1Aux[0]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vRegDestAux[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper1Aux[2] ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper1_o[15]     ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper2_o[12]     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |superDecoder ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; REGI_BITS      ; 4     ; Signed Integer                                      ;
+; VECT_BITS      ; 2     ; Signed Integer                                      ;
+; VECT_LANES     ; 3     ; Signed Integer                                      ;
+; MEMO_LINES     ; 64    ; Signed Integer                                      ;
+; REGI_SIZE      ; 16    ; Signed Integer                                      ;
+; VECT_SIZE      ; 8     ; Signed Integer                                      ;
+; ELEM_SIZE      ; 8     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decoder:miniDecoder ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; REGI_BITS      ; 4     ; Signed Integer                          ;
+; VECT_BITS      ; 2     ; Signed Integer                          ;
+; VECT_LANES     ; 3     ; Signed Integer                          ;
+; MEMO_LINES     ; 64    ; Signed Integer                          ;
+; REGI_SIZE      ; 16    ; Signed Integer                          ;
+; VECT_SIZE      ; 8     ; Signed Integer                          ;
+; ELEM_SIZE      ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vRegisterFile:vec_regfile ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; elementSize    ; 8     ; Signed Integer                                ;
+; vectorSize     ; 8     ; Signed Integer                                ;
+; vectors        ; 4     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dRegisterFile:int_regfile ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; REGI_BITS      ; 4     ; Signed Integer                                ;
+; REGI_SIZE      ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dPipe:idex_pipe ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; REGI_BITS      ; 4     ; Signed Integer                      ;
+; VECT_BITS      ; 2     ; Signed Integer                      ;
+; VECT_LANES     ; 3     ; Signed Integer                      ;
+; MEMO_LINES     ; 64    ; Signed Integer                      ;
+; REGI_SIZE      ; 16    ; Signed Integer                      ;
+; VECT_SIZE      ; 8     ; Signed Integer                      ;
+; ELEM_SIZE      ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0 ;
++------------------------------------+----------------------+----------------------------------------+
+; Parameter Name                     ; Value                ; Type                                   ;
++------------------------------------+----------------------+----------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                ;
+; WIDTH_A                            ; 64                   ; Untyped                                ;
+; WIDTHAD_A                          ; 2                    ; Untyped                                ;
+; NUMWORDS_A                         ; 4                    ; Untyped                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WIDTH_B                            ; 64                   ; Untyped                                ;
+; WIDTHAD_B                          ; 2                    ; Untyped                                ;
+; NUMWORDS_B                         ; 4                    ; Untyped                                ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_63j1      ; Untyped                                ;
++------------------------------------+----------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                              ;
++-------------------------------------------+---------------------------------------------------+
+; Name                                      ; Value                                             ;
++-------------------------------------------+---------------------------------------------------+
+; Number of entity instances                ; 1                                                 ;
+; Entity Instance                           ; vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                         ;
+;     -- WIDTH_A                            ; 64                                                ;
+;     -- NUMWORDS_A                         ; 4                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 64                                                ;
+;     -- NUMWORDS_B                         ; 4                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
++-------------------------------------------+---------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dPipe:idex_pipe"                                                                                                                      ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                         ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; vecOper2_o ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (1 bits) it drives; bit(s) "vecOper2_o[63..1]" have no fanouts ;
+; vecOper2_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                             ;
++------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decoder:miniDecoder"                                                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; intOper1 ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (4 bits) it drives; bit(s) "intOper1[15..4]" have no fanouts ;
+; intOper2 ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (4 bits) it drives; bit(s) "intOper2[15..4]" have no fanouts ;
++----------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -282,21 +525,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 102                         ;
-;     ENA               ; 35                          ;
-;     plain             ; 67                          ;
-; arriav_lcell_comb     ; 43                          ;
-;     normal            ; 43                          ;
+; arriav_ff             ; 462                         ;
+;     ENA               ; 291                         ;
+;     SCLR              ; 96                          ;
+;     plain             ; 75                          ;
+; arriav_lcell_comb     ; 225                         ;
+;     normal            ; 225                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 15                          ;
-;         5 data inputs ; 19                          ;
-;         6 data inputs ; 6                           ;
-; boundary_port         ; 74                          ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 39                          ;
+;         6 data inputs ; 166                         ;
+; boundary_port         ; 339                         ;
+; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.56                        ;
+; Average LUT depth     ; 1.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -315,10 +560,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 25 12:42:12 2021
+    Info: Processing started: Tue Nov 02 01:50:27 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off superEncriptador -c superEncriptador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
+Info (12021): Found 2 design units, including 2 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: G:/superEncriptador4k/decoder.sv Line: 1
+    Info (12023): Found entity 2: decoderTB File: G:/superEncriptador4k/decoder.sv Line: 454
 Info (12021): Found 1 design units, including 1 entities, in source file tbexecute.sv
     Info (12023): Found entity 1: tbExecute File: G:/superEncriptador4k/tbExecute.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file estage.sv
@@ -373,7 +621,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file compone
     Info (12023): Found entity 1: adder File: G:/superEncriptador4k/components/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tbdecoder.sv
     Info (12023): Found entity 1: tbDecoder File: G:/superEncriptador4k/tbDecoder.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at superEncriptador.sv(115): truncated literal to match 7 bits File: G:/superEncriptador4k/superEncriptador.sv Line: 115
 Info (12021): Found 1 design units, including 1 entities, in source file superencriptador.sv
     Info (12023): Found entity 1: superEncriptador File: G:/superEncriptador4k/superEncriptador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file romxor.v
@@ -396,30 +643,147 @@ Info (12021): Found 2 design units, including 2 entities, in source file vregist
 Info (12021): Found 2 design units, including 2 entities, in source file valublock.sv
     Info (12023): Found entity 1: vAluBlock File: G:/superEncriptador4k/vAluBlock.sv Line: 1
     Info (12023): Found entity 2: vAluTest File: G:/superEncriptador4k/vAluBlock.sv Line: 43
-Info (12021): Found 2 design units, including 2 entities, in source file superdecoder.sv
+Info (12021): Found 1 design units, including 1 entities, in source file superdecoder.sv
     Info (12023): Found entity 1: superDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 1
-    Info (12023): Found entity 2: decoderTB File: G:/superEncriptador4k/superDecoder.sv Line: 345
+Warning (10236): Verilog HDL Implicit Net warning at dStage.sv(24): created implicit net for "ra1" File: G:/superEncriptador4k/dStage.sv Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at dStage.sv(25): created implicit net for "ra2" File: G:/superEncriptador4k/dStage.sv Line: 25
 Warning (10236): Verilog HDL Implicit Net warning at vAluBlock.sv(26): created implicit net for "x" File: G:/superEncriptador4k/vAluBlock.sv Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at superDecoder.sv(115): created implicit net for "vOper2" File: G:/superEncriptador4k/superDecoder.sv Line: 115
 Info (12127): Elaborating entity "superDecoder" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at superDecoder.sv(80): object "condGT" assigned a value but never read File: G:/superEncriptador4k/superDecoder.sv Line: 80
-Warning (10036): Verilog HDL or VHDL warning at superDecoder.sv(82): object "condNE" assigned a value but never read File: G:/superEncriptador4k/superDecoder.sv Line: 82
+Warning (10034): Output port "reg_dest_o" at superDecoder.sv(18) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 18
+Warning (10034): Output port "vec_dest_o" at superDecoder.sv(19) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 19
+Warning (10034): Output port "vOperImm" at superDecoder.sv(23) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 23
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:miniDecoder" File: G:/superEncriptador4k/superDecoder.sv Line: 83
+Warning (10036): Verilog HDL or VHDL warning at decoder.sv(90): object "condGT" assigned a value but never read File: G:/superEncriptador4k/decoder.sv Line: 90
+Warning (10036): Verilog HDL or VHDL warning at decoder.sv(92): object "condNE" assigned a value but never read File: G:/superEncriptador4k/decoder.sv Line: 92
+Info (12128): Elaborating entity "vRegisterFile" for hierarchy "vRegisterFile:vec_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 92
+Info (12128): Elaborating entity "dRegisterFile" for hierarchy "dRegisterFile:int_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 102
+Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(21): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(22): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 22
+Info (12128): Elaborating entity "dPipe" for hierarchy "dPipe:idex_pipe" File: G:/superEncriptador4k/superDecoder.sv Line: 116
+Warning (276027): Inferred dual-clock RAM node "vRegisterFile:vec_regfile|matrix_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "vRegisterFile:vec_regfile|matrix_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 64
+        Info (286033): Parameter WIDTHAD_A set to 2
+        Info (286033): Parameter NUMWORDS_A set to 4
+        Info (286033): Parameter WIDTH_B set to 64
+        Info (286033): Parameter WIDTHAD_B set to 2
+        Info (286033): Parameter NUMWORDS_B set to 4
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+Info (12130): Elaborated megafunction instantiation "vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0"
+Info (12133): Instantiated megafunction "vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "64"
+    Info (12134): Parameter "WIDTHAD_A" = "2"
+    Info (12134): Parameter "NUMWORDS_A" = "4"
+    Info (12134): Parameter "WIDTH_B" = "64"
+    Info (12134): Parameter "WIDTHAD_B" = "2"
+    Info (12134): Parameter "NUMWORDS_B" = "4"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_63j1.tdf
+    Info (12023): Found entity 1: altsyncram_63j1 File: G:/superEncriptador4k/db/altsyncram_63j1.tdf Line: 28
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vOper2[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 318
-    Warning (13410): Pin "vOper2[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 318
-    Warning (13410): Pin "ImmOut[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 318
-    Warning (13410): Pin "ImmOut[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 318
-    Warning (13410): Pin "ImmOut[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 318
-    Warning (13410): Pin "flagNop" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 30
+    Warning (13410): Pin "reg_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
+    Warning (13410): Pin "reg_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
+    Warning (13410): Pin "reg_dest_o[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
+    Warning (13410): Pin "reg_dest_o[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
+    Warning (13410): Pin "vec_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "vec_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "vOperImm[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[4]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[8]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[9]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[10]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[11]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[12]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[13]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[14]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[15]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[16]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[17]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[18]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[19]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[20]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[21]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[22]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[23]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[24]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[25]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[26]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[27]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[28]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[29]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[30]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[31]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[32]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[33]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[34]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[35]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[36]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[37]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[38]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[39]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[40]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[41]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[42]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[43]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[44]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[45]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[46]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[47]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[48]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[49]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[50]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[51]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[52]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[53]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[54]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[55]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[56]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[57]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[58]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[59]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[60]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[61]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[62]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "vOperImm[63]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
+    Warning (13410): Pin "flagNop" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 33
+    Warning (13410): Pin "ImmOut[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
+    Warning (13410): Pin "ImmOut[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
+    Warning (13410): Pin "ImmOut[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
+    Warning (13410): Pin "isOper2V" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 43
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 115 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Mon Oct 25 12:42:18 2021
+Info (21057): Implemented 1024 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 122 input pins
+    Info (21059): Implemented 217 output pins
+    Info (21061): Implemented 621 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4906 megabytes
+    Info: Processing ended: Tue Nov 02 01:50:33 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:15
 

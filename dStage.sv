@@ -19,7 +19,7 @@ module dStage #(
     output logic [REGI_SIZE-1:0] rs_o, rt_o
 );
 
-    dRegisterFile #(R, D)
+    dRegisterFile #(8, 8)
         RegisterFile(clk_i, we3, 
                     ra1,//instr_i[R+F:F+1], 
                     ra2,//instr_i[R+R+F:R+F+1], 

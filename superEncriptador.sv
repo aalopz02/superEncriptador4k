@@ -112,6 +112,6 @@ module superEncriptador(
 		pc = pc + 1'b1;
 	end
 
-	assign done = (pc == 7'd128);
+	assign done = (pc == 7'hF);
 	
 endmodule

@@ -13,7 +13,7 @@ module decoder#(
 	output logic [REGI_SIZE-1:0] intOper2,
 	output logic [VECT_BITS-1:0] vOper1,
 	output logic [VECT_BITS-1:0] vOper2,
-	output logic [REGI_BITS-3:0] intRegDest,
+	output logic [REGI_BITS-1:0] intRegDest,//aca habia un -3, lo cambie por -1
 	output logic [VECT_BITS-1:0] vRegDest, 
 	output logic [1:0] cond,
 	output logic enableAluInt,
@@ -30,8 +30,21 @@ module decoder#(
 	output logic flagMemRead,
 	output logic flagMemWrite,
 	output logic [2:0] swapBitOrigin,
-	output logic [2:0] swapBitDest
+	output logic [2:0] swapBitDest,
+	output logic isOper1V,
+	output logic isOper2V,
+	output logic isOper1Int,
+	output logic isOper2Int,
+	output logic writeResultInt,
+	output logic writeResultV
 	);
+	
+	reg writeResultIntAux = 1'b0;
+	reg writeResultVAux = 1'b0;
+	reg isOper1VAux = 1'b0;
+	reg isOper2VAux = 1'b0;
+	reg isOper1IntAux = 1'b0;
+	reg isOper2IntAux = 1'b0;
 	
 	reg [3:0] intOper1Aux = 4'd0;
 	reg [3:0] intOper2Aux = 4'd0;
@@ -103,6 +116,12 @@ module decoder#(
 						flagImmAux <= 1'b0;
 						enableSwapAux <= 1'd0;
 						aluOpcodeAux <= codeCMP;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b1;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 					end
 				opCodeJ: begin
 						jumpAddressAux <= instruction[13:4];
@@ -115,6 +134,12 @@ module decoder#(
 						flagNopAux <= 1'b0;
 						flagImmAux <= 1'b0;
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b0;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 					end
 				opCodeVXOR: begin
 						condAux <= instruction[15:14];
@@ -130,6 +155,12 @@ module decoder#(
 						vOper1Aux <= instruction[12:11];
 						vRegDestAux <= instruction[10:9];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end
 				opCodeVXORI: begin
 						condAux <= instruction[15:14];
@@ -146,6 +177,12 @@ module decoder#(
 						vOper1Aux <= instruction[12:11];
 						vRegDestAux <= instruction[10:9];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b0;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end
 				opCodeVLD: begin
 						condAux <= instruction[15:14];
@@ -155,7 +192,7 @@ module decoder#(
 						enableJumpAux <= 1'b0;
 						flagEndAux <= 1'b0;
 						flagNopAux <= 1'b0;
-						flagImmAux <= 1'b1;
+						flagImmAux <= 1'b0;
 					   flagMemReadAux <= 1'b1;
 						flagMemWriteAux <= 1'b0;
 						ImmOutAux[2:0] <= instruction[7:5];
@@ -163,6 +200,12 @@ module decoder#(
 						intOper1Aux <= instruction[13:10];
 						vRegDestAux <= instruction[9:8];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end
 				opCodeVSTR: begin
 						condAux <= instruction[15:14];
@@ -172,7 +215,7 @@ module decoder#(
 						enableJumpAux <= 1'b0;
 						flagEndAux <= 1'b0;
 						flagNopAux <= 1'b0;
-						flagImmAux <= 1'b1;
+						flagImmAux <= 1'b0;
 					   flagMemReadAux <= 1'b0;
 						flagMemWriteAux <= 1'b1;
 						ImmOutAux[2:0] <= instruction[7:5];
@@ -180,6 +223,12 @@ module decoder#(
 						intOper1Aux <= instruction[13:10];
 						vOper1Aux <= instruction[9:8];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 					end 
 				opCodeVSR: begin
 						condAux <= instruction[15:14];
@@ -195,6 +244,12 @@ module decoder#(
 						vOper1Aux <= instruction[12:11];
 						vRegDestAux <= instruction[10:9];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end 
 				opCodeVSL: begin
 						condAux <= instruction[15:14];
@@ -210,6 +265,12 @@ module decoder#(
 						vOper1Aux <= instruction[12:11];
 						vRegDestAux <= instruction[10:9];
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end 
 				opCodeVSWAP: begin
 						condAux <= instruction[15:14];
@@ -225,6 +286,12 @@ module decoder#(
 						vRegDestAux <= instruction[11:10];
 						swapBitOriginAux <= instruction[9:7];
 						swapBitDestAux <= instruction[6:4];
+						isOper1VAux <= 1'b1;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b0;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b1;
 					end
 				opCodeINTADD: begin
 						condAux <= condAL;
@@ -240,6 +307,12 @@ module decoder#(
 						intOper1Aux <= instruction[15:12];
 						intRegDestAux <= instruction[11:8];
 						intOper2Aux <= instruction[7:4];
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b1;
+						writeResultIntAux <= 1'b1;
+						writeResultVAux <= 1'b0;
 					end 
 				opCodeINTSUB: begin
 						condAux <= condAL;
@@ -255,6 +328,12 @@ module decoder#(
 						intOper1Aux <= instruction[15:12];
 						intRegDestAux <= instruction[11:8];
 						intOper2Aux <= instruction[7:4];
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b1;
+						writeResultIntAux <= 1'b1;
+						writeResultVAux <= 1'b0;
 					end 
 				opCodeINTADDI: begin
 						condAux <= condAL;
@@ -272,6 +351,12 @@ module decoder#(
 						flagImmAux <= 1'b1;
 						ImmOutAux[3:0] <= instruction[7:4];
 						ImmOutAux[7:4] <= 4'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b1;
+						writeResultVAux <= 1'b0;
 					end
 				opCodeINTSUBI: begin
 						condAux <= condAL;
@@ -290,6 +375,12 @@ module decoder#(
 						flagImmAux <= 1'b1;
 						ImmOutAux[3:0] <= instruction[7:4];
 						ImmOutAux[7:4] <= 4'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b1;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b1;
+						writeResultVAux <= 1'b0;
 					end
 				opCodeNOP: begin
 						enableAluIntAux <= 1'b0;
@@ -297,6 +388,12 @@ module decoder#(
 						enableMemAux <= 1'b0;
 						enableJumpAux <= 1'b0;
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b0;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 					end
 				opCodeEND: begin
 						enableAluIntAux <= 1'b0;
@@ -306,6 +403,8 @@ module decoder#(
 						enableSwapAux <= 1'd0;
 						flagEndAux <= 1'b1;
 						flagNopAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 					end
 				default : begin
 						enableAluIntAux <= 1'b0;
@@ -313,11 +412,21 @@ module decoder#(
 						enableMemAux <= 1'b0;
 						enableJumpAux <= 1'b0;
 						enableSwapAux <= 1'd0;
+						isOper1VAux <= 1'b0;
+						isOper2VAux <= 1'b0;
+						isOper1IntAux <= 1'b0;
+						isOper2IntAux <= 1'b0;
+						writeResultIntAux <= 1'b0;
+						writeResultVAux <= 1'b0;
 				end
 			endcase
 	end
 	
 	always @ (posedge clk) begin
+		isOper1V <= isOper1VAux;
+		isOper2V <= isOper2VAux;
+		isOper1Int <= isOper1IntAux;
+		isOper2Int <= isOper2IntAux;
 		intRegDest <= intRegDestAux;
 		vRegDest <= vRegDestAux; 
 		cond <= condAux;
@@ -336,6 +445,8 @@ module decoder#(
 		flagMemWrite <= flagMemWriteAux;
 		swapBitOrigin <= swapBitOriginAux;
 		swapBitDest <= swapBitDestAux;
+		writeResultInt <= writeResultIntAux;
+	   writeResultV <= writeResultVAux;
 	end
 	
 endmodule
@@ -370,6 +481,12 @@ module decoderTB();
 	logic flagMemWrite;
 	logic [2:0] swapBitOrigin;
 	logic [2:0] swapBitDest;
+	logic isOper1V;
+	logic isOper2V;
+	logic isOper1Int;
+	logic isOper2Int;
+	logic writeResultInt;
+	logic writeResultV;
 	
 	decoder superDecoder(
 	clk, instruction, 
@@ -382,7 +499,13 @@ module decoderTB();
 	flagMemRead,
 	flagMemWrite,
 	swapBitOrigin,swapBitDest,
-	intRegDest,vRegDest,aluOpcode,enableSwap
+	intRegDest,vRegDest,aluOpcode,enableSwap,
+	isOper1V,
+	isOper2V,
+	isOper1Int,
+	isOper2Int,
+	writeResultInt,
+	writeResultV
 	);
 	
 	initial begin

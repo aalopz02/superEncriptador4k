@@ -38,7 +38,13 @@ module superDecoder#(
 	output logic flagMemRead,
 	output logic flagMemWrite,
 	output logic [2:0] swapBitOrigin,
-	output logic [2:0] swapBitDest
+	output logic [2:0] swapBitDest,
+	output logic isOper1V,
+	output logic isOper2V,
+	output logic isOper1Int,
+	output logic isOper2Int,
+	output logic writeResultInt,
+	output logic writeResultV
 );
 	logic [VECT_BITS-1:0] voper1_p, voper2_p;
 	logic [REGI_BITS-1:0] ioper1_p, ioper2_p;
@@ -50,8 +56,8 @@ module superDecoder#(
 			.intOper1(ioper1_p), .intOper2(ioper2_p),
 			.vOper1(voper1_p), 
 			.vOper2(voper2_p), 
-			.intRegDest(intRegDest),
-			.vRegDest(vecRegDest),
+			.intRegDest(intRegDest),//aca usa este, pero tiene declarado tambien reg_dest_o
+			.vRegDest(vecRegDest),//aca usa este, pero tiene declarado tambien vec_dest_o
 			.cond(cond),
 			.enableAluInt(enableAluInt), 
 			.enableAluV(enableAluV), 
@@ -67,7 +73,13 @@ module superDecoder#(
 			.swapBitOrigin(swapBitOrigin),
 			.swapBitDest(swapBitDest),
 			.enableSwap(enableSwap),
-			.aluOpcode(aluOpcode)
+			.aluOpcode(aluOpcode),
+			.isOper1V(isOper1V),
+			.isOper2V(isOper2V),
+			.isOper1Int(isOper1Int),
+			.isOper2Int(isOper2Int),
+			.writeResultInt(writeResultInt),
+			.writeResultV(writeResultV)
 			);
 
 	vRegisterFile #(ELEM_SIZE, VECT_SIZE, 2**VECT_BITS)
