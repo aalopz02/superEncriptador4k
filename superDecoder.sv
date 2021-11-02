@@ -11,12 +11,16 @@ module superDecoder#(
 	 input logic [REGI_SIZE-1:0] instruction,
 	 input logic [REGI_SIZE-1:0] next_pc_i,
 	 input logic                             int_we_i, vec_we_i,
-	 input logic [REGI_SIZE-1:0]             int_wd_i,
+	 input logic [REGI_BITS-1:0]             int_dest_i,
+	 input logic [VECT_BITS-1:0]             vec_dest_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_wd_i,
+	 input logic [REGI_SIZE-1:0]             int_wd_i,
+	output logic [REGI_BITS-1:0]             reg_dest_o,
+	output logic [VECT_BITS-1:0]             vec_dest_o,
 	output logic [REGI_SIZE-1:0]             intOper1,
 	output logic [REGI_SIZE-1:0]             intOper2,
 	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1,
-	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper2,
+	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOperImm,
 	output logic [REGI_BITS-1:0] intRegDest,
 	output logic [VECT_BITS-1:0] vecRegDest, 
 	output logic [1:0] cond,
@@ -39,7 +43,7 @@ module superDecoder#(
 	logic [VECT_BITS-1:0] voper1_p, voper2_p;
 	logic [REGI_BITS-1:0] ioper1_p, ioper2_p;
 	logic [REGI_SIZE-1:0] ioper1_data_p, ioper2_data_p;
-	logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1_data_p, vOper2_data_p;
+	logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1_data_p, vOper2_data_p, vOperImm_p;
 
 	decoder  #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
 		miniDecoder(.clk(clk||rst), .instruction(instruction),
@@ -69,9 +73,7 @@ module superDecoder#(
 	vRegisterFile #(ELEM_SIZE, VECT_SIZE, 2**VECT_BITS)
 		vec_regfile(.clk(clk),
 			.wEnable(vec_we_i),
-			.voper1(voper1_p), 
-			.voper2(voper2_p),
-			.vresult(vecRegDest),
+			.voper1(voper1_p), .voper2(voper2_p), .vresult(vec_dest_i),
 			.dataIn(vec_wd_i),
 			.oper1(vOper1_data_p), 
 			.oper2(vOper2_data_p)
@@ -80,12 +82,14 @@ module superDecoder#(
 	dRegisterFile #(REGI_BITS, REGI_SIZE)
 		int_regfile(.clk(clk),
 			.we3(int_we_i),
-			.ra1(ioper1_p), .ra2(ioper2_p), .wa3(intRegDest),
+			.ra1(ioper1_p), .ra2(ioper2_p), .wa3(int_dest_i),
 			.pc(next_pc_i),
 			.wd3(int_wd_i),
 			.rd1(ioper1_data_p),
 			.rd2(ioper2_data_p)
 			);
+
+	//intToVec vectorizer(ImmOut, vOperImm_p);
 
 	dPipe #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE)
 		idex_pipe(.clk_i(clk), .rst_i(rst),
