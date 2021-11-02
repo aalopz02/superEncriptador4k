@@ -1,27 +1,30 @@
 module dPipe #(
-    parameter P = 16,
-    parameter D = 16,
-    parameter R = 5,
-    parameter F = 4
+    parameter REGI_BITS = 4,
+    parameter VECT_BITS = 2,
+    parameter VECT_LANES = 3,
+    parameter MEMO_LINES = 64,
+    parameter REGI_SIZE = 16,
+    parameter VECT_SIZE = 8,
+    parameter ELEM_SIZE = 8
 ) (
-	 input logic         clk_i, rst_i,
-     input logic [P-1:0] next_pc_i,
-     input logic [F-1:0] funct4_i,
-     input logic [D-1:0] rs_i, rt_i,
-    output logic [P-1:0] next_pc_o,
-    output logic [F-1:0] funct4_o,
-    output logic [D-1:0] rs_o, rt_o
+	 input logic                             clk_i, rst_i,
+	 input logic             [REGI_SIZE-1:0] intOper1_i, intOper2_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vecOper1_i, vecOper2_i,
+    output logic             [REGI_SIZE-1:0] intOper1_o, intOper2_o,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vecOper1_o, vecOper2_o
 );
 	always_ff @(posedge clk_i) begin
 		if (rst_i) begin
-            next_pc_o <= 0;
-            funct4_o <= 0;
-            rs_o <= 0; rt_o <= 0;
+            intOper1_o <= 0;
+            intOper2_o <= 0;
+            vecOper1_o <= 0;
+            vecOper2_o <= 0;
         end
         else begin
-            next_pc_o <= next_pc_i;
-            funct4_o <= funct4_i;
-            rs_o <= rs_i; rt_o <= rt_i;
+            intOper1_o <= intOper1_i;
+            intOper2_o <= intOper2_i;
+            vecOper1_o <= vecOper1_i;
+            vecOper2_o <= vecOper2_i;
         end
     end
 endmodule
