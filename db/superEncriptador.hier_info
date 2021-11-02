@@ -1,2170 +1,294 @@
-|tbExecute
-
-
-|tbExecute|eStage:dut
-clk_i => ~NO_FANOUT~
-rst_i => ~NO_FANOUT~
-control_i[0] => control_i[0].IN1
-control_i[1] => control_i[1].IN1
-control_i[2] => control_i[2].IN1
-rs_i[0] => rs_i[0].IN1
-rs_i[1] => rs_i[1].IN1
-rs_i[2] => rs_i[2].IN1
-rs_i[3] => rs_i[3].IN1
-rs_i[4] => rs_i[4].IN1
-rs_i[5] => rs_i[5].IN1
-rs_i[6] => rs_i[6].IN1
-rs_i[7] => rs_i[7].IN1
-rs_i[8] => rs_i[8].IN1
-rs_i[9] => rs_i[9].IN1
-rs_i[10] => rs_i[10].IN1
-rs_i[11] => rs_i[11].IN1
-rs_i[12] => rs_i[12].IN1
-rs_i[13] => rs_i[13].IN1
-rs_i[14] => rs_i[14].IN1
-rs_i[15] => rs_i[15].IN1
-rt_i[0] => rt_i[0].IN1
-rt_i[1] => rt_i[1].IN1
-rt_i[2] => rt_i[2].IN1
-rt_i[3] => rt_i[3].IN1
-rt_i[4] => rt_i[4].IN1
-rt_i[5] => rt_i[5].IN1
-rt_i[6] => rt_i[6].IN1
-rt_i[7] => rt_i[7].IN1
-rt_i[8] => rt_i[8].IN1
-rt_i[9] => rt_i[9].IN1
-rt_i[10] => rt_i[10].IN1
-rt_i[11] => rt_i[11].IN1
-rt_i[12] => rt_i[12].IN1
-rt_i[13] => rt_i[13].IN1
-rt_i[14] => rt_i[14].IN1
-rt_i[15] => rt_i[15].IN1
-alu_res_o[0] <= alu:fu.bus_s_o
-alu_res_o[1] <= alu:fu.bus_s_o
-alu_res_o[2] <= alu:fu.bus_s_o
-alu_res_o[3] <= alu:fu.bus_s_o
-alu_res_o[4] <= alu:fu.bus_s_o
-alu_res_o[5] <= alu:fu.bus_s_o
-alu_res_o[6] <= alu:fu.bus_s_o
-alu_res_o[7] <= alu:fu.bus_s_o
-alu_res_o[8] <= alu:fu.bus_s_o
-alu_res_o[9] <= alu:fu.bus_s_o
-alu_res_o[10] <= alu:fu.bus_s_o
-alu_res_o[11] <= alu:fu.bus_s_o
-alu_res_o[12] <= alu:fu.bus_s_o
-alu_res_o[13] <= alu:fu.bus_s_o
-alu_res_o[14] <= alu:fu.bus_s_o
-alu_res_o[15] <= alu:fu.bus_s_o
-flags_o[0] <= alu:fu.flags_o
-flags_o[1] <= alu:fu.flags_o
-flags_o[2] <= alu:fu.flags_o
-flags_o[3] <= alu:fu.flags_o
-
-
-|tbExecute|eStage:dut|alu:fu
-bus_a_i[0] => bus_a_i[0].IN5
-bus_a_i[1] => bus_a_i[1].IN5
-bus_a_i[2] => bus_a_i[2].IN5
-bus_a_i[3] => bus_a_i[3].IN5
-bus_a_i[4] => bus_a_i[4].IN5
-bus_a_i[5] => bus_a_i[5].IN5
-bus_a_i[6] => bus_a_i[6].IN5
-bus_a_i[7] => bus_a_i[7].IN5
-bus_a_i[8] => bus_a_i[8].IN5
-bus_a_i[9] => bus_a_i[9].IN5
-bus_a_i[10] => bus_a_i[10].IN5
-bus_a_i[11] => bus_a_i[11].IN5
-bus_a_i[12] => bus_a_i[12].IN5
-bus_a_i[13] => bus_a_i[13].IN5
-bus_a_i[14] => bus_a_i[14].IN5
-bus_a_i[15] => bus_a_i[15].IN5
-bus_b_i[0] => bus_b_i[0].IN5
-bus_b_i[1] => bus_b_i[1].IN5
-bus_b_i[2] => bus_b_i[2].IN5
-bus_b_i[3] => bus_b_i[3].IN5
-bus_b_i[4] => bus_b_i[4].IN5
-bus_b_i[5] => bus_b_i[5].IN5
-bus_b_i[6] => bus_b_i[6].IN5
-bus_b_i[7] => bus_b_i[7].IN5
-bus_b_i[8] => bus_b_i[8].IN5
-bus_b_i[9] => bus_b_i[9].IN5
-bus_b_i[10] => bus_b_i[10].IN5
-bus_b_i[11] => bus_b_i[11].IN5
-bus_b_i[12] => bus_b_i[12].IN5
-bus_b_i[13] => bus_b_i[13].IN5
-bus_b_i[14] => bus_b_i[14].IN5
-bus_b_i[15] => bus_b_i[15].IN5
-control_i[0] => control_i[0].IN2
-control_i[1] => control_i[1].IN1
-control_i[2] => control_i[2].IN1
-bus_s_o[0] <= mux_eight:opSelector.bus_o
-bus_s_o[1] <= mux_eight:opSelector.bus_o
-bus_s_o[2] <= mux_eight:opSelector.bus_o
-bus_s_o[3] <= mux_eight:opSelector.bus_o
-bus_s_o[4] <= mux_eight:opSelector.bus_o
-bus_s_o[5] <= mux_eight:opSelector.bus_o
-bus_s_o[6] <= mux_eight:opSelector.bus_o
-bus_s_o[7] <= mux_eight:opSelector.bus_o
-bus_s_o[8] <= mux_eight:opSelector.bus_o
-bus_s_o[9] <= mux_eight:opSelector.bus_o
-bus_s_o[10] <= mux_eight:opSelector.bus_o
-bus_s_o[11] <= mux_eight:opSelector.bus_o
-bus_s_o[12] <= mux_eight:opSelector.bus_o
-bus_s_o[13] <= mux_eight:opSelector.bus_o
-bus_s_o[14] <= mux_eight:opSelector.bus_o
-bus_s_o[15] <= mux_eight:opSelector.bus_o
-flags_o[0] <= flag_v.DB_MAX_OUTPUT_PORT_TYPE
-flags_o[1] <= flag_c.DB_MAX_OUTPUT_PORT_TYPE
-flags_o[2] <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
-flags_o[3] <= mux_eight:opSelector.bus_o
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub
-bus_a_i[0] => bus_a_i[0].IN1
-bus_a_i[1] => bus_a_i[1].IN1
-bus_a_i[2] => bus_a_i[2].IN1
-bus_a_i[3] => bus_a_i[3].IN1
-bus_a_i[4] => bus_a_i[4].IN1
-bus_a_i[5] => bus_a_i[5].IN1
-bus_a_i[6] => bus_a_i[6].IN1
-bus_a_i[7] => bus_a_i[7].IN1
-bus_a_i[8] => bus_a_i[8].IN1
-bus_a_i[9] => bus_a_i[9].IN1
-bus_a_i[10] => bus_a_i[10].IN1
-bus_a_i[11] => bus_a_i[11].IN1
-bus_a_i[12] => bus_a_i[12].IN1
-bus_a_i[13] => bus_a_i[13].IN1
-bus_a_i[14] => bus_a_i[14].IN1
-bus_a_i[15] => bus_a_i[15].IN1
-bus_b_i[0] => bus_b_i[0].IN1
-bus_b_i[1] => bus_b_i[1].IN1
-bus_b_i[2] => bus_b_i[2].IN1
-bus_b_i[3] => bus_b_i[3].IN1
-bus_b_i[4] => bus_b_i[4].IN1
-bus_b_i[5] => bus_b_i[5].IN1
-bus_b_i[6] => bus_b_i[6].IN1
-bus_b_i[7] => bus_b_i[7].IN1
-bus_b_i[8] => bus_b_i[8].IN1
-bus_b_i[9] => bus_b_i[9].IN1
-bus_b_i[10] => bus_b_i[10].IN1
-bus_b_i[11] => bus_b_i[11].IN1
-bus_b_i[12] => bus_b_i[12].IN1
-bus_b_i[13] => bus_b_i[13].IN1
-bus_b_i[14] => bus_b_i[14].IN1
-bus_b_i[15] => bus_b_i[15].IN1
-select_i => select_i.IN17
-bus_o[0] <= adder:addr.bus_o
-bus_o[1] <= adder:addr.bus_o
-bus_o[2] <= adder:addr.bus_o
-bus_o[3] <= adder:addr.bus_o
-bus_o[4] <= adder:addr.bus_o
-bus_o[5] <= adder:addr.bus_o
-bus_o[6] <= adder:addr.bus_o
-bus_o[7] <= adder:addr.bus_o
-bus_o[8] <= adder:addr.bus_o
-bus_o[9] <= adder:addr.bus_o
-bus_o[10] <= adder:addr.bus_o
-bus_o[11] <= adder:addr.bus_o
-bus_o[12] <= adder:addr.bus_o
-bus_o[13] <= adder:addr.bus_o
-bus_o[14] <= adder:addr.bus_o
-bus_o[15] <= adder:addr.bus_o
-carry_o <= adder:addr.carry_o
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|xor_gate:oper
-bus_a_i[0] => bus_s_o.IN0
-bus_a_i[1] => bus_s_o.IN0
-bus_a_i[2] => bus_s_o.IN0
-bus_a_i[3] => bus_s_o.IN0
-bus_a_i[4] => bus_s_o.IN0
-bus_a_i[5] => bus_s_o.IN0
-bus_a_i[6] => bus_s_o.IN0
-bus_a_i[7] => bus_s_o.IN0
-bus_a_i[8] => bus_s_o.IN0
-bus_a_i[9] => bus_s_o.IN0
-bus_a_i[10] => bus_s_o.IN0
-bus_a_i[11] => bus_s_o.IN0
-bus_a_i[12] => bus_s_o.IN0
-bus_a_i[13] => bus_s_o.IN0
-bus_a_i[14] => bus_s_o.IN0
-bus_a_i[15] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_b_i[1] => bus_s_o.IN1
-bus_b_i[2] => bus_s_o.IN1
-bus_b_i[3] => bus_s_o.IN1
-bus_b_i[4] => bus_s_o.IN1
-bus_b_i[5] => bus_s_o.IN1
-bus_b_i[6] => bus_s_o.IN1
-bus_b_i[7] => bus_s_o.IN1
-bus_b_i[8] => bus_s_o.IN1
-bus_b_i[9] => bus_s_o.IN1
-bus_b_i[10] => bus_s_o.IN1
-bus_b_i[11] => bus_s_o.IN1
-bus_b_i[12] => bus_s_o.IN1
-bus_b_i[13] => bus_s_o.IN1
-bus_b_i[14] => bus_s_o.IN1
-bus_b_i[15] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[1] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[2] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[3] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[4] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[5] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[6] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[7] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[8] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[9] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[10] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[11] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[12] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[13] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[14] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[15] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr
-bus_a_i[0] => bus_a_i[0].IN1
-bus_a_i[1] => bus_a_i[1].IN1
-bus_a_i[2] => bus_a_i[2].IN1
-bus_a_i[3] => bus_a_i[3].IN1
-bus_a_i[4] => bus_a_i[4].IN1
-bus_a_i[5] => bus_a_i[5].IN1
-bus_a_i[6] => bus_a_i[6].IN1
-bus_a_i[7] => bus_a_i[7].IN1
-bus_a_i[8] => bus_a_i[8].IN1
-bus_a_i[9] => bus_a_i[9].IN1
-bus_a_i[10] => bus_a_i[10].IN1
-bus_a_i[11] => bus_a_i[11].IN1
-bus_a_i[12] => bus_a_i[12].IN1
-bus_a_i[13] => bus_a_i[13].IN1
-bus_a_i[14] => bus_a_i[14].IN1
-bus_a_i[15] => bus_a_i[15].IN1
-bus_b_i[0] => bus_b_i[0].IN1
-bus_b_i[1] => bus_b_i[1].IN1
-bus_b_i[2] => bus_b_i[2].IN1
-bus_b_i[3] => bus_b_i[3].IN1
-bus_b_i[4] => bus_b_i[4].IN1
-bus_b_i[5] => bus_b_i[5].IN1
-bus_b_i[6] => bus_b_i[6].IN1
-bus_b_i[7] => bus_b_i[7].IN1
-bus_b_i[8] => bus_b_i[8].IN1
-bus_b_i[9] => bus_b_i[9].IN1
-bus_b_i[10] => bus_b_i[10].IN1
-bus_b_i[11] => bus_b_i[11].IN1
-bus_b_i[12] => bus_b_i[12].IN1
-bus_b_i[13] => bus_b_i[13].IN1
-bus_b_i[14] => bus_b_i[14].IN1
-bus_b_i[15] => bus_b_i[15].IN1
-carry_i => full_num[0].IN1
-bus_o[0] <= one_bit_full_adder:forloop[0].addrr.port3
-bus_o[1] <= one_bit_full_adder:forloop[1].addrr.port3
-bus_o[2] <= one_bit_full_adder:forloop[2].addrr.port3
-bus_o[3] <= one_bit_full_adder:forloop[3].addrr.port3
-bus_o[4] <= one_bit_full_adder:forloop[4].addrr.port3
-bus_o[5] <= one_bit_full_adder:forloop[5].addrr.port3
-bus_o[6] <= one_bit_full_adder:forloop[6].addrr.port3
-bus_o[7] <= one_bit_full_adder:forloop[7].addrr.port3
-bus_o[8] <= one_bit_full_adder:forloop[8].addrr.port3
-bus_o[9] <= one_bit_full_adder:forloop[9].addrr.port3
-bus_o[10] <= one_bit_full_adder:forloop[10].addrr.port3
-bus_o[11] <= one_bit_full_adder:forloop[11].addrr.port3
-bus_o[12] <= one_bit_full_adder:forloop[12].addrr.port3
-bus_o[13] <= one_bit_full_adder:forloop[13].addrr.port3
-bus_o[14] <= one_bit_full_adder:forloop[14].addrr.port3
-bus_o[15] <= one_bit_full_adder:forloop[15].addrr.port3
-carry_o <= one_bit_full_adder:forloop[15].addrr.port4
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[0].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[1].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[2].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[3].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[4].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[5].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[6].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[7].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[8].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[9].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[10].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[11].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[12].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[13].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[14].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr
-bit_a_i => bit_a_i.IN1
-bit_b_i => bit_b_i.IN1
-carry_i => carry_i.IN1
-sum_o <= one_bit_half_adder:getSumB.port2
-carry_o <= or_gate:getCarry.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumA|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB
-bit_a_i => bit_a_i.IN2
-bit_b_i => bit_b_i.IN2
-sum_o <= xor_gate:sum.port2
-carry_o <= and_gate:car.port2
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|xor_gate:sum
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|one_bit_half_adder:getSumB|and_gate:car
-bus_a_i[0] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|adder_substractor:adder_sub|adder:addr|one_bit_full_adder:forloop[15].addrr|or_gate:getCarry
-bus_a_i[0] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|and_gate:and_op
-bus_a_i[0] => bus_s_o.IN0
-bus_a_i[1] => bus_s_o.IN0
-bus_a_i[2] => bus_s_o.IN0
-bus_a_i[3] => bus_s_o.IN0
-bus_a_i[4] => bus_s_o.IN0
-bus_a_i[5] => bus_s_o.IN0
-bus_a_i[6] => bus_s_o.IN0
-bus_a_i[7] => bus_s_o.IN0
-bus_a_i[8] => bus_s_o.IN0
-bus_a_i[9] => bus_s_o.IN0
-bus_a_i[10] => bus_s_o.IN0
-bus_a_i[11] => bus_s_o.IN0
-bus_a_i[12] => bus_s_o.IN0
-bus_a_i[13] => bus_s_o.IN0
-bus_a_i[14] => bus_s_o.IN0
-bus_a_i[15] => bus_s_o.IN0
-bus_b_i[0] => bus_s_o.IN1
-bus_b_i[1] => bus_s_o.IN1
-bus_b_i[2] => bus_s_o.IN1
-bus_b_i[3] => bus_s_o.IN1
-bus_b_i[4] => bus_s_o.IN1
-bus_b_i[5] => bus_s_o.IN1
-bus_b_i[6] => bus_s_o.IN1
-bus_b_i[7] => bus_s_o.IN1
-bus_b_i[8] => bus_s_o.IN1
-bus_b_i[9] => bus_s_o.IN1
-bus_b_i[10] => bus_s_o.IN1
-bus_b_i[11] => bus_s_o.IN1
-bus_b_i[12] => bus_s_o.IN1
-bus_b_i[13] => bus_s_o.IN1
-bus_b_i[14] => bus_s_o.IN1
-bus_b_i[15] => bus_s_o.IN1
-bus_s_o[0] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[1] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[2] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[3] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[4] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[5] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[6] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[7] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[8] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[9] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[10] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[11] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[12] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[13] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[14] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_s_o[15] <= bus_s_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|or_gate:xor_op
-bus_a_i[0] => bus_o.IN0
-bus_a_i[1] => bus_o.IN0
-bus_a_i[2] => bus_o.IN0
-bus_a_i[3] => bus_o.IN0
-bus_a_i[4] => bus_o.IN0
-bus_a_i[5] => bus_o.IN0
-bus_a_i[6] => bus_o.IN0
-bus_a_i[7] => bus_o.IN0
-bus_a_i[8] => bus_o.IN0
-bus_a_i[9] => bus_o.IN0
-bus_a_i[10] => bus_o.IN0
-bus_a_i[11] => bus_o.IN0
-bus_a_i[12] => bus_o.IN0
-bus_a_i[13] => bus_o.IN0
-bus_a_i[14] => bus_o.IN0
-bus_a_i[15] => bus_o.IN0
-bus_b_i[0] => bus_o.IN1
-bus_b_i[1] => bus_o.IN1
-bus_b_i[2] => bus_o.IN1
-bus_b_i[3] => bus_o.IN1
-bus_b_i[4] => bus_o.IN1
-bus_b_i[5] => bus_o.IN1
-bus_b_i[6] => bus_o.IN1
-bus_b_i[7] => bus_o.IN1
-bus_b_i[8] => bus_o.IN1
-bus_b_i[9] => bus_o.IN1
-bus_b_i[10] => bus_o.IN1
-bus_b_i[11] => bus_o.IN1
-bus_b_i[12] => bus_o.IN1
-bus_b_i[13] => bus_o.IN1
-bus_b_i[14] => bus_o.IN1
-bus_b_i[15] => bus_o.IN1
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|shift_left_gate:shift_left_gate
-bus_i[0] => ShiftLeft0.IN16
-bus_i[1] => ShiftLeft0.IN15
-bus_i[2] => ShiftLeft0.IN14
-bus_i[3] => ShiftLeft0.IN13
-bus_i[4] => ShiftLeft0.IN12
-bus_i[5] => ShiftLeft0.IN11
-bus_i[6] => ShiftLeft0.IN10
-bus_i[7] => ShiftLeft0.IN9
-bus_i[8] => ShiftLeft0.IN8
-bus_i[9] => ShiftLeft0.IN7
-bus_i[10] => ShiftLeft0.IN6
-bus_i[11] => ShiftLeft0.IN5
-bus_i[12] => ShiftLeft0.IN4
-bus_i[13] => ShiftLeft0.IN3
-bus_i[14] => ShiftLeft0.IN2
-bus_i[15] => ShiftLeft0.IN1
-shift_i[0] => ShiftLeft0.IN32
-shift_i[1] => ShiftLeft0.IN31
-shift_i[2] => ShiftLeft0.IN30
-shift_i[3] => ShiftLeft0.IN29
-shift_i[4] => ShiftLeft0.IN28
-shift_i[5] => ShiftLeft0.IN27
-shift_i[6] => ShiftLeft0.IN26
-shift_i[7] => ShiftLeft0.IN25
-shift_i[8] => ShiftLeft0.IN24
-shift_i[9] => ShiftLeft0.IN23
-shift_i[10] => ShiftLeft0.IN22
-shift_i[11] => ShiftLeft0.IN21
-shift_i[12] => ShiftLeft0.IN20
-shift_i[13] => ShiftLeft0.IN19
-shift_i[14] => ShiftLeft0.IN18
-shift_i[15] => ShiftLeft0.IN17
-bus_o[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|shift_right_gate:shift_right_gate
-bus_i[0] => ShiftRight0.IN16
-bus_i[1] => ShiftRight0.IN15
-bus_i[2] => ShiftRight0.IN14
-bus_i[3] => ShiftRight0.IN13
-bus_i[4] => ShiftRight0.IN12
-bus_i[5] => ShiftRight0.IN11
-bus_i[6] => ShiftRight0.IN10
-bus_i[7] => ShiftRight0.IN9
-bus_i[8] => ShiftRight0.IN8
-bus_i[9] => ShiftRight0.IN7
-bus_i[10] => ShiftRight0.IN6
-bus_i[11] => ShiftRight0.IN5
-bus_i[12] => ShiftRight0.IN4
-bus_i[13] => ShiftRight0.IN3
-bus_i[14] => ShiftRight0.IN2
-bus_i[15] => ShiftRight0.IN1
-shift_i[0] => ShiftRight0.IN32
-shift_i[1] => ShiftRight0.IN31
-shift_i[2] => ShiftRight0.IN30
-shift_i[3] => ShiftRight0.IN29
-shift_i[4] => ShiftRight0.IN28
-shift_i[5] => ShiftRight0.IN27
-shift_i[6] => ShiftRight0.IN26
-shift_i[7] => ShiftRight0.IN25
-shift_i[8] => ShiftRight0.IN24
-shift_i[9] => ShiftRight0.IN23
-shift_i[10] => ShiftRight0.IN22
-shift_i[11] => ShiftRight0.IN21
-shift_i[12] => ShiftRight0.IN20
-shift_i[13] => ShiftRight0.IN19
-shift_i[14] => ShiftRight0.IN18
-shift_i[15] => ShiftRight0.IN17
-bus_o[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector
-bus_a_i[0] => bus_a_i[0].IN1
-bus_a_i[1] => bus_a_i[1].IN1
-bus_a_i[2] => bus_a_i[2].IN1
-bus_a_i[3] => bus_a_i[3].IN1
-bus_a_i[4] => bus_a_i[4].IN1
-bus_a_i[5] => bus_a_i[5].IN1
-bus_a_i[6] => bus_a_i[6].IN1
-bus_a_i[7] => bus_a_i[7].IN1
-bus_a_i[8] => bus_a_i[8].IN1
-bus_a_i[9] => bus_a_i[9].IN1
-bus_a_i[10] => bus_a_i[10].IN1
-bus_a_i[11] => bus_a_i[11].IN1
-bus_a_i[12] => bus_a_i[12].IN1
-bus_a_i[13] => bus_a_i[13].IN1
-bus_a_i[14] => bus_a_i[14].IN1
-bus_a_i[15] => bus_a_i[15].IN1
-bus_b_i[0] => bus_b_i[0].IN1
-bus_b_i[1] => bus_b_i[1].IN1
-bus_b_i[2] => bus_b_i[2].IN1
-bus_b_i[3] => bus_b_i[3].IN1
-bus_b_i[4] => bus_b_i[4].IN1
-bus_b_i[5] => bus_b_i[5].IN1
-bus_b_i[6] => bus_b_i[6].IN1
-bus_b_i[7] => bus_b_i[7].IN1
-bus_b_i[8] => bus_b_i[8].IN1
-bus_b_i[9] => bus_b_i[9].IN1
-bus_b_i[10] => bus_b_i[10].IN1
-bus_b_i[11] => bus_b_i[11].IN1
-bus_b_i[12] => bus_b_i[12].IN1
-bus_b_i[13] => bus_b_i[13].IN1
-bus_b_i[14] => bus_b_i[14].IN1
-bus_b_i[15] => bus_b_i[15].IN1
-bus_c_i[0] => bus_c_i[0].IN1
-bus_c_i[1] => bus_c_i[1].IN1
-bus_c_i[2] => bus_c_i[2].IN1
-bus_c_i[3] => bus_c_i[3].IN1
-bus_c_i[4] => bus_c_i[4].IN1
-bus_c_i[5] => bus_c_i[5].IN1
-bus_c_i[6] => bus_c_i[6].IN1
-bus_c_i[7] => bus_c_i[7].IN1
-bus_c_i[8] => bus_c_i[8].IN1
-bus_c_i[9] => bus_c_i[9].IN1
-bus_c_i[10] => bus_c_i[10].IN1
-bus_c_i[11] => bus_c_i[11].IN1
-bus_c_i[12] => bus_c_i[12].IN1
-bus_c_i[13] => bus_c_i[13].IN1
-bus_c_i[14] => bus_c_i[14].IN1
-bus_c_i[15] => bus_c_i[15].IN1
-bus_d_i[0] => bus_d_i[0].IN1
-bus_d_i[1] => bus_d_i[1].IN1
-bus_d_i[2] => bus_d_i[2].IN1
-bus_d_i[3] => bus_d_i[3].IN1
-bus_d_i[4] => bus_d_i[4].IN1
-bus_d_i[5] => bus_d_i[5].IN1
-bus_d_i[6] => bus_d_i[6].IN1
-bus_d_i[7] => bus_d_i[7].IN1
-bus_d_i[8] => bus_d_i[8].IN1
-bus_d_i[9] => bus_d_i[9].IN1
-bus_d_i[10] => bus_d_i[10].IN1
-bus_d_i[11] => bus_d_i[11].IN1
-bus_d_i[12] => bus_d_i[12].IN1
-bus_d_i[13] => bus_d_i[13].IN1
-bus_d_i[14] => bus_d_i[14].IN1
-bus_d_i[15] => bus_d_i[15].IN1
-bus_e_i[0] => bus_e_i[0].IN1
-bus_e_i[1] => bus_e_i[1].IN1
-bus_e_i[2] => bus_e_i[2].IN1
-bus_e_i[3] => bus_e_i[3].IN1
-bus_e_i[4] => bus_e_i[4].IN1
-bus_e_i[5] => bus_e_i[5].IN1
-bus_e_i[6] => bus_e_i[6].IN1
-bus_e_i[7] => bus_e_i[7].IN1
-bus_e_i[8] => bus_e_i[8].IN1
-bus_e_i[9] => bus_e_i[9].IN1
-bus_e_i[10] => bus_e_i[10].IN1
-bus_e_i[11] => bus_e_i[11].IN1
-bus_e_i[12] => bus_e_i[12].IN1
-bus_e_i[13] => bus_e_i[13].IN1
-bus_e_i[14] => bus_e_i[14].IN1
-bus_e_i[15] => bus_e_i[15].IN1
-bus_f_i[0] => bus_f_i[0].IN1
-bus_f_i[1] => bus_f_i[1].IN1
-bus_f_i[2] => bus_f_i[2].IN1
-bus_f_i[3] => bus_f_i[3].IN1
-bus_f_i[4] => bus_f_i[4].IN1
-bus_f_i[5] => bus_f_i[5].IN1
-bus_f_i[6] => bus_f_i[6].IN1
-bus_f_i[7] => bus_f_i[7].IN1
-bus_f_i[8] => bus_f_i[8].IN1
-bus_f_i[9] => bus_f_i[9].IN1
-bus_f_i[10] => bus_f_i[10].IN1
-bus_f_i[11] => bus_f_i[11].IN1
-bus_f_i[12] => bus_f_i[12].IN1
-bus_f_i[13] => bus_f_i[13].IN1
-bus_f_i[14] => bus_f_i[14].IN1
-bus_f_i[15] => bus_f_i[15].IN1
-bus_g_i[0] => bus_g_i[0].IN1
-bus_g_i[1] => bus_g_i[1].IN1
-bus_g_i[2] => bus_g_i[2].IN1
-bus_g_i[3] => bus_g_i[3].IN1
-bus_g_i[4] => bus_g_i[4].IN1
-bus_g_i[5] => bus_g_i[5].IN1
-bus_g_i[6] => bus_g_i[6].IN1
-bus_g_i[7] => bus_g_i[7].IN1
-bus_g_i[8] => bus_g_i[8].IN1
-bus_g_i[9] => bus_g_i[9].IN1
-bus_g_i[10] => bus_g_i[10].IN1
-bus_g_i[11] => bus_g_i[11].IN1
-bus_g_i[12] => bus_g_i[12].IN1
-bus_g_i[13] => bus_g_i[13].IN1
-bus_g_i[14] => bus_g_i[14].IN1
-bus_g_i[15] => bus_g_i[15].IN1
-bus_h_i[0] => bus_h_i[0].IN1
-bus_h_i[1] => bus_h_i[1].IN1
-bus_h_i[2] => bus_h_i[2].IN1
-bus_h_i[3] => bus_h_i[3].IN1
-bus_h_i[4] => bus_h_i[4].IN1
-bus_h_i[5] => bus_h_i[5].IN1
-bus_h_i[6] => bus_h_i[6].IN1
-bus_h_i[7] => bus_h_i[7].IN1
-bus_h_i[8] => bus_h_i[8].IN1
-bus_h_i[9] => bus_h_i[9].IN1
-bus_h_i[10] => bus_h_i[10].IN1
-bus_h_i[11] => bus_h_i[11].IN1
-bus_h_i[12] => bus_h_i[12].IN1
-bus_h_i[13] => bus_h_i[13].IN1
-bus_h_i[14] => bus_h_i[14].IN1
-bus_h_i[15] => bus_h_i[15].IN1
-select_i[0] => select_i[0].IN2
-select_i[1] => select_i[1].IN2
-select_i[2] => select_i[2].IN1
-bus_o[0] <= mux2:stage_2_0.port3
-bus_o[1] <= mux2:stage_2_0.port3
-bus_o[2] <= mux2:stage_2_0.port3
-bus_o[3] <= mux2:stage_2_0.port3
-bus_o[4] <= mux2:stage_2_0.port3
-bus_o[5] <= mux2:stage_2_0.port3
-bus_o[6] <= mux2:stage_2_0.port3
-bus_o[7] <= mux2:stage_2_0.port3
-bus_o[8] <= mux2:stage_2_0.port3
-bus_o[9] <= mux2:stage_2_0.port3
-bus_o[10] <= mux2:stage_2_0.port3
-bus_o[11] <= mux2:stage_2_0.port3
-bus_o[12] <= mux2:stage_2_0.port3
-bus_o[13] <= mux2:stage_2_0.port3
-bus_o[14] <= mux2:stage_2_0.port3
-bus_o[15] <= mux2:stage_2_0.port3
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1
-bus_a_i[0] => bus_a_i[0].IN1
-bus_a_i[1] => bus_a_i[1].IN1
-bus_a_i[2] => bus_a_i[2].IN1
-bus_a_i[3] => bus_a_i[3].IN1
-bus_a_i[4] => bus_a_i[4].IN1
-bus_a_i[5] => bus_a_i[5].IN1
-bus_a_i[6] => bus_a_i[6].IN1
-bus_a_i[7] => bus_a_i[7].IN1
-bus_a_i[8] => bus_a_i[8].IN1
-bus_a_i[9] => bus_a_i[9].IN1
-bus_a_i[10] => bus_a_i[10].IN1
-bus_a_i[11] => bus_a_i[11].IN1
-bus_a_i[12] => bus_a_i[12].IN1
-bus_a_i[13] => bus_a_i[13].IN1
-bus_a_i[14] => bus_a_i[14].IN1
-bus_a_i[15] => bus_a_i[15].IN1
-bus_b_i[0] => bus_b_i[0].IN1
-bus_b_i[1] => bus_b_i[1].IN1
-bus_b_i[2] => bus_b_i[2].IN1
-bus_b_i[3] => bus_b_i[3].IN1
-bus_b_i[4] => bus_b_i[4].IN1
-bus_b_i[5] => bus_b_i[5].IN1
-bus_b_i[6] => bus_b_i[6].IN1
-bus_b_i[7] => bus_b_i[7].IN1
-bus_b_i[8] => bus_b_i[8].IN1
-bus_b_i[9] => bus_b_i[9].IN1
-bus_b_i[10] => bus_b_i[10].IN1
-bus_b_i[11] => bus_b_i[11].IN1
-bus_b_i[12] => bus_b_i[12].IN1
-bus_b_i[13] => bus_b_i[13].IN1
-bus_b_i[14] => bus_b_i[14].IN1
-bus_b_i[15] => bus_b_i[15].IN1
-bus_c_i[0] => bus_c_i[0].IN1
-bus_c_i[1] => bus_c_i[1].IN1
-bus_c_i[2] => bus_c_i[2].IN1
-bus_c_i[3] => bus_c_i[3].IN1
-bus_c_i[4] => bus_c_i[4].IN1
-bus_c_i[5] => bus_c_i[5].IN1
-bus_c_i[6] => bus_c_i[6].IN1
-bus_c_i[7] => bus_c_i[7].IN1
-bus_c_i[8] => bus_c_i[8].IN1
-bus_c_i[9] => bus_c_i[9].IN1
-bus_c_i[10] => bus_c_i[10].IN1
-bus_c_i[11] => bus_c_i[11].IN1
-bus_c_i[12] => bus_c_i[12].IN1
-bus_c_i[13] => bus_c_i[13].IN1
-bus_c_i[14] => bus_c_i[14].IN1
-bus_c_i[15] => bus_c_i[15].IN1
-bus_d_i[0] => bus_d_i[0].IN1
-bus_d_i[1] => bus_d_i[1].IN1
-bus_d_i[2] => bus_d_i[2].IN1
-bus_d_i[3] => bus_d_i[3].IN1
-bus_d_i[4] => bus_d_i[4].IN1
-bus_d_i[5] => bus_d_i[5].IN1
-bus_d_i[6] => bus_d_i[6].IN1
-bus_d_i[7] => bus_d_i[7].IN1
-bus_d_i[8] => bus_d_i[8].IN1
-bus_d_i[9] => bus_d_i[9].IN1
-bus_d_i[10] => bus_d_i[10].IN1
-bus_d_i[11] => bus_d_i[11].IN1
-bus_d_i[12] => bus_d_i[12].IN1
-bus_d_i[13] => bus_d_i[13].IN1
-bus_d_i[14] => bus_d_i[14].IN1
-bus_d_i[15] => bus_d_i[15].IN1
-select_i[0] => select_i[0].IN2
-select_i[1] => select_i[1].IN1
-bus_o[0] <= mux2:stage_2_0.port3
-bus_o[1] <= mux2:stage_2_0.port3
-bus_o[2] <= mux2:stage_2_0.port3
-bus_o[3] <= mux2:stage_2_0.port3
-bus_o[4] <= mux2:stage_2_0.port3
-bus_o[5] <= mux2:stage_2_0.port3
-bus_o[6] <= mux2:stage_2_0.port3
-bus_o[7] <= mux2:stage_2_0.port3
-bus_o[8] <= mux2:stage_2_0.port3
-bus_o[9] <= mux2:stage_2_0.port3
-bus_o[10] <= mux2:stage_2_0.port3
-bus_o[11] <= mux2:stage_2_0.port3
-bus_o[12] <= mux2:stage_2_0.port3
-bus_o[13] <= mux2:stage_2_0.port3
-bus_o[14] <= mux2:stage_2_0.port3
-bus_o[15] <= mux2:stage_2_0.port3
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_1
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_1_2
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_1|mux2:stage_2_0
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2
-bus_a_i[0] => bus_a_i[0].IN1
-bus_a_i[1] => bus_a_i[1].IN1
-bus_a_i[2] => bus_a_i[2].IN1
-bus_a_i[3] => bus_a_i[3].IN1
-bus_a_i[4] => bus_a_i[4].IN1
-bus_a_i[5] => bus_a_i[5].IN1
-bus_a_i[6] => bus_a_i[6].IN1
-bus_a_i[7] => bus_a_i[7].IN1
-bus_a_i[8] => bus_a_i[8].IN1
-bus_a_i[9] => bus_a_i[9].IN1
-bus_a_i[10] => bus_a_i[10].IN1
-bus_a_i[11] => bus_a_i[11].IN1
-bus_a_i[12] => bus_a_i[12].IN1
-bus_a_i[13] => bus_a_i[13].IN1
-bus_a_i[14] => bus_a_i[14].IN1
-bus_a_i[15] => bus_a_i[15].IN1
-bus_b_i[0] => bus_b_i[0].IN1
-bus_b_i[1] => bus_b_i[1].IN1
-bus_b_i[2] => bus_b_i[2].IN1
-bus_b_i[3] => bus_b_i[3].IN1
-bus_b_i[4] => bus_b_i[4].IN1
-bus_b_i[5] => bus_b_i[5].IN1
-bus_b_i[6] => bus_b_i[6].IN1
-bus_b_i[7] => bus_b_i[7].IN1
-bus_b_i[8] => bus_b_i[8].IN1
-bus_b_i[9] => bus_b_i[9].IN1
-bus_b_i[10] => bus_b_i[10].IN1
-bus_b_i[11] => bus_b_i[11].IN1
-bus_b_i[12] => bus_b_i[12].IN1
-bus_b_i[13] => bus_b_i[13].IN1
-bus_b_i[14] => bus_b_i[14].IN1
-bus_b_i[15] => bus_b_i[15].IN1
-bus_c_i[0] => bus_c_i[0].IN1
-bus_c_i[1] => bus_c_i[1].IN1
-bus_c_i[2] => bus_c_i[2].IN1
-bus_c_i[3] => bus_c_i[3].IN1
-bus_c_i[4] => bus_c_i[4].IN1
-bus_c_i[5] => bus_c_i[5].IN1
-bus_c_i[6] => bus_c_i[6].IN1
-bus_c_i[7] => bus_c_i[7].IN1
-bus_c_i[8] => bus_c_i[8].IN1
-bus_c_i[9] => bus_c_i[9].IN1
-bus_c_i[10] => bus_c_i[10].IN1
-bus_c_i[11] => bus_c_i[11].IN1
-bus_c_i[12] => bus_c_i[12].IN1
-bus_c_i[13] => bus_c_i[13].IN1
-bus_c_i[14] => bus_c_i[14].IN1
-bus_c_i[15] => bus_c_i[15].IN1
-bus_d_i[0] => bus_d_i[0].IN1
-bus_d_i[1] => bus_d_i[1].IN1
-bus_d_i[2] => bus_d_i[2].IN1
-bus_d_i[3] => bus_d_i[3].IN1
-bus_d_i[4] => bus_d_i[4].IN1
-bus_d_i[5] => bus_d_i[5].IN1
-bus_d_i[6] => bus_d_i[6].IN1
-bus_d_i[7] => bus_d_i[7].IN1
-bus_d_i[8] => bus_d_i[8].IN1
-bus_d_i[9] => bus_d_i[9].IN1
-bus_d_i[10] => bus_d_i[10].IN1
-bus_d_i[11] => bus_d_i[11].IN1
-bus_d_i[12] => bus_d_i[12].IN1
-bus_d_i[13] => bus_d_i[13].IN1
-bus_d_i[14] => bus_d_i[14].IN1
-bus_d_i[15] => bus_d_i[15].IN1
-select_i[0] => select_i[0].IN2
-select_i[1] => select_i[1].IN1
-bus_o[0] <= mux2:stage_2_0.port3
-bus_o[1] <= mux2:stage_2_0.port3
-bus_o[2] <= mux2:stage_2_0.port3
-bus_o[3] <= mux2:stage_2_0.port3
-bus_o[4] <= mux2:stage_2_0.port3
-bus_o[5] <= mux2:stage_2_0.port3
-bus_o[6] <= mux2:stage_2_0.port3
-bus_o[7] <= mux2:stage_2_0.port3
-bus_o[8] <= mux2:stage_2_0.port3
-bus_o[9] <= mux2:stage_2_0.port3
-bus_o[10] <= mux2:stage_2_0.port3
-bus_o[11] <= mux2:stage_2_0.port3
-bus_o[12] <= mux2:stage_2_0.port3
-bus_o[13] <= mux2:stage_2_0.port3
-bus_o[14] <= mux2:stage_2_0.port3
-bus_o[15] <= mux2:stage_2_0.port3
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_1
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_1_2
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux_four:stage_1_2|mux2:stage_2_0
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|eStage:dut|alu:fu|mux_eight:opSelector|mux2:stage_2_0
-bus_a_i[0] => bus_o.DATAA
-bus_a_i[1] => bus_o.DATAA
-bus_a_i[2] => bus_o.DATAA
-bus_a_i[3] => bus_o.DATAA
-bus_a_i[4] => bus_o.DATAA
-bus_a_i[5] => bus_o.DATAA
-bus_a_i[6] => bus_o.DATAA
-bus_a_i[7] => bus_o.DATAA
-bus_a_i[8] => bus_o.DATAA
-bus_a_i[9] => bus_o.DATAA
-bus_a_i[10] => bus_o.DATAA
-bus_a_i[11] => bus_o.DATAA
-bus_a_i[12] => bus_o.DATAA
-bus_a_i[13] => bus_o.DATAA
-bus_a_i[14] => bus_o.DATAA
-bus_a_i[15] => bus_o.DATAA
-bus_b_i[0] => bus_o.DATAB
-bus_b_i[1] => bus_o.DATAB
-bus_b_i[2] => bus_o.DATAB
-bus_b_i[3] => bus_o.DATAB
-bus_b_i[4] => bus_o.DATAB
-bus_b_i[5] => bus_o.DATAB
-bus_b_i[6] => bus_o.DATAB
-bus_b_i[7] => bus_o.DATAB
-bus_b_i[8] => bus_o.DATAB
-bus_b_i[9] => bus_o.DATAB
-bus_b_i[10] => bus_o.DATAB
-bus_b_i[11] => bus_o.DATAB
-bus_b_i[12] => bus_o.DATAB
-bus_b_i[13] => bus_o.DATAB
-bus_b_i[14] => bus_o.DATAB
-bus_b_i[15] => bus_o.DATAB
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-select_i => bus_o.OUTPUTSELECT
-bus_o[0] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[1] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[2] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[3] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[4] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[5] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[6] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[7] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[8] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[9] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[10] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[11] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[12] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[13] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[14] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-bus_o[15] <= bus_o.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|tbExecute|ePipe:exmem_pipe
-clk_i => alu_res_o[0]~reg0.CLK
-clk_i => alu_res_o[1]~reg0.CLK
-clk_i => alu_res_o[2]~reg0.CLK
-clk_i => alu_res_o[3]~reg0.CLK
-clk_i => alu_res_o[4]~reg0.CLK
-clk_i => alu_res_o[5]~reg0.CLK
-clk_i => alu_res_o[6]~reg0.CLK
-clk_i => alu_res_o[7]~reg0.CLK
-clk_i => alu_res_o[8]~reg0.CLK
-clk_i => alu_res_o[9]~reg0.CLK
-clk_i => alu_res_o[10]~reg0.CLK
-clk_i => alu_res_o[11]~reg0.CLK
-clk_i => alu_res_o[12]~reg0.CLK
-clk_i => alu_res_o[13]~reg0.CLK
-clk_i => alu_res_o[14]~reg0.CLK
-clk_i => alu_res_o[15]~reg0.CLK
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-rst_i => alu_res_o.OUTPUTSELECT
-alu_res_i[0] => alu_res_o.DATAA
-alu_res_i[1] => alu_res_o.DATAA
-alu_res_i[2] => alu_res_o.DATAA
-alu_res_i[3] => alu_res_o.DATAA
-alu_res_i[4] => alu_res_o.DATAA
-alu_res_i[5] => alu_res_o.DATAA
-alu_res_i[6] => alu_res_o.DATAA
-alu_res_i[7] => alu_res_o.DATAA
-alu_res_i[8] => alu_res_o.DATAA
-alu_res_i[9] => alu_res_o.DATAA
-alu_res_i[10] => alu_res_o.DATAA
-alu_res_i[11] => alu_res_o.DATAA
-alu_res_i[12] => alu_res_o.DATAA
-alu_res_i[13] => alu_res_o.DATAA
-alu_res_i[14] => alu_res_o.DATAA
-alu_res_i[15] => alu_res_o.DATAA
-alu_res_o[0] <= alu_res_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[1] <= alu_res_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[2] <= alu_res_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[3] <= alu_res_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[4] <= alu_res_o[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[5] <= alu_res_o[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[6] <= alu_res_o[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[7] <= alu_res_o[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[8] <= alu_res_o[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[9] <= alu_res_o[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[10] <= alu_res_o[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[11] <= alu_res_o[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[12] <= alu_res_o[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[13] <= alu_res_o[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[14] <= alu_res_o[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-alu_res_o[15] <= alu_res_o[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|superDecoder
+clk => intRegDestAux[0].CLK
+clk => intRegDestAux[1].CLK
+clk => intRegDestAux[2].CLK
+clk => intRegDestAux[3].CLK
+clk => swapBitDestAux[0].CLK
+clk => swapBitDestAux[1].CLK
+clk => swapBitDestAux[2].CLK
+clk => swapBitOriginAux[0].CLK
+clk => swapBitOriginAux[1].CLK
+clk => swapBitOriginAux[2].CLK
+clk => flagMemWriteAux.CLK
+clk => flagMemReadAux.CLK
+clk => ImmOutAux[0].CLK
+clk => ImmOutAux[1].CLK
+clk => ImmOutAux[2].CLK
+clk => ImmOutAux[3].CLK
+clk => ImmOutAux[4].CLK
+clk => ImmOutAux[5].CLK
+clk => ImmOutAux[6].CLK
+clk => ImmOutAux[7].CLK
+clk => vRegDestAux[0].CLK
+clk => vRegDestAux[1].CLK
+clk => vOper1Aux[0].CLK
+clk => vOper1Aux[1].CLK
+clk => aluOpcodeAux[0].CLK
+clk => aluOpcodeAux[1].CLK
+clk => aluOpcodeAux[2].CLK
+clk => jumpAddressAux[0].CLK
+clk => jumpAddressAux[1].CLK
+clk => jumpAddressAux[2].CLK
+clk => jumpAddressAux[3].CLK
+clk => jumpAddressAux[4].CLK
+clk => jumpAddressAux[5].CLK
+clk => jumpAddressAux[6].CLK
+clk => jumpAddressAux[7].CLK
+clk => jumpAddressAux[8].CLK
+clk => jumpAddressAux[9].CLK
+clk => enableSwapAux.CLK
+clk => flagImmAux.CLK
+clk => flagNopAux.CLK
+clk => flagEndAux.CLK
+clk => enableJumpAux.CLK
+clk => enableMemAux.CLK
+clk => enableAluVAux.CLK
+clk => enableAluIntAux.CLK
+clk => condAux[0].CLK
+clk => condAux[1].CLK
+clk => intOper2Aux[0].CLK
+clk => intOper2Aux[1].CLK
+clk => intOper2Aux[2].CLK
+clk => intOper2Aux[3].CLK
+clk => intOper1Aux[0].CLK
+clk => intOper1Aux[1].CLK
+clk => intOper1Aux[2].CLK
+clk => intOper1Aux[3].CLK
+clk => swapBitDest[0]~reg0.CLK
+clk => swapBitDest[1]~reg0.CLK
+clk => swapBitDest[2]~reg0.CLK
+clk => swapBitOrigin[0]~reg0.CLK
+clk => swapBitOrigin[1]~reg0.CLK
+clk => swapBitOrigin[2]~reg0.CLK
+clk => flagMemWrite~reg0.CLK
+clk => flagMemRead~reg0.CLK
+clk => jumpAddress[0]~reg0.CLK
+clk => jumpAddress[1]~reg0.CLK
+clk => jumpAddress[2]~reg0.CLK
+clk => jumpAddress[3]~reg0.CLK
+clk => jumpAddress[4]~reg0.CLK
+clk => jumpAddress[5]~reg0.CLK
+clk => jumpAddress[6]~reg0.CLK
+clk => jumpAddress[7]~reg0.CLK
+clk => jumpAddress[8]~reg0.CLK
+clk => jumpAddress[9]~reg0.CLK
+clk => aluOpcode[0]~reg0.CLK
+clk => aluOpcode[1]~reg0.CLK
+clk => aluOpcode[2]~reg0.CLK
+clk => ImmOut[0]~reg0.CLK
+clk => ImmOut[1]~reg0.CLK
+clk => ImmOut[2]~reg0.CLK
+clk => ImmOut[3]~reg0.CLK
+clk => ImmOut[4]~reg0.CLK
+clk => ImmOut[5]~reg0.CLK
+clk => ImmOut[6]~reg0.CLK
+clk => ImmOut[7]~reg0.CLK
+clk => flagImm~reg0.CLK
+clk => flagNop~reg0.CLK
+clk => flagEnd~reg0.CLK
+clk => enableSwap~reg0.CLK
+clk => enableJump~reg0.CLK
+clk => enableMem~reg0.CLK
+clk => enableAluV~reg0.CLK
+clk => enableAluInt~reg0.CLK
+clk => cond[0]~reg0.CLK
+clk => cond[1]~reg0.CLK
+clk => vRegDest[0]~reg0.CLK
+clk => vRegDest[1]~reg0.CLK
+clk => intRegDest[0]~reg0.CLK
+clk => intRegDest[1]~reg0.CLK
+clk => intRegDest[2]~reg0.CLK
+clk => intRegDest[3]~reg0.CLK
+clk => vOper2[0]~reg0.CLK
+clk => vOper2[1]~reg0.CLK
+clk => vOper1[0]~reg0.CLK
+clk => vOper1[1]~reg0.CLK
+clk => intOper2[0]~reg0.CLK
+clk => intOper2[1]~reg0.CLK
+clk => intOper2[2]~reg0.CLK
+clk => intOper2[3]~reg0.CLK
+clk => intOper1[0]~reg0.CLK
+clk => intOper1[1]~reg0.CLK
+clk => intOper1[2]~reg0.CLK
+clk => intOper1[3]~reg0.CLK
+instruction[0] => Equal0.IN7
+instruction[0] => Equal1.IN7
+instruction[0] => Equal2.IN7
+instruction[0] => Equal3.IN7
+instruction[0] => Equal4.IN7
+instruction[0] => Equal5.IN7
+instruction[0] => Equal6.IN7
+instruction[0] => Equal7.IN7
+instruction[0] => Equal8.IN7
+instruction[0] => Equal9.IN7
+instruction[0] => Equal10.IN7
+instruction[0] => Equal11.IN7
+instruction[0] => Equal12.IN7
+instruction[0] => Equal13.IN7
+instruction[0] => Equal14.IN7
+instruction[1] => Equal0.IN6
+instruction[1] => Equal1.IN6
+instruction[1] => Equal2.IN6
+instruction[1] => Equal3.IN6
+instruction[1] => Equal4.IN6
+instruction[1] => Equal5.IN6
+instruction[1] => Equal6.IN6
+instruction[1] => Equal7.IN6
+instruction[1] => Equal8.IN6
+instruction[1] => Equal9.IN6
+instruction[1] => Equal10.IN6
+instruction[1] => Equal11.IN6
+instruction[1] => Equal12.IN6
+instruction[1] => Equal13.IN6
+instruction[1] => Equal14.IN6
+instruction[2] => Equal0.IN5
+instruction[2] => Equal1.IN5
+instruction[2] => Equal2.IN5
+instruction[2] => Equal3.IN5
+instruction[2] => Equal4.IN5
+instruction[2] => Equal5.IN5
+instruction[2] => Equal6.IN5
+instruction[2] => Equal7.IN5
+instruction[2] => Equal8.IN5
+instruction[2] => Equal9.IN5
+instruction[2] => Equal10.IN5
+instruction[2] => Equal11.IN5
+instruction[2] => Equal12.IN5
+instruction[2] => Equal13.IN5
+instruction[2] => Equal14.IN5
+instruction[3] => Equal0.IN4
+instruction[3] => Equal1.IN4
+instruction[3] => Equal2.IN4
+instruction[3] => Equal3.IN4
+instruction[3] => Equal4.IN4
+instruction[3] => Equal5.IN4
+instruction[3] => Equal6.IN4
+instruction[3] => Equal7.IN4
+instruction[3] => Equal8.IN4
+instruction[3] => Equal9.IN4
+instruction[3] => Equal10.IN4
+instruction[3] => Equal11.IN4
+instruction[3] => Equal12.IN4
+instruction[3] => Equal13.IN4
+instruction[3] => Equal14.IN4
+instruction[4] => Selector7.IN4
+instruction[4] => Selector23.IN4
+instruction[4] => swapBitDestAux[0].DATAIN
+instruction[4] => jumpAddressAux[0].DATAIN
+instruction[5] => Selector3.IN6
+instruction[5] => Selector6.IN4
+instruction[5] => Selector22.IN4
+instruction[5] => Selector23.IN3
+instruction[5] => swapBitDestAux[1].DATAIN
+instruction[5] => jumpAddressAux[1].DATAIN
+instruction[6] => Selector2.IN6
+instruction[6] => Selector5.IN4
+instruction[6] => Selector7.IN3
+instruction[6] => Selector21.IN4
+instruction[6] => Selector22.IN3
+instruction[6] => swapBitDestAux[2].DATAIN
+instruction[6] => jumpAddressAux[2].DATAIN
+instruction[7] => Selector1.IN6
+instruction[7] => Selector4.IN4
+instruction[7] => Selector6.IN3
+instruction[7] => Selector20.IN4
+instruction[7] => Selector21.IN3
+instruction[7] => swapBitOriginAux[0].DATAIN
+instruction[7] => jumpAddressAux[3].DATAIN
+instruction[8] => Selector0.IN6
+instruction[8] => Selector5.IN3
+instruction[8] => Selector16.IN6
+instruction[8] => Selector18.IN6
+instruction[8] => Selector19.IN4
+instruction[8] => intRegDestAux[0].DATAIN
+instruction[8] => swapBitOriginAux[1].DATAIN
+instruction[8] => jumpAddressAux[4].DATAIN
+instruction[9] => Selector4.IN3
+instruction[9] => Selector15.IN6
+instruction[9] => Selector17.IN6
+instruction[9] => Selector18.IN5
+instruction[9] => intRegDestAux[1].DATAIN
+instruction[9] => swapBitOriginAux[2].DATAIN
+instruction[9] => jumpAddressAux[5].DATAIN
+instruction[10] => Selector3.IN5
+instruction[10] => Selector17.IN5
+instruction[10] => Selector18.IN4
+instruction[10] => intRegDestAux[2].DATAIN
+instruction[10] => jumpAddressAux[6].DATAIN
+instruction[11] => Selector2.IN5
+instruction[11] => Selector16.IN5
+instruction[11] => Selector17.IN4
+instruction[11] => intRegDestAux[3].DATAIN
+instruction[11] => jumpAddressAux[7].DATAIN
+instruction[12] => Selector1.IN5
+instruction[12] => Selector3.IN4
+instruction[12] => Selector15.IN5
+instruction[12] => Selector16.IN4
+instruction[12] => jumpAddressAux[8].DATAIN
+instruction[13] => Selector0.IN5
+instruction[13] => Selector2.IN4
+instruction[13] => Selector15.IN4
+instruction[13] => jumpAddressAux[9].DATAIN
+instruction[14] => Selector1.IN4
+instruction[14] => Selector9.IN6
+instruction[15] => Selector0.IN4
+instruction[15] => Selector8.IN6
+intOper1[0] <= intOper1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper1[1] <= intOper1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper1[2] <= intOper1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper1[3] <= intOper1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper2[0] <= intOper2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper2[1] <= intOper2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper2[2] <= intOper2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intOper2[3] <= intOper2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vOper1[0] <= vOper1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vOper1[1] <= vOper1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vOper2[0] <= vOper2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vOper2[1] <= vOper2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cond[0] <= cond[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cond[1] <= cond[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enableAluInt <= enableAluInt~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enableAluV <= enableAluV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enableMem <= enableMem~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enableJump <= enableJump~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flagImm <= flagImm~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[0] <= ImmOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[1] <= ImmOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[2] <= ImmOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[3] <= ImmOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[4] <= ImmOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[5] <= ImmOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[6] <= ImmOut[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ImmOut[7] <= ImmOut[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[0] <= jumpAddress[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[1] <= jumpAddress[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[2] <= jumpAddress[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[3] <= jumpAddress[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[4] <= jumpAddress[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[5] <= jumpAddress[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[6] <= jumpAddress[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[7] <= jumpAddress[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[8] <= jumpAddress[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+jumpAddress[9] <= jumpAddress[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flagEnd <= flagEnd~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flagNop <= flagNop~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flagMemRead <= flagMemRead~reg0.DB_MAX_OUTPUT_PORT_TYPE
+flagMemWrite <= flagMemWrite~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitOrigin[0] <= swapBitOrigin[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitOrigin[1] <= swapBitOrigin[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitOrigin[2] <= swapBitOrigin[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitDest[0] <= swapBitDest[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitDest[1] <= swapBitDest[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+swapBitDest[2] <= swapBitDest[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intRegDest[0] <= intRegDest[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intRegDest[1] <= intRegDest[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intRegDest[2] <= intRegDest[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+intRegDest[3] <= intRegDest[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vRegDest[0] <= vRegDest[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vRegDest[1] <= vRegDest[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+aluOpcode[0] <= aluOpcode[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+aluOpcode[1] <= aluOpcode[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+aluOpcode[2] <= aluOpcode[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enableSwap <= enableSwap~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

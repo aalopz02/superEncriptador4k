@@ -1,0 +1,281 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "intOper1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "intOper2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vOper1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vOper1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cond[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cond[1]",
+					"strict" : false
+				},
+				{
+					"name" : "enableAluInt",
+					"strict" : false
+				},
+				{
+					"name" : "enableAluV",
+					"strict" : false
+				},
+				{
+					"name" : "enableMem",
+					"strict" : false
+				},
+				{
+					"name" : "enableJump",
+					"strict" : false
+				},
+				{
+					"name" : "flagImm",
+					"strict" : false
+				},
+				{
+					"name" : "ImmOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ImmOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ImmOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ImmOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ImmOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[8]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpAddress[9]",
+					"strict" : false
+				},
+				{
+					"name" : "flagEnd",
+					"strict" : false
+				},
+				{
+					"name" : "flagMemRead",
+					"strict" : false
+				},
+				{
+					"name" : "flagMemWrite",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitOrigin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitOrigin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitOrigin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitDest[0]",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitDest[1]",
+					"strict" : false
+				},
+				{
+					"name" : "swapBitDest[2]",
+					"strict" : false
+				},
+				{
+					"name" : "intRegDest[0]",
+					"strict" : false
+				},
+				{
+					"name" : "intRegDest[1]",
+					"strict" : false
+				},
+				{
+					"name" : "intRegDest[2]",
+					"strict" : false
+				},
+				{
+					"name" : "intRegDest[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vRegDest[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vRegDest[1]",
+					"strict" : false
+				},
+				{
+					"name" : "aluOpcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "aluOpcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "aluOpcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "enableSwap",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[14]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[15]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
