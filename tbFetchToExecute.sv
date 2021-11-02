@@ -44,10 +44,15 @@ module tbFetchToExecute #(
     logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o;
     logic             [REGI_SIZE-1:0] iswa_res_o;
     logic [(ELEM_SIZE*VECT_SIZE)-1:0] vswa_res_o;
+    logic                             enableMem_o;
+    logic                             enableReg_o;
+	logic                             enableJump_o;
+    logic                             flagMemRead_o;
+	logic                             flagMemWrite_o;
     logic                       [3:0] alu_flags;
     
     fStage #(REGI_BITS, REGI_SIZE) 
-        dut(.clk_i(clk), .rst_i(rst),
+        id_stage(.clk_i(clk), .rst_i(rst),
             .next_pc_i(next_pc_i),
             .next_pc_o(next_pc_p1),
             .instr_o(instr_p)
@@ -82,8 +87,8 @@ module tbFetchToExecute #(
             .flagMemWrite(flagMemWrite),
             .swapBitOrigin(swapBitOrigin),
             .swapBitDest(swapBitDest),
-            .intRegDest(intRegDest),
-            .vRegDest(vRegDest),
+            //.intRegDest(intRegDest),
+            //.vRegDest(vRegDest),
             .enableSwap(enableSwap),
             .aluOpcode(aluOpcode)
             );
@@ -99,6 +104,7 @@ module tbFetchToExecute #(
             .enableAluV(enableAluV), 
             .enableMem(enableMem), 
             .enableJump(enableJump), 
+            .enableReg(enableReg),
             .flagImm(flagImm), 
             .ImmOut(ImmOut),
             .jumpAddress(jumpAddress),
@@ -113,7 +119,12 @@ module tbFetchToExecute #(
             .ialu_res_o(ialu_res_o),
             .valu_res_o(valu_res_o),
             .iswa_res_o(iswa_res_o),
-            .vswa_res_o(vswa_res_o)
+            .vswa_res_o(vswa_res_o),
+            .enableMem_o(enableMem_o),
+            .enableReg_o(enableReg_o), 
+            .enableJump_o(enableJump_o), 
+            .flagMemRead_o(flagMemRead_o),
+            .flagMemWrite_o(flagMemWrite_o)
             );
     
     initial begin

@@ -54,14 +54,16 @@ module eStage #(
         .opCode(aluOpcode));
     
     // Scalar Swap
-    singleSwapper fu_int_swa(.oper(ImmOut),
+    singleSwapper fu_vec_swa(.clk(clk_i),
+        .oper(ImmOut),
         .pos1(swapBitOrigin),
         .pos2(swapBitDest),
         .res(iswa_res_o)
         );
     
     // Vector Swap
-    vSwapperBlock fu_vec_swa(.vOper(ImmOut),
+    vSwapperBlock fu_int_swa(.clk(clk_i),
+        .vOper(ImmOut),
         .dir1(swapBitOrigin),
         .dir2(swapBitDest),
         .res(vswa_res_o)

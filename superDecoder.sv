@@ -18,7 +18,7 @@ module superDecoder#(
 	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1,
 	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper2,
 	output logic [REGI_BITS-1:0] intRegDest,
-	output logic [VECT_BITS-1:0] vRegDest, 
+	output logic [VECT_BITS-1:0] vecRegDest, 
 	output logic [1:0] cond,
 	output logic enableAluInt,
 	output logic enableAluV,
@@ -36,8 +36,8 @@ module superDecoder#(
 	output logic [2:0] swapBitOrigin,
 	output logic [2:0] swapBitDest
 );
-	logic [VECT_BITS-1:0] voper1_p, voper2_p, vresult_p;
-	logic [REGI_BITS-1:0] ioper1_p, ioper2_p, iresult_p;
+	logic [VECT_BITS-1:0] voper1_p, voper2_p;
+	logic [REGI_BITS-1:0] ioper1_p, ioper2_p;
 	logic [REGI_SIZE-1:0] ioper1_data_p, ioper2_data_p;
 	logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1_data_p, vOper2_data_p;
 
@@ -46,8 +46,8 @@ module superDecoder#(
 			.intOper1(ioper1_p), .intOper2(ioper2_p),
 			.vOper1(voper1_p), 
 			.vOper2(voper2_p), 
-			.intRegDest(iresult_p),
-			.vRegDest(vresult_p),
+			.intRegDest(intRegDest),
+			.vRegDest(vecRegDest),
 			.cond(cond),
 			.enableAluInt(enableAluInt), 
 			.enableAluV(enableAluV), 
@@ -71,7 +71,7 @@ module superDecoder#(
 			.wEnable(vec_we_i),
 			.voper1(voper1_p), 
 			.voper2(voper2_p),
-			.vresult(vresult_p),
+			.vresult(vecRegDest),
 			.dataIn(vec_wd_i),
 			.oper1(vOper1_data_p), 
 			.oper2(vOper2_data_p)
@@ -80,7 +80,7 @@ module superDecoder#(
 	dRegisterFile #(REGI_BITS, REGI_SIZE)
 		int_regfile(.clk(clk),
 			.we3(int_we_i),
-			.ra1(ioper1_p), .ra2(ioper2_p), .wa3(iresult_p),
+			.ra1(ioper1_p), .ra2(ioper2_p), .wa3(intRegDest),
 			.pc(next_pc_i),
 			.wd3(int_wd_i),
 			.rd1(ioper1_data_p),
