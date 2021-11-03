@@ -13,6 +13,7 @@ module eStage #(
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsa_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsb_i,
      input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_imm_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_cop_i,
      input logic [1:0] cond,
 	 input logic enableAluInt,
 	 input logic enableAluV,
@@ -79,7 +80,7 @@ module eStage #(
     mux2 #(ELEM_SIZE) vec_selector_2(valu_out, vswa_res, enableSwap, valu_res_o);
     
     // Cond Unit
-    condUnit cond_unit(alu_flags_i, cond, signal_branch);
+    condUnit cond_unit(clk_i, cond, alu_flags_i, signal_branch);
 
     
 endmodule
