@@ -8,20 +8,31 @@ module superMemory #(
     parameter ELEM_SIZE = 8
 ) (
 	 input logic                 clk_i, rst_i,
-     input logic                 enableMem_i,
-     input logic                 enableReg_i,
-	 input logic                 enableJump_i,
-     input logic                 flagMemRead_i,
-	 input logic                 flagMemWrite_i,
-     input logic                 writeResultInt_i,
-	 input logic                 writeResultV_i,
+     input logic                 enableMem,
+     input logic                 enableReg,
+	 input logic                 enableJump,
+     input logic                 flagMemRead,
+	 input logic                 flagMemWrite,
+     input logic                 flagEnd,
+	 input logic                 flagNop,
+     input logic                 writeResultInt,
+	 input logic                 writeResultV,
+     input logic           [9:0] jumpAddress,
+     input logic [REGI_BITS-1:0] intRegDest,
+	 input logic [VECT_BITS-1:0] vecRegDest, memo_res,
      input logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_a_i, int_wd_i,
-    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_rd_o,
-    output logic                 enableReg,
-	output logic                 enableJump,
-    output logic                 flagMemRead,
-    output logic                 writeResultInt,
-	output logic                 writeResultV,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_rd_f,
+    output logic                 enableReg_f,
+	output logic                 enableJump_f,
+    output logic                 flagMemRead_f,
+    output logic                 flagEnd_f,
+	output logic                 flagNop_f,
+    output logic           [9:0] jumpAddress_f,
+    output logic [REGI_BITS-1:0] intRegDest_f,
+	output logic [VECT_BITS-1:0] vecRegDest_f, memo_res_f, 
+    output logic                 writeResultInt_f,
+	output logic                 writeResultV_f
+    
 );
     logic [(ELEM_SIZE*VECT_SIZE)-1:0] in_rd_p;
 
@@ -48,6 +59,7 @@ module superMemory #(
             .flagMemRead_o(flagMemRead),
             .writeResultInt_o(writeResultInt),
             .writeResultV_o(writeResultV),
+            .jumpAddress_o(jumpAddress)
             );
             
 endmodule
