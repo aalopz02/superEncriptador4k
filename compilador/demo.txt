@@ -1,4 +1,6 @@
 demo:
+vswapal v2, v3, #5, #1
+vswapal v0, v3, #7, #1
 cmp r2, r3
 jne demo
 vxoreq v1, v2, r3

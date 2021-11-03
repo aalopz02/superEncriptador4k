@@ -11,10 +11,10 @@ module condUnit #(
 );
     always_ff @(negedge clk_i) begin
         case(alu_flags_i)
-            2'b00: if(cond_i == alu_flags_i) signal_o <= 1;
-            2'b01: if(cond_i == alu_flags_i) signal_o <= 1;
-            2'b10: if(cond_i == alu_flags_i) signal_o <= 1;
-            2'b11: if(cond_i == alu_flags_i) signal_o <= 1;
+            2'b00: if(cond == alu_flags_i) signal_o <= 1;
+            2'b01: if(cond == alu_flags_i) signal_o <= 1;
+            2'b10: if(cond == alu_flags_i) signal_o <= 1;
+            2'b11: if(cond == alu_flags_i) signal_o <= 1;
             default: signal_o = 0; // undefined
         endcase 
     end

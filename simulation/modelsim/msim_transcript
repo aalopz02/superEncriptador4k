@@ -12,194 +12,336 @@
 # 
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/intToVect.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:41 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/intToVect.sv 
 # -- Compiling module intToVect
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:41 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/decoder.sv 
 # -- Compiling module decoder
 # -- Compiling module decoderTB
 # 
 # Top level modules:
 # 	decoderTB
-# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dRegisterFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:41 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dRegisterFile.sv 
 # -- Compiling module dRegisterFile
 # 
 # Top level modules:
 # 	dRegisterFile
-# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dPipe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:41 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dPipe.sv 
 # -- Compiling module dPipe
 # 
 # Top level modules:
 # 	dPipe
-# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vRegisterFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:41 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vRegisterFile.sv 
 # -- Compiling module vRegisterFile
 # -- Compiling module vREgTB
 # 
 # Top level modules:
 # 	vREgTB
-# End time: 23:20:42 on Nov 02,2021, Elapsed time: 0:00:01
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/superDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:42 on Nov 02,2021
+# Start time: 01:41:43 on Nov 03,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/superDecoder.sv 
 # -- Compiling module superDecoder
 # 
 # Top level modules:
 # 	superDecoder
-# End time: 23:20:42 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:43 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work G:/superEncriptador4k/fPipe.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:47 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/fPipe.sv 
 # -- Compiling module fPipe
 # 
 # Top level modules:
 # 	fPipe
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:47 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/fiPipe.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:47 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/fiPipe.sv 
 # -- Compiling module fiPipe
 # 
 # Top level modules:
 # 	fiPipe
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:47 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/fStage.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:47 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/fStage.sv 
 # -- Compiling module fStage
 # 
 # Top level modules:
 # 	fStage
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToDecode.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/superExecute.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
-# vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToDecode.sv 
-# -- Compiling module tbFetchToDecode
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/superExecute.sv 
+# -- Compiling module superExecute
 # 
 # Top level modules:
-# 	tbFetchToDecode
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# 	superExecute
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/eStage.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/eStage.sv 
+# -- Compiling module eStage
+# 
+# Top level modules:
+# 	eStage
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/ePipe.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/ePipe.sv 
+# -- Compiling module ePipe
+# 
+# Top level modules:
+# 	ePipe
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToExecute.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToExecute.sv 
+# -- Compiling module tbFetchToExecute
+# 
+# Top level modules:
+# 	tbFetchToExecute
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/singleSwapper.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/singleSwapper.sv 
+# -- Compiling module singleSwapper
+# -- Compiling module swapTB
+# 
+# Top level modules:
+# 	swapTB
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/vSwapperBlock.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/vSwapperBlock.sv 
+# -- Compiling module vSwapperBlock
+# 
+# Top level modules:
+# 	vSwapperBlock
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux2.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/alu.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/condUnit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/condUnit.sv 
+# -- Compiling module condUnit
+# 
+# Top level modules:
+# 	condUnit
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux_four.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux_four.sv 
+# -- Compiling module mux_four
+# 
+# Top level modules:
+# 	mux_four
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/shift_right_gate.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/shift_right_gate.sv 
+# -- Compiling module shift_right_gate
+# 
+# Top level modules:
+# 	shift_right_gate
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/shif_left_gate.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/shif_left_gate.sv 
+# -- Compiling module shift_left_gate
+# 
+# Top level modules:
+# 	shift_left_gate
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder_substractor.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder_substractor.sv 
+# -- Compiling module adder_substractor
+# 
+# Top level modules:
+# 	adder_substractor
+# End time: 01:41:48 on Nov 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux_eight.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:48 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/mux_eight.sv 
+# -- Compiling module mux_eight
+# 
+# Top level modules:
+# 	mux_eight
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/vAluBlock.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:41:49 on Nov 03,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/vAluBlock.sv 
+# -- Compiling module vAluBlock
+# -- Compiling module vAluTest
+# 
+# Top level modules:
+# 	vAluTest
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/imem.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/or_gate.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/or_gate.sv 
 # -- Compiling module or_gate
 # 
 # Top level modules:
 # 	or_gate
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/xor_gate.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/xor_gate.sv 
 # -- Compiling module xor_gate
 # 
 # Top level modules:
 # 	xor_gate
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/and_gate.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/and_gate.sv 
 # -- Compiling module and_gate
 # 
 # Top level modules:
 # 	and_gate
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_half_adder.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_half_adder.sv 
 # -- Compiling module one_bit_half_adder
 # 
 # Top level modules:
 # 	one_bit_half_adder
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_full_adder.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_full_adder.sv 
 # -- Compiling module one_bit_full_adder
 # 
 # Top level modules:
 # 	one_bit_full_adder
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work G:/superEncriptador4k/components/flip_flop.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:20:51 on Nov 02,2021
+# Start time: 01:41:49 on Nov 03,2021
 # vlog -reportprogress 300 -work work G:/superEncriptador4k/components/flip_flop.sv 
 # -- Compiling module flip_flop
 # 
 # Top level modules:
 # 	flip_flop
-# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 01:41:49 on Nov 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-vsim work.tbFetchToDecode
-# vsim work.tbFetchToDecode 
-# Start time: 23:20:51 on Nov 02,2021
+vsim work.tbFetchToExecute
+# vsim work.tbFetchToExecute 
+# Start time: 01:41:49 on Nov 03,2021
 # Loading sv_std.std
-# Loading work.tbFetchToDecode
+# Loading work.tbFetchToExecute
 # Loading work.fStage
 # Loading work.flip_flop
 # Loading work.adder
@@ -211,89 +353,236 @@ vsim work.tbFetchToDecode
 # Loading work.dRegisterFile
 # Loading work.intToVect
 # Loading work.dPipe
-# Loading work.one_bit_full_adder
-# Loading work.one_bit_half_adder
+# Loading work.superExecute
+# Loading work.eStage
+# Loading work.mux2
+# Loading work.alu
+# Loading work.adder_substractor
 # Loading work.xor_gate
 # Loading work.and_gate
 # Loading work.or_gate
+# Loading work.shift_left_gate
+# Loading work.shift_right_gate
+# Loading work.mux_eight
+# Loading work.mux_four
+# Loading work.vAluBlock
+# Loading work.singleSwapper
+# Loading work.vSwapperBlock
+# Loading work.condUnit
+# Loading work.ePipe
+# Loading work.one_bit_full_adder
+# Loading work.one_bit_half_adder
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pc_adder'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
 # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'bus_b_i'. The port definition is at: G:/superEncriptador4k/components/adder.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'carry_i'. The port definition is at: G:/superEncriptador4k/components/adder.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
 # ** Warning: (vsim-3722) G:/superEncriptador4k/fStage.sv(22): [TFMPC] - Missing connection for port 'carry_o'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decoder'.  Expected 44, found 35.
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder File: G:/superEncriptador4k/tbFetchToDecode.sv Line: 71
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_we_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_we_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_dest_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_dest_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_wd_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_wd_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'alu_flags_i'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vecRegDest'.
-# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'alu_flags_o'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decoder'.  Expected 44, found 36.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/decoder File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 71
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'alu_flags_i'. The port definition is at: G:/superEncriptador4k/superDecoder.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/decoder File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 71
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'int_we_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'vec_we_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'int_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'vec_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'vec_wd_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'int_wd_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'vecRegDest'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(71): [TFMPC] - Missing connection for port 'alu_flags_o'.
 # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (4) for port 'intOper1'. The port definition is at: G:/superEncriptador4k/decoder.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
 # ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (4) for port 'intOper2'. The port definition is at: G:/superEncriptador4k/decoder.sv(13).
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
 # ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'alu_flags_o'. The port definition is at: G:/superEncriptador4k/dPipe.sv(16).
-#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/idex_pipe File: G:/superEncriptador4k/superDecoder.sv Line: 114
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/decoder/idex_pipe File: G:/superEncriptador4k/superDecoder.sv Line: 114
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'execute'.  Expected 48, found 31.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 125
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'int_rsa_i'. The port definition is at: G:/superEncriptador4k/superExecute.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 125
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'int_rsb_i'. The port definition is at: G:/superEncriptador4k/superExecute.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 125
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'alu_flags_o'. The port definition is at: G:/superEncriptador4k/superExecute.sv(56).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 125
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'int_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'vec_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'vec_imm_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'vec_cop_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper1V'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper2V'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper1Int'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper2Int'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'writeResultInt'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'writeResultV'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'alu_flags_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper1V_o'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper2V_o'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper1Int_o'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'isOper2Int_o'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'writeResultInt_o'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToExecute.sv(125): [TFMPC] - Missing connection for port 'writeResultV_o'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'ialu_res_o'. The port definition is at: G:/superEncriptador4k/eStage.sv(35).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage File: G:/superEncriptador4k/superExecute.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_int_alu File: G:/superEncriptador4k/eStage.sv Line: 48
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_int_alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'intOper'. The port definition is at: G:/superEncriptador4k/intToVect.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/immConv File: G:/superEncriptador4k/eStage.sv Line: 61
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[0]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[0]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[1]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[1]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[2]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[2]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[3]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[3]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[4]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[4]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[5]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[5]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[6]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[6]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'flags_o'. The port definition is at: G:/superEncriptador4k/components/alu.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[7]/alu File: G:/superEncriptador4k/vAluBlock.sv Line: 20
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'opSelector'.  Expected 10, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/fu_vec_alu/forloop[7]/alu/opSelector File: G:/superEncriptador4k/components/alu.sv Line: 34
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_g_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/components/alu.sv(34): [TFMPC] - Missing connection for port 'bus_h_i'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (64) for port 'bus_a_i'. The port definition is at: G:/superEncriptador4k/components/mux2.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/vec_selector_2 File: G:/superEncriptador4k/eStage.sv Line: 93
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (64) for port 'bus_b_i'. The port definition is at: G:/superEncriptador4k/components/mux2.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/vec_selector_2 File: G:/superEncriptador4k/eStage.sv Line: 93
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (64) for port 'bus_o'. The port definition is at: G:/superEncriptador4k/components/mux2.sv(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/ex_stage/vec_selector_2 File: G:/superEncriptador4k/eStage.sv Line: 93
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'exmen_pipe'.  Expected 29, found 28.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/exmen_pipe File: G:/superEncriptador4k/superExecute.sv Line: 95
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'ialu_res_o'. The port definition is at: G:/superEncriptador4k/ePipe.sv(25).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToExecute/execute/exmen_pipe File: G:/superEncriptador4k/superExecute.sv Line: 95
+# ** Warning: (vsim-3722) G:/superEncriptador4k/superExecute.sv(95): [TFMPC] - Missing connection for port 'alu_flags_i'.
 
-add wave -position end  sim:/tbFetchToDecode/next_pc_p1
-add wave -position end  sim:/tbFetchToDecode/int_we
-add wave -position end  sim:/tbFetchToDecode/int_a_i
-add wave -position end  sim:/tbFetchToDecode/int_wd_i
-add wave -position end  sim:/tbFetchToDecode/int_rd_o
-add wave -position end  sim:/tbFetchToDecode/next_pc_i
-add wave -position end  sim:/tbFetchToDecode/instr_p
-add wave -position end  sim:/tbFetchToDecode/instr_o
-add wave -position end  sim:/tbFetchToDecode/reg_dest_o
-add wave -position end  sim:/tbFetchToDecode/vec_dest_o
-add wave -position end  sim:/tbFetchToDecode/intOper1
-add wave -position end  sim:/tbFetchToDecode/intOper2
-add wave -position end  sim:/tbFetchToDecode/vOper1
-add wave -position end  sim:/tbFetchToDecode/vOper2
-add wave -position end  sim:/tbFetchToDecode/vOperImm
-add wave -position end  sim:/tbFetchToDecode/vOperCop
-add wave -position end  sim:/tbFetchToDecode/intRegDest
-add wave -position end  sim:/tbFetchToDecode/vecRegDest
-add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper1
-add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper2
-add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper1
-add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper2
-add wave -position end  sim:/tbFetchToDecode/cond
-add wave -position end  sim:/tbFetchToDecode/enableAluInt
-add wave -position end  sim:/tbFetchToDecode/enableAluV
-add wave -position end  sim:/tbFetchToDecode/enableMem
-add wave -position end  sim:/tbFetchToDecode/enableJump
-add wave -position end  sim:/tbFetchToDecode/enableSwap
-add wave -position end  sim:/tbFetchToDecode/flagEnd
-add wave -position end  sim:/tbFetchToDecode/flagNop
-add wave -position end  sim:/tbFetchToDecode/flagImm
-add wave -position end  sim:/tbFetchToDecode/ImmOut
-add wave -position end  sim:/tbFetchToDecode/aluOpcode
-add wave -position end  sim:/tbFetchToDecode/jumpAddress
-add wave -position end  sim:/tbFetchToDecode/flagMemRead
-add wave -position end  sim:/tbFetchToDecode/flagMemWrite
-add wave -position end  sim:/tbFetchToDecode/swapBitOrigin
-add wave -position end  sim:/tbFetchToDecode/swapBitDest
-add wave -position end  sim:/tbFetchToDecode/isOper1V
-add wave -position end  sim:/tbFetchToDecode/isOper2V
-add wave -position end  sim:/tbFetchToDecode/isOper1Int
-add wave -position end  sim:/tbFetchToDecode/isOper2Int
-add wave -position end  sim:/tbFetchToDecode/writeResultInt
-add wave -position end  sim:/tbFetchToDecode/writeResultV
-add wave -position end  sim:/tbFetchToDecode/alu_flags_o
-add wave -position end  sim:/tbFetchToDecode/decoder/instruction
-add wave -position end  sim:/tbFetchToDecode/clk
-add wave -position end  sim:/tbFetchToDecode/rst
+add wave -position end  sim:/tbFetchToExecute/reg_dest_o
+add wave -position end  sim:/tbFetchToExecute/vec_dest_o
+add wave -position end  sim:/tbFetchToExecute/intOper1
+add wave -position end  sim:/tbFetchToExecute/intOper2
+add wave -position end  sim:/tbFetchToExecute/vOper1
+add wave -position end  sim:/tbFetchToExecute/vOper2
+add wave -position end  sim:/tbFetchToExecute/vOperImm
+add wave -position end  sim:/tbFetchToExecute/vOperCop
+add wave -position end  sim:/tbFetchToExecute/intRegDest
+add wave -position end  sim:/tbFetchToExecute/vecRegDest
+add wave -position end  sim:/tbFetchToExecute/cond
+add wave -position end  sim:/tbFetchToExecute/enableAluInt
+add wave -position end  sim:/tbFetchToExecute/enableAluV
+add wave -position end  sim:/tbFetchToExecute/enableMem
+add wave -position end  sim:/tbFetchToExecute/enableJump
+add wave -position end  sim:/tbFetchToExecute/enableSwap
+add wave -position end  sim:/tbFetchToExecute/flagEnd
+add wave -position end  sim:/tbFetchToExecute/flagNop
+add wave -position end  sim:/tbFetchToExecute/flagImm
+add wave -position end  sim:/tbFetchToExecute/ImmOut
+add wave -position end  sim:/tbFetchToExecute/aluOpcode
+add wave -position end  sim:/tbFetchToExecute/jumpAddress
+add wave -position end  sim:/tbFetchToExecute/flagMemRead
+add wave -position end  sim:/tbFetchToExecute/flagMemWrite
+add wave -position end  sim:/tbFetchToExecute/swapBitOrigin
+add wave -position end  sim:/tbFetchToExecute/swapBitDest
+add wave -position end  sim:/tbFetchToExecute/isOper1V
+add wave -position end  sim:/tbFetchToExecute/isOper2V
+add wave -position end  sim:/tbFetchToExecute/isOper1Int
+add wave -position end  sim:/tbFetchToExecute/isOper2Int
+add wave -position end  sim:/tbFetchToExecute/writeResultInt
+add wave -position end  sim:/tbFetchToExecute/writeResultV
+add wave -position end  sim:/tbFetchToExecute/alu_flags_o
+add wave -position end  sim:/tbFetchToExecute/ialu_res_o
+add wave -position end  sim:/tbFetchToExecute/valu_res_o
+add wave -position end  sim:/tbFetchToExecute/enableMem_o
+add wave -position end  sim:/tbFetchToExecute/enableReg_o
+add wave -position end  sim:/tbFetchToExecute/enableJump_o
+add wave -position end  sim:/tbFetchToExecute/flagMemRead_o
+add wave -position end  sim:/tbFetchToExecute/flagMemWrite_o
+add wave -position end  sim:/tbFetchToExecute/isOper1V_o
+add wave -position end  sim:/tbFetchToExecute/isOper2V_o
+add wave -position end  sim:/tbFetchToExecute/isOper1Int_o
+add wave -position end  sim:/tbFetchToExecute/isOper2Int_o
+add wave -position end  sim:/tbFetchToExecute/writeResultInt_o
+add wave -position end  sim:/tbFetchToExecute/writeResultV_o
+add wave -position end  sim:/tbFetchToExecute/enableReg
+add wave -position end  sim:/tbFetchToExecute/decoder/instruction
+add wave -position end  sim:/tbFetchToExecute/clk
+add wave -position end  sim:/tbFetchToExecute/rst
+
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/voper1
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/voper2
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/vresult
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/dataIn
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/oper1
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/oper2
+add wave -position end  sim:/tbFetchToExecute/decoder/vec_regfile/matrix
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/vectorOper1
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/vectorOper2
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/result
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/opCode
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/opCodeAux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/vectorOper1Aux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/vectorOper2Aux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_alu/resultAux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/pos1
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/pos1'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/pos2
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/pos2'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/res
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper1Aux
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper1Aux'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper2Aux
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/oper2Aux'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/resAux
+# ** UI-Msg: (vish-4014) No objects found matching '/tbFetchToExecute/execute/ex_stage/fu_vec_swa/resAux'.
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/elVOper2
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/dir1Aux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/dir2Aux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/vectorOper1Aux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/resultAux
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/clk
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/vOper
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/dir1
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/dir2
+add wave -position end  sim:/tbFetchToExecute/execute/ex_stage/fu_vec_swa/res
 run 100
 run 100
 run 100
-run 100
-run 100
-run 100
-# End time: 23:24:54 on Nov 02,2021, Elapsed time: 0:04:03
-# Errors: 0, Warnings: 17
+# End time: 01:43:51 on Nov 03,2021, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 82

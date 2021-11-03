@@ -1160,19 +1160,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "vec_we_i",
-					"strict" : false
-				},
-				{
 					"name" : "vec_wd_i[0]",
 					"strict" : false
 				},
 				{
-					"name" : "vec_dest_i[0]",
+					"name" : "vec_dest_i[1]",
 					"strict" : false
 				},
 				{
-					"name" : "vec_dest_i[1]",
+					"name" : "vec_we_i",
+					"strict" : false
+				},
+				{
+					"name" : "vec_dest_i[0]",
 					"strict" : false
 				},
 				{

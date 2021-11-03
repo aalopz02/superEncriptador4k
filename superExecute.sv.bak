@@ -62,10 +62,8 @@ module superExecute #(
     
     eStage #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
         ex_stage(.clk_i(clk_i), .rst_i(rst_i),
-            .int_rsa_i(int_rsa_i), 
-				.int_rsb_i(int_rsb_i),
-            .vec_rsa_i(vec_rsa_i), 
-				.vec_rsb_i(vec_rsb_i),
+            .int_rsa_i(int_rsa_i), .int_rsb_i(int_rsb_i),
+            .vec_rsa_i(vec_rsa_i), .vec_rsb_i(vec_rsb_i),
             .vec_imm_i(vec_imm_i),
             .vec_cop_i(vec_cop_i),
             .alu_flags_i(alu_flags_i),
@@ -78,7 +76,6 @@ module superExecute #(
             .flagEnd(flagEnd),
             .flagNop(flagNop),
             .flagImm(flagImm),
-				.isIntOper1(isOper1Int),
             .ImmOut(ImmOut),
             .aluOpcode(aluOpcode),
             .jumpAddress(jumpAddress),

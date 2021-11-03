@@ -11,7 +11,7 @@ cModel Technology
 Z0 dG:/superEncriptador4k/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1635916851
+Z2 !s110 1635925309
 !i10b 1
 !s100 OMdnGYdbafkHn:i<e;MVN2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,18 +22,68 @@ R0
 Z5 w1634056109
 8G:/superEncriptador4k/components/adder.sv
 FG:/superEncriptador4k/components/adder.sv
-!i122 16
+!i122 30
 L0 1 17
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1635916851.000000
+Z7 !s108 1635925309.000000
 !s107 G:/superEncriptador4k/components/adder.sv|
 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/adder.sv|
 !i113 1
 Z8 o-work work
 Z9 tCvgOpt 0
+vadder_substractor
+R1
+Z10 !s110 1635925308
+!i10b 1
+!s100 IZZ<DTbc0mm783P@;CAM_3
+R3
+InnC_W<PVDSo6X3zP3f?LN2
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/adder_substractor.sv
+FG:/superEncriptador4k/components/adder_substractor.sv
+!i122 21
+L0 11 24
+R6
+r1
+!s85 0
+31
+Z11 !s108 1635925308.000000
+!s107 G:/superEncriptador4k/components/adder_substractor.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/adder_substractor.sv|
+!i113 1
+R8
+R9
+valu
+R1
+R10
+!i10b 1
+!s100 z:cJ5oEE066<V9W2ZPNhW1
+R3
+IbdIBDWD<:07h8EQ72d@[O0
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/alu.sv
+FG:/superEncriptador4k/components/alu.sv
+!i122 16
+L0 11 44
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/alu.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/alu.sv|
+!i113 1
+R8
+R9
 vand_gate
 R1
 R2
@@ -47,8 +97,8 @@ R0
 R5
 8G:/superEncriptador4k/components/and_gate.sv
 FG:/superEncriptador4k/components/and_gate.sv
-!i122 13
-Z10 L0 11 7
+!i122 27
+Z12 L0 11 7
 R6
 r1
 !s85 0
@@ -59,9 +109,35 @@ R7
 !i113 1
 R8
 R9
+vcondUnit
+R1
+R10
+!i10b 1
+!s100 o?Uz?G04Vhmee@=[[`f;;2
+R3
+IhiSMJN>cYgbM4]nCTAe4B1
+R4
+S1
+R0
+w1635918516
+8G:/superEncriptador4k/components/condUnit.sv
+FG:/superEncriptador4k/components/condUnit.sv
+!i122 17
+Z13 L0 1 21
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/condUnit.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/condUnit.sv|
+!i113 1
+R8
+R9
+ncond@unit
 vdecoder
 R1
-Z11 !s110 1635916841
+Z14 !s110 1635925303
 !i10b 1
 !s100 iMfUYmCS=97SGX2dI`Vn03
 R3
@@ -69,25 +145,25 @@ Io?9MBTEDlC:GX4]f2E>UK1
 R4
 S1
 R0
-Z12 w1635916799
-Z13 8G:/superEncriptador4k/decoder.sv
-Z14 FG:/superEncriptador4k/decoder.sv
+Z15 w1635916799
+Z16 8G:/superEncriptador4k/decoder.sv
+Z17 FG:/superEncriptador4k/decoder.sv
 !i122 1
 L0 1 480
 R6
 r1
 !s85 0
 31
-Z15 !s108 1635916841.000000
-Z16 !s107 G:/superEncriptador4k/decoder.sv|
-Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/decoder.sv|
+Z18 !s108 1635925303.000000
+Z19 !s107 G:/superEncriptador4k/decoder.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/decoder.sv|
 !i113 1
-Z18 o-sv -work work
-Z19 !s92 -sv -work work +incdir+G:/superEncriptador4k
+Z21 o-sv -work work
+Z22 !s92 -sv -work work +incdir+G:/superEncriptador4k
 R9
 vdecoderTB
 R1
-R11
+R14
 !i10b 1
 !s100 WDicbN3gWK3NA=8ocZQil2
 R3
@@ -95,26 +171,26 @@ Ih?DCZzdcabEX?`S93K^bf0
 R4
 S1
 R0
-R12
-R13
-R14
+R15
+R16
+R17
 !i122 1
 L0 482 105
 R6
 r1
 !s85 0
 31
-R15
-R16
-R17
-!i113 1
 R18
 R19
+R20
+!i113 1
+R21
+R22
 R9
 ndecoder@t@b
 vdPipe
 R1
-R11
+R14
 !i10b 1
 !s100 7cF>ndS>fkQBLCNl@4jUi0
 R3
@@ -122,7 +198,7 @@ IzN02c5Xz:b1SJRAcgDRUO2
 R4
 S1
 R0
-Z20 w1635912155
+Z23 w1635912155
 8G:/superEncriptador4k/dPipe.sv
 FG:/superEncriptador4k/dPipe.sv
 !i122 3
@@ -131,44 +207,96 @@ R6
 r1
 !s85 0
 31
-R15
+R18
 !s107 G:/superEncriptador4k/dPipe.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/dPipe.sv|
 !i113 1
-R18
-R19
+R21
+R22
 R9
 nd@pipe
 vdRegisterFile
 R1
-R11
+R14
 !i10b 1
-!s100 UoFC?DzjCO`=IAm]l8a:D2
+!s100 <=9hL9CV=@0FcfI=T?kEC0
 R3
-I[Ba7?e54YnGJoj[56]R<32
+IBieJa?8PQCd`RSDDaD2me1
 R4
 S1
 R0
-Z21 w1635874193
+w1635920999
 8G:/superEncriptador4k/dRegisterFile.sv
 FG:/superEncriptador4k/dRegisterFile.sv
 !i122 2
-L0 1 23
+L0 1 42
 R6
 r1
 !s85 0
 31
-R15
+R18
 !s107 G:/superEncriptador4k/dRegisterFile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/dRegisterFile.sv|
 !i113 1
-R18
-R19
+R21
+R22
 R9
 nd@register@file
+vePipe
+R1
+R10
+!i10b 1
+!s100 ];YjE9:maRJ?N7CCAfO>L2
+R3
+I<n?R[Y<b?TDc@SLXBW@Ud1
+R4
+S1
+R0
+w1635917767
+8G:/superEncriptador4k/ePipe.sv
+FG:/superEncriptador4k/ePipe.sv
+!i122 11
+L0 1 71
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/ePipe.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/ePipe.sv|
+!i113 1
+R8
+R9
+ne@pipe
+veStage
+R1
+R10
+!i10b 1
+!s100 z4U<ETT<87I=lC5]g5F:R2
+R3
+IAa>U9h5T1Sz=l6fcmlKP01
+R4
+S1
+R0
+w1635925281
+8G:/superEncriptador4k/eStage.sv
+FG:/superEncriptador4k/eStage.sv
+!i122 10
+L0 1 99
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/eStage.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/eStage.sv|
+!i113 1
+R8
+R9
+ne@stage
 vfiPipe
 R1
-R2
+Z24 !s110 1635925307
 !i10b 1
 !s100 ?]OHJN4WDEaNiH1iHh_<83
 R3
@@ -180,12 +308,12 @@ R5
 8G:/superEncriptador4k/fiPipe.sv
 FG:/superEncriptador4k/fiPipe.sv
 !i122 7
-Z22 L0 1 15
+Z25 L0 1 15
 R6
 r1
 !s85 0
 31
-R7
+Z26 !s108 1635925307.000000
 !s107 G:/superEncriptador4k/fiPipe.sv|
 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/fiPipe.sv|
 !i113 1
@@ -205,8 +333,8 @@ R0
 R5
 8G:/superEncriptador4k/components/flip_flop.sv
 FG:/superEncriptador4k/components/flip_flop.sv
-!i122 17
-Z23 L0 1 10
+!i122 31
+Z27 L0 1 10
 R6
 r1
 !s85 0
@@ -219,7 +347,7 @@ R8
 R9
 vfPipe
 R1
-R2
+R24
 !i10b 1
 !s100 hYm0S^okB<5bNWC316mif3
 R3
@@ -227,16 +355,16 @@ I_2:GcO4EXZ[VQ]4hDOCZZ3
 R4
 S1
 R0
-R21
+Z28 w1635874193
 8G:/superEncriptador4k/fPipe.sv
 FG:/superEncriptador4k/fPipe.sv
 !i122 6
-Z24 L0 1 21
+R13
 R6
 r1
 !s85 0
 31
-R7
+R26
 !s107 G:/superEncriptador4k/fPipe.sv|
 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/fPipe.sv|
 !i113 1
@@ -245,7 +373,7 @@ R9
 nf@pipe
 vfStage
 R1
-R2
+R10
 !i10b 1
 !s100 h^@3;E=<LFhLNje>jBeFN1
 R3
@@ -253,16 +381,16 @@ IQSSM9b0[eSV=B2f5=k2EH0
 R4
 S1
 R0
-R21
+R28
 8G:/superEncriptador4k/fStage.sv
 FG:/superEncriptador4k/fStage.sv
 !i122 8
-L0 1 25
+Z29 L0 1 25
 R6
 r1
 !s85 0
 31
-R7
+R26
 !s107 G:/superEncriptador4k/fStage.sv|
 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/fStage.sv|
 !i113 1
@@ -282,8 +410,8 @@ R0
 w1635913619
 8G:/superEncriptador4k/components/imem.sv
 FG:/superEncriptador4k/components/imem.sv
-!i122 10
-R23
+!i122 24
+R27
 R6
 r1
 !s85 0
@@ -296,7 +424,7 @@ R8
 R9
 vintToVect
 R1
-R11
+R14
 !i10b 1
 !s100 `kkEV^0@?]bgJ4Rm[g[aM0
 R3
@@ -304,23 +432,98 @@ Ij3T907KAe]i5eR1LA9lVC3
 R4
 S1
 R0
-Z25 w1635875547
-Z26 8G:/superEncriptador4k/intToVect.sv
-Z27 FG:/superEncriptador4k/intToVect.sv
+Z30 w1635875547
+Z31 8G:/superEncriptador4k/intToVect.sv
+Z32 FG:/superEncriptador4k/intToVect.sv
 !i122 0
-R22
+R25
 R6
 r1
 !s85 0
 31
-R15
-Z28 !s107 G:/superEncriptador4k/intToVect.sv|
-Z29 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/intToVect.sv|
-!i113 1
 R18
-R19
+Z33 !s107 G:/superEncriptador4k/intToVect.sv|
+Z34 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/intToVect.sv|
+!i113 1
+R21
+R22
 R9
 nint@to@vect
+vmux2
+R1
+R10
+!i10b 1
+!s100 E]z]ReG03?lPNc<:V^XmA1
+R3
+I_8Xagoj`m`j:=59O?o7`40
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux2.sv
+FG:/superEncriptador4k/components/mux2.sv
+!i122 15
+Z35 L0 11 8
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/mux2.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/mux2.sv|
+!i113 1
+R8
+R9
+vmux_eight
+R1
+R2
+!i10b 1
+!s100 ?PZAnjkj[66LPEjGIYjJ72
+R3
+I<A>7X@UIKSXlO`<UnRAYz1
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux_eight.sv
+FG:/superEncriptador4k/components/mux_eight.sv
+!i122 22
+L0 11 12
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/mux_eight.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/mux_eight.sv|
+!i113 1
+R8
+R9
+vmux_four
+R1
+R10
+!i10b 1
+!s100 >L_OI3hfHd9aY_Qk3Pb5G2
+R3
+IC;DP2V6lJ>Rfi>85o15ih3
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/mux_four.sv
+FG:/superEncriptador4k/components/mux_four.sv
+!i122 18
+L0 11 13
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/mux_four.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/mux_four.sv|
+!i113 1
+R8
+R9
 vone_bit_full_adder
 R1
 R2
@@ -334,7 +537,7 @@ R0
 R5
 8G:/superEncriptador4k/components/one_bit_full_adder.sv
 FG:/superEncriptador4k/components/one_bit_full_adder.sv
-!i122 15
+!i122 29
 L0 11 10
 R6
 r1
@@ -359,8 +562,8 @@ R0
 R5
 8G:/superEncriptador4k/components/one_bit_half_adder.sv
 FG:/superEncriptador4k/components/one_bit_half_adder.sv
-!i122 14
-L0 11 8
+!i122 28
+R35
 R6
 r1
 !s85 0
@@ -384,8 +587,8 @@ R0
 R5
 8G:/superEncriptador4k/components/or_gate.sv
 FG:/superEncriptador4k/components/or_gate.sv
-!i122 11
-R10
+!i122 25
+R12
 R6
 r1
 !s85 0
@@ -396,9 +599,85 @@ R7
 !i113 1
 R8
 R9
+vshift_left_gate
+R1
+R10
+!i10b 1
+!s100 _^@EJ1PdB9z8kX`;H019N1
+R3
+IbG]jXD@?DS`Jnd0NHSico1
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/shif_left_gate.sv
+FG:/superEncriptador4k/components/shif_left_gate.sv
+!i122 20
+R35
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/shif_left_gate.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/shif_left_gate.sv|
+!i113 1
+R8
+R9
+vshift_right_gate
+R1
+R10
+!i10b 1
+!s100 5_5RzD9SboPHCMjMh:0kh2
+R3
+IKi[M]<]HoM[82O;nHn2aI1
+R4
+S1
+R0
+R5
+8G:/superEncriptador4k/components/shift_right_gate.sv
+FG:/superEncriptador4k/components/shift_right_gate.sv
+!i122 19
+R35
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/components/shift_right_gate.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/components/shift_right_gate.sv|
+!i113 1
+R8
+R9
+vsingleSwapper
+R1
+R10
+!i10b 1
+!s100 2iWlU]Cbhz@GhmPVUKL9S1
+R3
+IL<7^C[b[jYhgS`8N4eSzY1
+R4
+S1
+R0
+Z36 w1635874194
+Z37 8G:/superEncriptador4k/singleSwapper.sv
+Z38 FG:/superEncriptador4k/singleSwapper.sv
+!i122 13
+R29
+R6
+r1
+!s85 0
+31
+R11
+Z39 !s107 G:/superEncriptador4k/singleSwapper.sv|
+Z40 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/singleSwapper.sv|
+!i113 1
+R8
+R9
+nsingle@swapper
 vsuperDecoder
 R1
-Z30 !s110 1635916842
+R14
 !i10b 1
 !s100 BQgYBT^jSlE0H5lk[zMeZ2
 R3
@@ -406,7 +685,7 @@ I9B8EN1IOVcjY4AbVNP<eM1
 R4
 S1
 R0
-R20
+R23
 8G:/superEncriptador4k/superDecoder.sv
 FG:/superEncriptador4k/superDecoder.sv
 !i122 5
@@ -415,17 +694,69 @@ R6
 r1
 !s85 0
 31
-!s108 1635916842.000000
+R18
 !s107 G:/superEncriptador4k/superDecoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/superDecoder.sv|
 !i113 1
-R18
-R19
+R21
+R22
 R9
 nsuper@decoder
+vsuperExecute
+R1
+R10
+!i10b 1
+!s100 Na<B??=>C?_c4T:G>PFGN3
+R3
+IR1dKIhlU_lU9CVP3R_WNn3
+R4
+S1
+R0
+w1635923284
+8G:/superEncriptador4k/superExecute.sv
+FG:/superEncriptador4k/superExecute.sv
+!i122 9
+L0 1 124
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/superExecute.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/superExecute.sv|
+!i113 1
+R8
+R9
+nsuper@execute
+vswapTB
+R1
+R10
+!i10b 1
+!s100 APW]`Z:MfTNHYR2B7ATRi1
+R3
+IfBX[F]S9Qg5Lg`5Hda`<`0
+R4
+S1
+R0
+R36
+R37
+R38
+!i122 13
+L0 27 50
+R6
+r1
+!s85 0
+31
+R11
+R39
+R40
+!i113 1
+R8
+R9
+nswap@t@b
 vtb
 R1
-R11
+R14
 !i10b 1
 !s100 mWHYMaAgB;zoa67MCTk?30
 R3
@@ -433,102 +764,180 @@ I?oZ;WjmPAnj[5_UIeYA_R3
 R4
 S1
 R0
-R25
-R26
-R27
+R30
+R31
+R32
 !i122 0
 L0 17 18
 R6
 r1
 !s85 0
 31
-R15
-R28
-R29
-!i113 1
 R18
-R19
+R33
+R34
+!i113 1
+R21
+R22
 R9
-vtbFetchToDecode
+vtbFetchToExecute
 R1
-R2
+R10
 !i10b 1
-!s100 PMIHB>jc8`?nU@[NM_W9I1
+!s100 PHi4lR:h^e@^mS1QZV;RL0
 R3
-IMoKDzl2_55V=hIGFiR6Ri1
+IH?gg^8baHgkZR4BM191`z3
 R4
 S1
 R0
-w1635915870
-8G:/superEncriptador4k/tbFetchToDecode.sv
-FG:/superEncriptador4k/tbFetchToDecode.sv
-!i122 9
-L0 1 120
+w1635924263
+8G:/superEncriptador4k/tbFetchToExecute.sv
+FG:/superEncriptador4k/tbFetchToExecute.sv
+!i122 12
+L0 1 169
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/tbFetchToExecute.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/tbFetchToExecute.sv|
+!i113 1
+R8
+R9
+ntb@fetch@to@execute
+vvAluBlock
+R1
+R2
+!i10b 1
+!s100 lL;zEMikhCf5@k=X]kEO<1
+R3
+IP:B8:AGBJ_=UNn?4bgN`i1
+R4
+S1
+R0
+R36
+Z41 8G:/superEncriptador4k/vAluBlock.sv
+Z42 FG:/superEncriptador4k/vAluBlock.sv
+!i122 23
+Z43 L0 1 41
 R6
 r1
 !s85 0
 31
 R7
-!s107 G:/superEncriptador4k/tbFetchToDecode.sv|
-!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/tbFetchToDecode.sv|
+Z44 !s107 G:/superEncriptador4k/vAluBlock.sv|
+Z45 !s90 -reportprogress|300|-work|work|G:/superEncriptador4k/vAluBlock.sv|
 !i113 1
 R8
 R9
-ntb@fetch@to@decode
-vvRegisterFile
+nv@alu@block
+vvAluTest
 R1
-R30
+R2
 !i10b 1
-!s100 JCa?MzCESI^JJ0B7?P]zg3
+!s100 LkV^=;BSUA^fog^k0KYZZ2
 R3
-IC74g5bBPa:@XBgIY:=T9k1
+I7_53RGAPQonkG7d6zKVQi2
 R4
 S1
 R0
-Z31 w1635874194
-Z32 8G:/superEncriptador4k/vRegisterFile.sv
-Z33 FG:/superEncriptador4k/vRegisterFile.sv
-!i122 4
-R24
+R36
+R41
+R42
+!i122 23
+L0 43 44
 R6
 r1
 !s85 0
 31
-R15
-Z34 !s107 G:/superEncriptador4k/vRegisterFile.sv|
-Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vRegisterFile.sv|
+R7
+R44
+R45
 !i113 1
+R8
+R9
+nv@alu@test
+vvRegisterFile
+R1
+R14
+!i10b 1
+!s100 3n@8eS]@3gHG@`[BZ=5V63
+R3
+ImB7BX?OHmffgi1`Ko^L6i3
+R4
+S1
+R0
+Z46 w1635921936
+Z47 8G:/superEncriptador4k/vRegisterFile.sv
+Z48 FG:/superEncriptador4k/vRegisterFile.sv
+!i122 4
+L0 1 29
+R6
+r1
+!s85 0
+31
 R18
-R19
+Z49 !s107 G:/superEncriptador4k/vRegisterFile.sv|
+Z50 !s90 -reportprogress|300|-sv|-work|work|+incdir+G:/superEncriptador4k|G:/superEncriptador4k/vRegisterFile.sv|
+!i113 1
+R21
+R22
 R9
 nv@register@file
 vvREgTB
 R1
-R30
+R14
 !i10b 1
-!s100 :]VCZ?3?O6HO=?G?@GH?J3
+!s100 LUh0KTkBJlK1g6PRVOkD=1
 R3
-IT558Ezfi8iM3bZmJP?C8Y1
+IjJ7P6ng1X3@AVf;a18X@R1
 R4
 S1
 R0
-R31
-R32
-R33
+R46
+R47
+R48
 !i122 4
-L0 23 44
+L0 31 44
 R6
 r1
 !s85 0
 31
-R15
-R34
-R35
-!i113 1
 R18
-R19
+R49
+R50
+!i113 1
+R21
+R22
 R9
 nv@r@eg@t@b
+vvSwapperBlock
+R1
+R10
+!i10b 1
+!s100 72kBAJHzW>0kRTc=MJac?2
+R3
+IBTZ7Bo::1UoLTO3AiPU3e3
+R4
+S1
+R0
+R36
+8G:/superEncriptador4k/vSwapperBlock.sv
+FG:/superEncriptador4k/vSwapperBlock.sv
+!i122 14
+R43
+R6
+r1
+!s85 0
+31
+R11
+!s107 G:/superEncriptador4k/vSwapperBlock.sv|
+!s90 -reportprogress|300|-work|work|G:/superEncriptador4k/vSwapperBlock.sv|
+!i113 1
+R8
+R9
+nv@swapper@block
 vxor_gate
 R1
 R2
@@ -542,8 +951,8 @@ R0
 R5
 8G:/superEncriptador4k/components/xor_gate.sv
 FG:/superEncriptador4k/components/xor_gate.sv
-!i122 12
-R10
+!i122 26
+R12
 R6
 r1
 !s85 0

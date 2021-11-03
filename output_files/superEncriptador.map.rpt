@@ -1,5 +1,5 @@
 Analysis & Synthesis report for superEncriptador
-Tue Nov 02 23:20:09 2021
+Wed Nov 03 01:41:29 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -17,21 +17,22 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Registers Packed Into Inferred Megafunctions
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated
- 15. Parameter Settings for User Entity Instance: Top-level Entity: |superDecoder
- 16. Parameter Settings for User Entity Instance: decoder:miniDecoder
- 17. Parameter Settings for User Entity Instance: vRegisterFile:vec_regfile
- 18. Parameter Settings for User Entity Instance: dRegisterFile:int_regfile
- 19. Parameter Settings for User Entity Instance: dPipe:idex_pipe
- 20. Parameter Settings for Inferred Entity Instance: vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0
- 21. altsyncram Parameter Settings by Entity Instance
- 22. Port Connectivity Checks: "dPipe:idex_pipe"
- 23. Port Connectivity Checks: "decoder:miniDecoder"
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 12. Inverted Register Statistics
+ 13. Registers Packed Into Inferred Megafunctions
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_43j1:auto_generated
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |superDecoder
+ 17. Parameter Settings for User Entity Instance: decoder:miniDecoder
+ 18. Parameter Settings for User Entity Instance: vRegisterFile:vec_regfile
+ 19. Parameter Settings for User Entity Instance: dRegisterFile:int_regfile
+ 20. Parameter Settings for User Entity Instance: dPipe:idex_pipe
+ 21. Parameter Settings for Inferred Entity Instance: vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0
+ 22. altsyncram Parameter Settings by Entity Instance
+ 23. Port Connectivity Checks: "dPipe:idex_pipe"
+ 24. Port Connectivity Checks: "decoder:miniDecoder"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -58,16 +59,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 02 23:20:09 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 03 01:41:29 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; superEncriptador                            ;
 ; Top-level Entity Name           ; superDecoder                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 632                                         ;
+; Total registers                 ; 772                                         ;
 ; Total pins                      ; 473                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 256                                         ;
+; Total block memory bits         ; 72                                          ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -186,9 +187,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
 ;     Processor 9            ;   0.0%      ;
-;     Processor 10           ;   0.0%      ;
-;     Processor 11           ;   0.0%      ;
-;     Processors 12-16       ;   0.0%      ;
+;     Processors 10-16       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -212,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_63j1.tdf           ; yes             ; Auto-Generated Megafunction  ; G:/superEncriptador4k/db/altsyncram_63j1.tdf                                 ;         ;
+; db/altsyncram_43j1.tdf           ; yes             ; Auto-Generated Megafunction  ; G:/superEncriptador4k/db/altsyncram_43j1.tdf                                 ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -221,27 +220,27 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 391       ;
+; Estimate of Logic utilization (ALMs needed) ; 461       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 225       ;
+; Combinational ALUT usage for logic          ; 381       ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 166       ;
+;     -- 6 input functions                    ; 212       ;
 ;     -- 5 input functions                    ; 38        ;
 ;     -- 4 input functions                    ; 17        ;
-;     -- <=3 input functions                  ; 4         ;
+;     -- <=3 input functions                  ; 114       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 632       ;
+; Dedicated logic registers                   ; 772       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 473       ;
 ; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 256       ;
+; Total block memory bits                     ; 72        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 587       ;
-; Total fan-out                               ; 4318      ;
-; Average fan-out                             ; 2.31      ;
+; Maximum fan-out                             ; 679       ;
+; Total fan-out                               ; 4760      ;
+; Average fan-out                             ; 2.25      ;
 +---------------------------------------------+-----------+
 
 
@@ -250,13 +249,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |superDecoder                             ; 225 (1)             ; 632 (0)                   ; 256               ; 0          ; 473  ; 0            ; |superDecoder                                                                                  ; superDecoder    ; work         ;
-;    |dPipe:idex_pipe|                      ; 162 (162)           ; 202 (202)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dPipe:idex_pipe                                                                  ; dPipe           ; work         ;
+; |superDecoder                             ; 381 (1)             ; 772 (0)                   ; 72                ; 0          ; 473  ; 0            ; |superDecoder                                                                                  ; superDecoder    ; work         ;
+;    |dPipe:idex_pipe|                      ; 208 (208)           ; 202 (202)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dPipe:idex_pipe                                                                  ; dPipe           ; work         ;
 ;    |dRegisterFile:int_regfile|            ; 15 (15)             ; 256 (256)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dRegisterFile:int_regfile                                                        ; dRegisterFile   ; work         ;
-;    |decoder:miniDecoder|                  ; 46 (46)             ; 110 (110)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|decoder:miniDecoder                                                              ; decoder         ; work         ;
-;    |vRegisterFile:vec_regfile|            ; 1 (1)               ; 64 (64)                   ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile                                                        ; vRegisterFile   ; work         ;
-;       |altsyncram:matrix_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0                                ; altsyncram      ; work         ;
-;          |altsyncram_63j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated ; altsyncram_63j1 ; work         ;
+;    |decoder:miniDecoder|                  ; 46 (46)             ; 112 (112)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|decoder:miniDecoder                                                              ; decoder         ; work         ;
+;    |vRegisterFile:vec_regfile|            ; 111 (111)           ; 202 (202)                 ; 72                ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile                                                        ; vRegisterFile   ; work         ;
+;       |altsyncram:matrix_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 72                ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0                                ; altsyncram      ; work         ;
+;          |altsyncram_43j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 72                ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_43j1:auto_generated ; altsyncram_43j1 ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -266,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 ; Name                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
 +---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4            ; 64           ; 4            ; 64           ; 256  ; None ;
+; vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_43j1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4            ; 18           ; 4            ; 18           ; 72   ; None ;
 +---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
@@ -320,24 +319,121 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 632   ;
+; Total registers                              ; 772   ;
 ; Number of registers using Synchronous Clear  ; 202   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 355   ;
+; Number of registers using Clock Enable       ; 493   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                                  ;
-+-----------------------------------------------+----------------------------------------+------+
-; Register Name                                 ; Megafunction                           ; Type ;
-+-----------------------------------------------+----------------------------------------+------+
-; vRegisterFile:vec_regfile|matrix[1..3][0..63] ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
-; decoder:miniDecoder|vOper1[0,1]               ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
-+-----------------------------------------------+----------------------------------------+------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; vRegisterFile:vec_regfile|matrix[0][0]  ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][0]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][0]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][1]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][1]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][1]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][2]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][3]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][4]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][6]  ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][6]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][6]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][6]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][8]  ; 2       ;
+; vRegisterFile:vec_regfile|matrix[2][8]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][8]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][9]  ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][10] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][10] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][11] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][12] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][14] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][14] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][14] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][14] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][16] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[2][16] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][16] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][17] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][18] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][18] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][19] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][20] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][22] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][22] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][22] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][22] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][24] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[3][25] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][26] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][26] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][27] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][28] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][30] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][30] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][30] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][30] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][33] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[3][33] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][34] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][34] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][35] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][36] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][38] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][38] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][38] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][38] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][40] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][40] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][41] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[2][41] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][42] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][43] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][44] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][46] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][46] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][46] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][46] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][48] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[0][49] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[2][49] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[1][50] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][51] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][52] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][54] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][54] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][54] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][54] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][56] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][56] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][57] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][57] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][57] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][59] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][60] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[0][62] ; 2       ;
+; vRegisterFile:vec_regfile|matrix[1][62] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[2][62] ; 1       ;
+; vRegisterFile:vec_regfile|matrix[3][62] ; 1       ;
+; Total number of inverted registers = 89 ;         ;
++-----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                                ;
++---------------------------------------------------------------------------------------------+----------------------------------------+------+
+; Register Name                                                                               ; Megafunction                           ; Type ;
++---------------------------------------------------------------------------------------------+----------------------------------------+------+
+; vRegisterFile:vec_regfile|matrix[1..3][5,7,13,15,21,23,29,31,32,37,39,45,47,53,55,58,61,63] ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
++---------------------------------------------------------------------------------------------+----------------------------------------+------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -345,6 +441,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 5:1                ; 46 bits   ; 138 LEs       ; 92 LEs               ; 46 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|vecOper1_o[52]     ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|ImmOutAux[0]   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper2Aux[0] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vOper1Aux[0]   ;
@@ -356,7 +453,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------------+
-; Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated ;
+; Source assignments for vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_43j1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                        ;
 +---------------------------------+--------------------+------+-------------------------------------------+
@@ -447,7 +544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                ;
-; WIDTH_A                            ; 64                   ; Untyped                                ;
+; WIDTH_A                            ; 18                   ; Untyped                                ;
 ; WIDTHAD_A                          ; 2                    ; Untyped                                ;
 ; NUMWORDS_A                         ; 4                    ; Untyped                                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
@@ -456,7 +553,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
-; WIDTH_B                            ; 64                   ; Untyped                                ;
+; WIDTH_B                            ; 18                   ; Untyped                                ;
 ; WIDTHAD_B                          ; 2                    ; Untyped                                ;
 ; NUMWORDS_B                         ; 4                    ; Untyped                                ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
@@ -491,7 +588,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                ;
-; CBXI_PARAMETER                     ; altsyncram_63j1      ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_43j1      ; Untyped                                ;
 +------------------------------------+----------------------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -504,10 +601,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Number of entity instances                ; 1                                                 ;
 ; Entity Instance                           ; vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                         ;
-;     -- WIDTH_A                            ; 64                                                ;
+;     -- WIDTH_A                            ; 18                                                ;
 ;     -- NUMWORDS_A                         ; 4                                                 ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
-;     -- WIDTH_B                            ; 64                                                ;
+;     -- WIDTH_B                            ; 18                                                ;
 ;     -- NUMWORDS_B                         ; 4                                                 ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
@@ -540,23 +637,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 632                         ;
-;     ENA               ; 355                         ;
+; arriav_ff             ; 772                         ;
+;     ENA               ; 493                         ;
 ;     SCLR              ; 202                         ;
-;     plain             ; 75                          ;
-; arriav_lcell_comb     ; 226                         ;
-;     normal            ; 226                         ;
+;     plain             ; 77                          ;
+; arriav_lcell_comb     ; 382                         ;
+;     normal            ; 382                         ;
 ;         0 data inputs ; 1                           ;
+;         1 data inputs ; 107                         ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 17                          ;
 ;         5 data inputs ; 38                          ;
-;         6 data inputs ; 166                         ;
+;         6 data inputs ; 212                         ;
 ; boundary_port         ; 473                         ;
-; stratixv_ram_block    ; 64                          ;
+; stratixv_ram_block    ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.93                        ;
+; Average LUT depth     ; 1.05                        ;
 +-----------------------+-----------------------------+
 
 
@@ -575,10 +673,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 02 23:20:02 2021
+    Info: Processing started: Wed Nov 03 01:41:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off superEncriptador -c superEncriptador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
+Info (12021): Found 1 design units, including 1 entities, in source file vswapperblock.sv
+    Info (12023): Found entity 1: vSwapperBlock File: G:/superEncriptador4k/vSwapperBlock.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file superexecute.sv
+    Info (12023): Found entity 1: superExecute File: G:/superEncriptador4k/superExecute.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tbfetchtoexecute.sv
+    Info (12023): Found entity 1: tbFetchToExecute File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tbfetchtodecode.sv
     Info (12023): Found entity 1: tbFetchToDecode File: G:/superEncriptador4k/tbFetchToDecode.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file inttovect.sv
@@ -658,12 +762,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram.v
     Info (12023): Found entity 1: ram File: G:/superEncriptador4k/ram.v Line: 40
 Info (12021): Found 2 design units, including 2 entities, in source file vregisterfile.sv
     Info (12023): Found entity 1: vRegisterFile File: G:/superEncriptador4k/vRegisterFile.sv Line: 1
-    Info (12023): Found entity 2: vREgTB File: G:/superEncriptador4k/vRegisterFile.sv Line: 23
+    Info (12023): Found entity 2: vREgTB File: G:/superEncriptador4k/vRegisterFile.sv Line: 31
 Info (12021): Found 2 design units, including 2 entities, in source file valublock.sv
     Info (12023): Found entity 1: vAluBlock File: G:/superEncriptador4k/vAluBlock.sv Line: 1
     Info (12023): Found entity 2: vAluTest File: G:/superEncriptador4k/vAluBlock.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file superdecoder.sv
     Info (12023): Found entity 1: superDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at superExecute.sv(87): created implicit net for "flagMemRead_p" File: G:/superEncriptador4k/superExecute.sv Line: 87
+Warning (10236): Verilog HDL Implicit Net warning at superExecute.sv(88): created implicit net for "flagMemWrite_p" File: G:/superEncriptador4k/superExecute.sv Line: 88
+Warning (10236): Verilog HDL Implicit Net warning at tbFetchToExecute.sv(135): created implicit net for "enableReg" File: G:/superEncriptador4k/tbFetchToExecute.sv Line: 135
 Warning (10236): Verilog HDL Implicit Net warning at vAluBlock.sv(26): created implicit net for "x" File: G:/superEncriptador4k/vAluBlock.sv Line: 26
 Info (12127): Elaborating entity "superDecoder" for the top level hierarchy
 Warning (10034): Output port "reg_dest_o" at superDecoder.sv(19) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 19
@@ -673,18 +780,18 @@ Warning (10036): Verilog HDL or VHDL warning at decoder.sv(90): object "condGT" 
 Warning (10036): Verilog HDL or VHDL warning at decoder.sv(92): object "condNE" assigned a value but never read File: G:/superEncriptador4k/decoder.sv Line: 92
 Info (12128): Elaborating entity "vRegisterFile" for hierarchy "vRegisterFile:vec_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 95
 Info (12128): Elaborating entity "dRegisterFile" for hierarchy "dRegisterFile:int_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 105
-Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(21): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(22): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(40): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(41): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 41
 Info (12128): Elaborating entity "intToVect" for hierarchy "intToVect:vectorizer_imm" File: G:/superEncriptador4k/superDecoder.sv Line: 109
 Info (12128): Elaborating entity "dPipe" for hierarchy "dPipe:idex_pipe" File: G:/superEncriptador4k/superDecoder.sv Line: 129
 Warning (276027): Inferred dual-clock RAM node "vRegisterFile:vec_regfile|matrix_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "vRegisterFile:vec_regfile|matrix_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 64
+        Info (286033): Parameter WIDTH_A set to 18
         Info (286033): Parameter WIDTHAD_A set to 2
         Info (286033): Parameter NUMWORDS_A set to 4
-        Info (286033): Parameter WIDTH_B set to 64
+        Info (286033): Parameter WIDTH_B set to 18
         Info (286033): Parameter WIDTHAD_B set to 2
         Info (286033): Parameter NUMWORDS_B set to 4
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
@@ -697,10 +804,10 @@ Info (19000): Inferred 1 megafunctions from design logic
 Info (12130): Elaborated megafunction instantiation "vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0"
 Info (12133): Instantiated megafunction "vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
-    Info (12134): Parameter "WIDTH_A" = "64"
+    Info (12134): Parameter "WIDTH_A" = "18"
     Info (12134): Parameter "WIDTHAD_A" = "2"
     Info (12134): Parameter "NUMWORDS_A" = "4"
-    Info (12134): Parameter "WIDTH_B" = "64"
+    Info (12134): Parameter "WIDTH_B" = "18"
     Info (12134): Parameter "WIDTHAD_B" = "2"
     Info (12134): Parameter "NUMWORDS_B" = "4"
     Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
@@ -710,8 +817,8 @@ Info (12133): Instantiated megafunction "vRegisterFile:vec_regfile|altsyncram:ma
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_63j1.tdf
-    Info (12023): Found entity 1: altsyncram_63j1 File: G:/superEncriptador4k/db/altsyncram_63j1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_43j1.tdf
+    Info (12023): Found entity 1: altsyncram_43j1 File: G:/superEncriptador4k/db/altsyncram_43j1.tdf Line: 28
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "reg_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
@@ -818,15 +925,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1329 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1426 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 124 input pins
     Info (21059): Implemented 349 output pins
-    Info (21061): Implemented 792 logic cells
-    Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 4905 megabytes
-    Info: Processing ended: Tue Nov 02 23:20:09 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (21061): Implemented 935 logic cells
+    Info (21064): Implemented 18 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 116 warnings
+    Info: Peak virtual memory: 4908 megabytes
+    Info: Processing ended: Wed Nov 03 01:41:29 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 

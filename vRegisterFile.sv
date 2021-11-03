@@ -12,11 +12,19 @@ module vRegisterFile #(
 	
 	logic [vectors-1:0][(elementSize*vectorSize)-1:0] matrix;
 	
-	always_ff @(negedge clk)
-    if (wEnable) matrix[vresult] <= dataIn;	
-
-  assign oper1 = matrix[voper1];
-  assign oper2 = matrix[voper2];
+	initial begin
+		matrix[2'd0] <= 64'h4343424241414141;
+		matrix[2'd1] <= 64'h4344444444444443;
+		matrix[2'd2] <= 64'h4a4a4b4c4c4d4d4e;
+		matrix[2'd3] <= 64'h5050515252535353;
+	end
+	
+	always_ff @(negedge clk) begin
+		if (wEnable) matrix[vresult] <= dataIn;	
+	end
+	
+	assign oper1 = matrix[voper1];
+	assign oper2 = matrix[voper2];
   
 endmodule
 
