@@ -122,6 +122,8 @@ module decoder#(
 						isOper2IntAux <= 1'b1;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeJ: begin
 						jumpAddressAux <= instruction[13:4];
@@ -140,6 +142,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeVXOR: begin
 						condAux <= instruction[15:14];
@@ -161,6 +165,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b1;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeVXORI: begin
 						condAux <= instruction[15:14];
@@ -183,6 +189,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b1;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeVLD: begin
 						condAux <= instruction[15:14];
@@ -229,6 +237,7 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						
 					end 
 				opCodeVSR: begin
 						condAux <= instruction[15:14];
@@ -250,6 +259,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b1;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end 
 				opCodeVSL: begin
 						condAux <= instruction[15:14];
@@ -271,6 +282,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b1;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end 
 				opCodeVSWAP: begin
 						condAux <= instruction[15:14];
@@ -292,6 +305,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b1;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeINTADD: begin
 						condAux <= condAL;
@@ -313,6 +328,8 @@ module decoder#(
 						isOper2IntAux <= 1'b1;
 						writeResultIntAux <= 1'b1;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end 
 				opCodeINTSUB: begin
 						condAux <= condAL;
@@ -334,6 +351,8 @@ module decoder#(
 						isOper2IntAux <= 1'b1;
 						writeResultIntAux <= 1'b1;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end 
 				opCodeINTADDI: begin
 						condAux <= condAL;
@@ -345,7 +364,6 @@ module decoder#(
 						enableSwapAux <= 1'd0;
 						flagEndAux <= 1'b0;
 						flagNopAux <= 1'b0;
-						flagImmAux <= 1'b0;
 						intOper1Aux <= instruction[15:12];
 						intRegDestAux <= instruction[11:8];
 						flagImmAux <= 1'b1;
@@ -357,6 +375,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b1;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeINTSUBI: begin
 						condAux <= condAL;
@@ -368,7 +388,6 @@ module decoder#(
 						enableSwapAux <= 1'd0;
 						flagEndAux <= 1'b0;
 						flagNopAux <= 1'b0;
-						flagImmAux <= 1'b0;
 						intOper1Aux <= instruction[15:12];
 						intRegDestAux <= instruction[11:8];
 						intOper2Aux <= instruction[7:4];
@@ -381,6 +400,8 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b1;
 						writeResultVAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeNOP: begin
 						enableAluIntAux <= 1'b0;
@@ -394,6 +415,9 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						flagImmAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 					end
 				opCodeEND: begin
 						enableAluIntAux <= 1'b0;
@@ -405,6 +429,7 @@ module decoder#(
 						flagNopAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						flagImmAux <= 1'b0;
 					end
 				default : begin
 						enableAluIntAux <= 1'b0;
@@ -418,6 +443,9 @@ module decoder#(
 						isOper2IntAux <= 1'b0;
 						writeResultIntAux <= 1'b0;
 						writeResultVAux <= 1'b0;
+						flagImmAux <= 1'b0;
+						flagMemReadAux <= 1'b0;
+						flagMemWriteAux <= 1'b0;
 				end
 			endcase
 	end

@@ -118,3 +118,69 @@ module tbFetchToDecode #(
         #5 clk <= 0;
     end
 endmodule
+
+/*
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fPipe.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fiPipe.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fStage.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToDecode.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/imem.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/or_gate.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/xor_gate.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/and_gate.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_half_adder.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_full_adder.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder.sv
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/flip_flop.sv
+
+vsim work.tbFetchToDecode
+
+add wave -position end  sim:/tbFetchToDecode/next_pc_p1
+add wave -position end  sim:/tbFetchToDecode/int_we
+add wave -position end  sim:/tbFetchToDecode/int_a_i
+add wave -position end  sim:/tbFetchToDecode/int_wd_i
+add wave -position end  sim:/tbFetchToDecode/int_rd_o
+add wave -position end  sim:/tbFetchToDecode/next_pc_i
+add wave -position end  sim:/tbFetchToDecode/instr_p
+add wave -position end  sim:/tbFetchToDecode/instr_o
+add wave -position end  sim:/tbFetchToDecode/reg_dest_o
+add wave -position end  sim:/tbFetchToDecode/vec_dest_o
+add wave -position end  sim:/tbFetchToDecode/intOper1
+add wave -position end  sim:/tbFetchToDecode/intOper2
+add wave -position end  sim:/tbFetchToDecode/vOper1
+add wave -position end  sim:/tbFetchToDecode/vOper2
+add wave -position end  sim:/tbFetchToDecode/vOperImm
+add wave -position end  sim:/tbFetchToDecode/vOperCop
+add wave -position end  sim:/tbFetchToDecode/intRegDest
+add wave -position end  sim:/tbFetchToDecode/vecRegDest
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper1
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper2
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper1
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper2
+add wave -position end  sim:/tbFetchToDecode/cond
+add wave -position end  sim:/tbFetchToDecode/enableAluInt
+add wave -position end  sim:/tbFetchToDecode/enableAluV
+add wave -position end  sim:/tbFetchToDecode/enableMem
+add wave -position end  sim:/tbFetchToDecode/enableJump
+add wave -position end  sim:/tbFetchToDecode/enableSwap
+add wave -position end  sim:/tbFetchToDecode/flagEnd
+add wave -position end  sim:/tbFetchToDecode/flagNop
+add wave -position end  sim:/tbFetchToDecode/flagImm
+add wave -position end  sim:/tbFetchToDecode/ImmOut
+add wave -position end  sim:/tbFetchToDecode/aluOpcode
+add wave -position end  sim:/tbFetchToDecode/jumpAddress
+add wave -position end  sim:/tbFetchToDecode/flagMemRead
+add wave -position end  sim:/tbFetchToDecode/flagMemWrite
+add wave -position end  sim:/tbFetchToDecode/swapBitOrigin
+add wave -position end  sim:/tbFetchToDecode/swapBitDest
+add wave -position end  sim:/tbFetchToDecode/isOper1V
+add wave -position end  sim:/tbFetchToDecode/isOper2V
+add wave -position end  sim:/tbFetchToDecode/isOper1Int
+add wave -position end  sim:/tbFetchToDecode/isOper2Int
+add wave -position end  sim:/tbFetchToDecode/writeResultInt
+add wave -position end  sim:/tbFetchToDecode/writeResultV
+add wave -position end  sim:/tbFetchToDecode/alu_flags_o
+add wave -position end  sim:/tbFetchToDecode/decoder/instruction
+add wave -position end  sim:/tbFetchToDecode/clk
+add wave -position end  sim:/tbFetchToDecode/rst
+*/

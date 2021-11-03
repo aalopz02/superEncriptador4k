@@ -10,55 +10,290 @@
 # Copying C:/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dRegisterFile.sv}
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/intToVect.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:46:49 on Nov 02,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dRegisterFile.sv 
-# -- Compiling module dRegisterFile
+# Start time: 23:20:41 on Nov 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/intToVect.sv 
+# -- Compiling module intToVect
+# -- Compiling module tb
 # 
 # Top level modules:
-# 	dRegisterFile
-# End time: 01:46:49 on Nov 02,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dPipe.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:46:49 on Nov 02,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dPipe.sv 
-# -- Compiling module dPipe
-# 
-# Top level modules:
-# 	dPipe
-# End time: 01:46:49 on Nov 02,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vRegisterFile.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:46:49 on Nov 02,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vRegisterFile.sv 
-# -- Compiling module vRegisterFile
-# -- Compiling module vREgTB
-# 
-# Top level modules:
-# 	vREgTB
-# End time: 01:46:49 on Nov 02,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/superDecoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:46:49 on Nov 02,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/superDecoder.sv 
-# -- Compiling module superDecoder
-# 
-# Top level modules:
-# 	superDecoder
-# End time: 01:46:49 on Nov 02,2021, Elapsed time: 0:00:00
+# 	tb
+# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:46:49 on Nov 02,2021
+# Start time: 23:20:41 on Nov 02,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/decoder.sv 
 # -- Compiling module decoder
 # -- Compiling module decoderTB
 # 
 # Top level modules:
 # 	decoderTB
-# End time: 01:46:49 on Nov 02,2021, Elapsed time: 0:00:00
+# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dRegisterFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:41 on Nov 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dRegisterFile.sv 
+# -- Compiling module dRegisterFile
+# 
+# Top level modules:
+# 	dRegisterFile
+# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/dPipe.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:41 on Nov 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/dPipe.sv 
+# -- Compiling module dPipe
+# 
+# Top level modules:
+# 	dPipe
+# End time: 23:20:41 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/vRegisterFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:41 on Nov 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/vRegisterFile.sv 
+# -- Compiling module vRegisterFile
+# -- Compiling module vREgTB
+# 
+# Top level modules:
+# 	vREgTB
+# End time: 23:20:42 on Nov 02,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+G:/superEncriptador4k {G:/superEncriptador4k/superDecoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:42 on Nov 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+G:/superEncriptador4k" G:/superEncriptador4k/superDecoder.sv 
+# -- Compiling module superDecoder
+# 
+# Top level modules:
+# 	superDecoder
+# End time: 23:20:42 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fPipe.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/fPipe.sv 
+# -- Compiling module fPipe
+# 
+# Top level modules:
+# 	fPipe
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fiPipe.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/fiPipe.sv 
+# -- Compiling module fiPipe
+# 
+# Top level modules:
+# 	fiPipe
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/fStage.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/fStage.sv 
+# -- Compiling module fStage
+# 
+# Top level modules:
+# 	fStage
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToDecode.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/tbFetchToDecode.sv 
+# -- Compiling module tbFetchToDecode
+# 
+# Top level modules:
+# 	tbFetchToDecode
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/imem.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/or_gate.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/or_gate.sv 
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/xor_gate.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/xor_gate.sv 
+# -- Compiling module xor_gate
+# 
+# Top level modules:
+# 	xor_gate
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/and_gate.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/and_gate.sv 
+# -- Compiling module and_gate
+# 
+# Top level modules:
+# 	and_gate
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_half_adder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_half_adder.sv 
+# -- Compiling module one_bit_half_adder
+# 
+# Top level modules:
+# 	one_bit_half_adder
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_full_adder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/one_bit_full_adder.sv 
+# -- Compiling module one_bit_full_adder
+# 
+# Top level modules:
+# 	one_bit_full_adder
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work G:/superEncriptador4k/components/flip_flop.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:20:51 on Nov 02,2021
+# vlog -reportprogress 300 -work work G:/superEncriptador4k/components/flip_flop.sv 
+# -- Compiling module flip_flop
+# 
+# Top level modules:
+# 	flip_flop
+# End time: 23:20:51 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vsim work.tbFetchToDecode
+# vsim work.tbFetchToDecode 
+# Start time: 23:20:51 on Nov 02,2021
+# Loading sv_std.std
+# Loading work.tbFetchToDecode
+# Loading work.fStage
+# Loading work.flip_flop
+# Loading work.adder
+# Loading work.imem
+# Loading work.fPipe
+# Loading work.superDecoder
+# Loading work.decoder
+# Loading work.vRegisterFile
+# Loading work.dRegisterFile
+# Loading work.intToVect
+# Loading work.dPipe
+# Loading work.one_bit_full_adder
+# Loading work.one_bit_half_adder
+# Loading work.xor_gate
+# Loading work.and_gate
+# Loading work.or_gate
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pc_adder'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (32) for port 'bus_b_i'. The port definition is at: G:/superEncriptador4k/components/adder.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'carry_i'. The port definition is at: G:/superEncriptador4k/components/adder.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/dut/pc_adder File: G:/superEncriptador4k/fStage.sv Line: 22
+# ** Warning: (vsim-3722) G:/superEncriptador4k/fStage.sv(22): [TFMPC] - Missing connection for port 'carry_o'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'decoder'.  Expected 44, found 35.
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder File: G:/superEncriptador4k/tbFetchToDecode.sv Line: 71
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_we_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_we_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_dest_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vec_wd_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'int_wd_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'alu_flags_i'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'vecRegDest'.
+# ** Warning: (vsim-3722) G:/superEncriptador4k/tbFetchToDecode.sv(71): [TFMPC] - Missing connection for port 'alu_flags_o'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (4) for port 'intOper1'. The port definition is at: G:/superEncriptador4k/decoder.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (4) for port 'intOper2'. The port definition is at: G:/superEncriptador4k/decoder.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/miniDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 58
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'alu_flags_o'. The port definition is at: G:/superEncriptador4k/dPipe.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tbFetchToDecode/decoder/idex_pipe File: G:/superEncriptador4k/superDecoder.sv Line: 114
+
+add wave -position end  sim:/tbFetchToDecode/next_pc_p1
+add wave -position end  sim:/tbFetchToDecode/int_we
+add wave -position end  sim:/tbFetchToDecode/int_a_i
+add wave -position end  sim:/tbFetchToDecode/int_wd_i
+add wave -position end  sim:/tbFetchToDecode/int_rd_o
+add wave -position end  sim:/tbFetchToDecode/next_pc_i
+add wave -position end  sim:/tbFetchToDecode/instr_p
+add wave -position end  sim:/tbFetchToDecode/instr_o
+add wave -position end  sim:/tbFetchToDecode/reg_dest_o
+add wave -position end  sim:/tbFetchToDecode/vec_dest_o
+add wave -position end  sim:/tbFetchToDecode/intOper1
+add wave -position end  sim:/tbFetchToDecode/intOper2
+add wave -position end  sim:/tbFetchToDecode/vOper1
+add wave -position end  sim:/tbFetchToDecode/vOper2
+add wave -position end  sim:/tbFetchToDecode/vOperImm
+add wave -position end  sim:/tbFetchToDecode/vOperCop
+add wave -position end  sim:/tbFetchToDecode/intRegDest
+add wave -position end  sim:/tbFetchToDecode/vecRegDest
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper1
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/intOper2
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper1
+add wave -position end  sim:/tbFetchToDecode/decoder/miniDecoder/vOper2
+add wave -position end  sim:/tbFetchToDecode/cond
+add wave -position end  sim:/tbFetchToDecode/enableAluInt
+add wave -position end  sim:/tbFetchToDecode/enableAluV
+add wave -position end  sim:/tbFetchToDecode/enableMem
+add wave -position end  sim:/tbFetchToDecode/enableJump
+add wave -position end  sim:/tbFetchToDecode/enableSwap
+add wave -position end  sim:/tbFetchToDecode/flagEnd
+add wave -position end  sim:/tbFetchToDecode/flagNop
+add wave -position end  sim:/tbFetchToDecode/flagImm
+add wave -position end  sim:/tbFetchToDecode/ImmOut
+add wave -position end  sim:/tbFetchToDecode/aluOpcode
+add wave -position end  sim:/tbFetchToDecode/jumpAddress
+add wave -position end  sim:/tbFetchToDecode/flagMemRead
+add wave -position end  sim:/tbFetchToDecode/flagMemWrite
+add wave -position end  sim:/tbFetchToDecode/swapBitOrigin
+add wave -position end  sim:/tbFetchToDecode/swapBitDest
+add wave -position end  sim:/tbFetchToDecode/isOper1V
+add wave -position end  sim:/tbFetchToDecode/isOper2V
+add wave -position end  sim:/tbFetchToDecode/isOper1Int
+add wave -position end  sim:/tbFetchToDecode/isOper2Int
+add wave -position end  sim:/tbFetchToDecode/writeResultInt
+add wave -position end  sim:/tbFetchToDecode/writeResultV
+add wave -position end  sim:/tbFetchToDecode/alu_flags_o
+add wave -position end  sim:/tbFetchToDecode/decoder/instruction
+add wave -position end  sim:/tbFetchToDecode/clk
+add wave -position end  sim:/tbFetchToDecode/rst
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+# End time: 23:24:54 on Nov 02,2021, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 17

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for superEncriptador
-Tue Nov 02 01:50:33 2021
+Tue Nov 02 23:20:09 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,14 +58,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 02 01:50:33 2021       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 02 23:20:09 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; superEncriptador                            ;
 ; Top-level Entity Name           ; superDecoder                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 462                                         ;
-; Total pins                      ; 339                                         ;
+; Total registers                 ; 632                                         ;
+; Total pins                      ; 473                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 256                                         ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -185,7 +185,10 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processor 9            ;   0.0%      ;
+;     Processor 10           ;   0.0%      ;
+;     Processor 11           ;   0.0%      ;
+;     Processors 12-16       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -194,6 +197,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; intToVect.sv                     ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/intToVect.sv                                           ;         ;
 ; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/decoder.sv                                             ;         ;
 ; dRegisterFile.sv                 ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/dRegisterFile.sv                                       ;         ;
 ; dPipe.sv                         ; yes             ; User SystemVerilog HDL File  ; G:/superEncriptador4k/dPipe.sv                                               ;         ;
@@ -217,27 +221,27 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 306       ;
+; Estimate of Logic utilization (ALMs needed) ; 391       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 224       ;
+; Combinational ALUT usage for logic          ; 225       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 166       ;
-;     -- 5 input functions                    ; 39        ;
-;     -- 4 input functions                    ; 16        ;
-;     -- <=3 input functions                  ; 3         ;
+;     -- 5 input functions                    ; 38        ;
+;     -- 4 input functions                    ; 17        ;
+;     -- <=3 input functions                  ; 4         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 462       ;
+; Dedicated logic registers                   ; 632       ;
 ;                                             ;           ;
-; I/O pins                                    ; 339       ;
+; I/O pins                                    ; 473       ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 256       ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 417       ;
-; Total fan-out                               ; 3566      ;
-; Average fan-out                             ; 2.50      ;
+; Maximum fan-out                             ; 587       ;
+; Total fan-out                               ; 4318      ;
+; Average fan-out                             ; 2.31      ;
 +---------------------------------------------+-----------+
 
 
@@ -246,11 +250,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |superDecoder                             ; 224 (1)             ; 462 (0)                   ; 256               ; 0          ; 339  ; 0            ; |superDecoder                                                                                  ; superDecoder    ; work         ;
-;    |dPipe:idex_pipe|                      ; 162 (162)           ; 96 (96)                   ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dPipe:idex_pipe                                                                  ; dPipe           ; work         ;
+; |superDecoder                             ; 225 (1)             ; 632 (0)                   ; 256               ; 0          ; 473  ; 0            ; |superDecoder                                                                                  ; superDecoder    ; work         ;
+;    |dPipe:idex_pipe|                      ; 162 (162)           ; 202 (202)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dPipe:idex_pipe                                                                  ; dPipe           ; work         ;
 ;    |dRegisterFile:int_regfile|            ; 15 (15)             ; 256 (256)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|dRegisterFile:int_regfile                                                        ; dRegisterFile   ; work         ;
 ;    |decoder:miniDecoder|                  ; 46 (46)             ; 110 (110)                 ; 0                 ; 0          ; 0    ; 0            ; |superDecoder|decoder:miniDecoder                                                              ; decoder         ; work         ;
-;    |vRegisterFile:vec_regfile|            ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile                                                        ; vRegisterFile   ; work         ;
+;    |vRegisterFile:vec_regfile|            ; 1 (1)               ; 64 (64)                   ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile                                                        ; vRegisterFile   ; work         ;
 ;       |altsyncram:matrix_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0                                ; altsyncram      ; work         ;
 ;          |altsyncram_63j1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |superDecoder|vRegisterFile:vec_regfile|altsyncram:matrix_rtl_0|altsyncram_63j1:auto_generated ; altsyncram_63j1 ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------+--------------+
@@ -266,37 +270,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; decoder:miniDecoder|ImmOutAux[5..7]    ; Stuck at GND due to stuck port data_in ;
-; decoder:miniDecoder|isOper2VAux        ; Stuck at GND due to stuck port data_in ;
-; decoder:miniDecoder|flagNopAux         ; Stuck at GND due to stuck port data_in ;
-; decoder:miniDecoder|isOper2V           ; Stuck at GND due to stuck port data_in ;
-; decoder:miniDecoder|flagNop            ; Stuck at GND due to stuck port data_in ;
-; decoder:miniDecoder|ImmOut[5..7]       ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 10 ;                                        ;
-+----------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++-----------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                     ; Reason for Removal                     ;
++-----------------------------------------------------------------------------------+----------------------------------------+
+; dPipe:idex_pipe|vOperImm_o[0..63]                                                 ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|ImmOutAux[5..7]                                               ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|isOper2VAux                                                   ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|flagNopAux                                                    ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|vOper2[0,1]                                                   ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|isOper2V                                                      ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|flagNop                                                       ; Stuck at GND due to stuck port data_in ;
+; decoder:miniDecoder|ImmOut[5..7]                                                  ; Stuck at GND due to stuck port data_in ;
+; dPipe:idex_pipe|vOperCop_o[5..7,13..15,21..23,29..31,37..39,45..47,53..55,61..63] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 100                                           ;                                        ;
++-----------------------------------------------------------------------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                           ;
-+----------------------------------+---------------------------+----------------------------------------+
-; Register name                    ; Reason for Removal        ; Registers Removed due to This Register ;
-+----------------------------------+---------------------------+----------------------------------------+
-; decoder:miniDecoder|ImmOutAux[5] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[5]          ;
-;                                  ; due to stuck port data_in ;                                        ;
-; decoder:miniDecoder|ImmOutAux[6] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[6]          ;
-;                                  ; due to stuck port data_in ;                                        ;
-; decoder:miniDecoder|ImmOutAux[7] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[7]          ;
-;                                  ; due to stuck port data_in ;                                        ;
-; decoder:miniDecoder|isOper2VAux  ; Stuck at GND              ; decoder:miniDecoder|isOper2V           ;
-;                                  ; due to stuck port data_in ;                                        ;
-; decoder:miniDecoder|flagNopAux   ; Stuck at GND              ; decoder:miniDecoder|flagNop            ;
-;                                  ; due to stuck port data_in ;                                        ;
-+----------------------------------+---------------------------+----------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++----------------------------------+---------------------------+-----------------------------------------------------------------+
+; Register name                    ; Reason for Removal        ; Registers Removed due to This Register                          ;
++----------------------------------+---------------------------+-----------------------------------------------------------------+
+; decoder:miniDecoder|ImmOutAux[5] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[5], dPipe:idex_pipe|vOperCop_o[5],   ;
+;                                  ; due to stuck port data_in ; dPipe:idex_pipe|vOperCop_o[13], dPipe:idex_pipe|vOperCop_o[21], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[29], dPipe:idex_pipe|vOperCop_o[37], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[45], dPipe:idex_pipe|vOperCop_o[53], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[61]                                  ;
+; decoder:miniDecoder|ImmOutAux[6] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[6], dPipe:idex_pipe|vOperCop_o[6],   ;
+;                                  ; due to stuck port data_in ; dPipe:idex_pipe|vOperCop_o[14], dPipe:idex_pipe|vOperCop_o[22], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[30], dPipe:idex_pipe|vOperCop_o[38], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[46], dPipe:idex_pipe|vOperCop_o[54], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[62]                                  ;
+; decoder:miniDecoder|ImmOutAux[7] ; Stuck at GND              ; decoder:miniDecoder|ImmOut[7], dPipe:idex_pipe|vOperCop_o[7],   ;
+;                                  ; due to stuck port data_in ; dPipe:idex_pipe|vOperCop_o[15], dPipe:idex_pipe|vOperCop_o[23], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[31], dPipe:idex_pipe|vOperCop_o[39], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[47], dPipe:idex_pipe|vOperCop_o[55], ;
+;                                  ;                           ; dPipe:idex_pipe|vOperCop_o[63]                                  ;
+; decoder:miniDecoder|isOper2VAux  ; Stuck at GND              ; decoder:miniDecoder|isOper2V                                    ;
+;                                  ; due to stuck port data_in ;                                                                 ;
+; decoder:miniDecoder|flagNopAux   ; Stuck at GND              ; decoder:miniDecoder|flagNop                                     ;
+;                                  ; due to stuck port data_in ;                                                                 ;
++----------------------------------+---------------------------+-----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -304,12 +320,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 462   ;
-; Number of registers using Synchronous Clear  ; 96    ;
+; Total registers                              ; 632   ;
+; Number of registers using Synchronous Clear  ; 202   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 291   ;
+; Number of registers using Clock Enable       ; 355   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -319,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------+----------------------------------------+------+
 ; Register Name                                 ; Megafunction                           ; Type ;
 +-----------------------------------------------+----------------------------------------+------+
-; vRegisterFile:vec_regfile|matrix[0..3][0..63] ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
+; vRegisterFile:vec_regfile|matrix[1..3][0..63] ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
 ; decoder:miniDecoder|vOper1[0,1]               ; vRegisterFile:vec_regfile|matrix_rtl_0 ; RAM  ;
 +-----------------------------------------------+----------------------------------------+------+
 
@@ -332,10 +348,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|ImmOutAux[0]   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper2Aux[0] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vOper1Aux[0]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vRegDestAux[1] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper1Aux[2] ;
-; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper1_o[15]     ;
-; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper2_o[12]     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|vRegDestAux[0] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |superDecoder|decoder:miniDecoder|intOper1Aux[1] ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper1_o[13]     ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |superDecoder|dPipe:idex_pipe|intOper2_o[10]     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
@@ -500,14 +516,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dPipe:idex_pipe"                                                                                                                      ;
-+------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                                                                         ;
-+------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
-; vecOper2_o ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (1 bits) it drives; bit(s) "vecOper2_o[63..1]" have no fanouts ;
-; vecOper2_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                             ;
-+------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dPipe:idex_pipe"                                                                                                                                                             ;
++-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                               ;
++-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_flags_o ; Output ; Warning  ; Output or bidir port (2 bits) is smaller than the port expression (4 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -525,23 +540,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 462                         ;
-;     ENA               ; 291                         ;
-;     SCLR              ; 96                          ;
+; arriav_ff             ; 632                         ;
+;     ENA               ; 355                         ;
+;     SCLR              ; 202                         ;
 ;     plain             ; 75                          ;
-; arriav_lcell_comb     ; 225                         ;
-;     normal            ; 225                         ;
+; arriav_lcell_comb     ; 226                         ;
+;     normal            ; 226                         ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 16                          ;
-;         5 data inputs ; 39                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 17                          ;
+;         5 data inputs ; 38                          ;
 ;         6 data inputs ; 166                         ;
-; boundary_port         ; 339                         ;
+; boundary_port         ; 473                         ;
 ; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.11                        ;
+; Average LUT depth     ; 0.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -560,21 +575,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 02 01:50:27 2021
+    Info: Processing started: Tue Nov 02 23:20:02 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off superEncriptador -c superEncriptador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
+Info (12021): Found 1 design units, including 1 entities, in source file tbfetchtodecode.sv
+    Info (12023): Found entity 1: tbFetchToDecode File: G:/superEncriptador4k/tbFetchToDecode.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file inttovect.sv
+    Info (12023): Found entity 1: intToVect File: G:/superEncriptador4k/intToVect.sv Line: 1
+    Info (12023): Found entity 2: tb File: G:/superEncriptador4k/intToVect.sv Line: 17
 Info (12021): Found 2 design units, including 2 entities, in source file decoder.sv
     Info (12023): Found entity 1: decoder File: G:/superEncriptador4k/decoder.sv Line: 1
-    Info (12023): Found entity 2: decoderTB File: G:/superEncriptador4k/decoder.sv Line: 454
+    Info (12023): Found entity 2: decoderTB File: G:/superEncriptador4k/decoder.sv Line: 482
 Info (12021): Found 1 design units, including 1 entities, in source file tbexecute.sv
     Info (12023): Found entity 1: tbExecute File: G:/superEncriptador4k/tbExecute.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file estage.sv
     Info (12023): Found entity 1: eStage File: G:/superEncriptador4k/eStage.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file epipe.sv
     Info (12023): Found entity 1: ePipe File: G:/superEncriptador4k/ePipe.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file dstage.sv
-    Info (12023): Found entity 1: dStage File: G:/superEncriptador4k/dStage.sv Line: 1
+Warning (12019): Can't analyze file -- file dStage.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file dregisterfile.sv
     Info (12023): Found entity 1: dRegisterFile File: G:/superEncriptador4k/dRegisterFile.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dpipe.sv
@@ -645,22 +664,19 @@ Info (12021): Found 2 design units, including 2 entities, in source file valublo
     Info (12023): Found entity 2: vAluTest File: G:/superEncriptador4k/vAluBlock.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file superdecoder.sv
     Info (12023): Found entity 1: superDecoder File: G:/superEncriptador4k/superDecoder.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at dStage.sv(24): created implicit net for "ra1" File: G:/superEncriptador4k/dStage.sv Line: 24
-Warning (10236): Verilog HDL Implicit Net warning at dStage.sv(25): created implicit net for "ra2" File: G:/superEncriptador4k/dStage.sv Line: 25
 Warning (10236): Verilog HDL Implicit Net warning at vAluBlock.sv(26): created implicit net for "x" File: G:/superEncriptador4k/vAluBlock.sv Line: 26
-Warning (10236): Verilog HDL Implicit Net warning at superDecoder.sv(115): created implicit net for "vOper2" File: G:/superEncriptador4k/superDecoder.sv Line: 115
 Info (12127): Elaborating entity "superDecoder" for the top level hierarchy
-Warning (10034): Output port "reg_dest_o" at superDecoder.sv(18) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 18
-Warning (10034): Output port "vec_dest_o" at superDecoder.sv(19) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 19
-Warning (10034): Output port "vOperImm" at superDecoder.sv(23) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 23
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:miniDecoder" File: G:/superEncriptador4k/superDecoder.sv Line: 83
+Warning (10034): Output port "reg_dest_o" at superDecoder.sv(19) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 19
+Warning (10034): Output port "vec_dest_o" at superDecoder.sv(20) has no driver File: G:/superEncriptador4k/superDecoder.sv Line: 20
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:miniDecoder" File: G:/superEncriptador4k/superDecoder.sv Line: 86
 Warning (10036): Verilog HDL or VHDL warning at decoder.sv(90): object "condGT" assigned a value but never read File: G:/superEncriptador4k/decoder.sv Line: 90
 Warning (10036): Verilog HDL or VHDL warning at decoder.sv(92): object "condNE" assigned a value but never read File: G:/superEncriptador4k/decoder.sv Line: 92
-Info (12128): Elaborating entity "vRegisterFile" for hierarchy "vRegisterFile:vec_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 92
-Info (12128): Elaborating entity "dRegisterFile" for hierarchy "dRegisterFile:int_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 102
+Info (12128): Elaborating entity "vRegisterFile" for hierarchy "vRegisterFile:vec_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 95
+Info (12128): Elaborating entity "dRegisterFile" for hierarchy "dRegisterFile:int_regfile" File: G:/superEncriptador4k/superDecoder.sv Line: 105
 Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(21): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 21
 Warning (10230): Verilog HDL assignment warning at dRegisterFile.sv(22): truncated value with size 32 to match size of target (16) File: G:/superEncriptador4k/dRegisterFile.sv Line: 22
-Info (12128): Elaborating entity "dPipe" for hierarchy "dPipe:idex_pipe" File: G:/superEncriptador4k/superDecoder.sv Line: 116
+Info (12128): Elaborating entity "intToVect" for hierarchy "intToVect:vectorizer_imm" File: G:/superEncriptador4k/superDecoder.sv Line: 109
+Info (12128): Elaborating entity "dPipe" for hierarchy "dPipe:idex_pipe" File: G:/superEncriptador4k/superDecoder.sv Line: 129
 Warning (276027): Inferred dual-clock RAM node "vRegisterFile:vec_regfile|matrix_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "vRegisterFile:vec_regfile|matrix_rtl_0" 
@@ -698,93 +714,119 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_63j1 File: G:/superEncriptador4k/db/altsyncram_63j1.tdf Line: 28
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "reg_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
-    Warning (13410): Pin "reg_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
-    Warning (13410): Pin "reg_dest_o[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
-    Warning (13410): Pin "reg_dest_o[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 18
-    Warning (13410): Pin "vec_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
-    Warning (13410): Pin "vec_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
-    Warning (13410): Pin "vOperImm[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[4]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[8]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[9]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[10]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[11]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[12]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[13]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[14]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[15]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[16]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[17]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[18]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[19]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[20]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[21]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[22]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[23]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[24]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[25]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[26]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[27]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[28]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[29]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[30]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[31]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[32]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[33]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[34]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[35]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[36]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[37]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[38]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[39]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[40]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[41]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[42]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[43]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[44]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[45]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[46]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[47]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[48]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[49]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[50]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[51]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[52]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[53]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[54]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[55]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[56]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[57]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[58]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[59]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[60]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[61]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[62]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "vOperImm[63]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 23
-    Warning (13410): Pin "flagNop" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 33
-    Warning (13410): Pin "ImmOut[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
-    Warning (13410): Pin "ImmOut[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
-    Warning (13410): Pin "ImmOut[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
-    Warning (13410): Pin "isOper2V" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 43
+    Warning (13410): Pin "reg_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "reg_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "reg_dest_o[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "reg_dest_o[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 19
+    Warning (13410): Pin "vec_dest_o[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 20
+    Warning (13410): Pin "vec_dest_o[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 20
+    Warning (13410): Pin "vOperImm[0]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[1]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[4]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[8]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[9]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[10]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[11]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[12]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[13]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[14]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[15]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[16]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[17]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[18]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[19]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[20]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[21]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[22]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[23]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[24]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[25]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[26]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[27]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[28]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[29]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[30]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[31]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[32]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[33]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[34]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[35]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[36]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[37]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[38]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[39]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[40]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[41]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[42]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[43]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[44]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[45]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[46]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[47]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[48]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[49]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[50]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[51]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[52]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[53]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[54]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[55]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[56]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[57]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[58]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[59]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[60]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[61]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[62]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperImm[63]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[13]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[14]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[15]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[21]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[22]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[23]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[29]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[30]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[31]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[37]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[38]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[39]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[45]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[46]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[47]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[53]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[54]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[55]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[61]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[62]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "vOperCop[63]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 25
+    Warning (13410): Pin "flagNop" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 35
+    Warning (13410): Pin "ImmOut[5]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 37
+    Warning (13410): Pin "ImmOut[6]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 37
+    Warning (13410): Pin "ImmOut[7]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 37
+    Warning (13410): Pin "isOper2V" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 45
+    Warning (13410): Pin "alu_flags_o[2]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 51
+    Warning (13410): Pin "alu_flags_o[3]" is stuck at GND File: G:/superEncriptador4k/superDecoder.sv Line: 51
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1024 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 122 input pins
-    Info (21059): Implemented 217 output pins
-    Info (21061): Implemented 621 logic cells
+Info (21057): Implemented 1329 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 124 input pins
+    Info (21059): Implemented 349 output pins
+    Info (21061): Implemented 792 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 4906 megabytes
-    Info: Processing ended: Tue Nov 02 01:50:33 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
+    Info: Peak virtual memory: 4905 megabytes
+    Info: Processing ended: Tue Nov 02 23:20:09 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:17
 
 
