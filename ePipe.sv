@@ -10,12 +10,15 @@ module ePipe #(
 	 input logic                 clk_i, rst_i,
      input logic             [REGI_SIZE-1:0] ialu_res_i,
      input logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] memo_res_i,
      input logic                             enableMem_i,
      input logic                             enableReg_i,
 	 input logic                             enableJump_i,
      input logic                             flagMemRead_i,
 	 input logic                             flagMemWrite_i,
      input logic                       [1:0] alu_flags_i,
+     input logic [REGI_BITS-1:0] intRegDest_i,
+	 input logic [VECT_BITS-1:0] vecRegDest_i,
     input logic isOper1V_i,
 	input logic isOper2V_i,
 	input logic isOper1Int_i,
@@ -24,6 +27,7 @@ module ePipe #(
 	input logic writeResultV_i,
     output logic             [REGI_SIZE-1:0] ialu_res_o,
     output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] memo_res_o,
     output logic                             enableMem_o,
     output logic                             enableReg_o,
 	output logic                             enableJump_o,
@@ -34,12 +38,15 @@ module ePipe #(
 	output logic isOper1Int_o,
 	output logic isOper2Int_o,
 	output logic writeResultInt_o,
-	output logic writeResultV_o
+	output logic writeResultV_o,
+    output logic [REGI_BITS-1:0] intRegDest_o,
+	output logic [VECT_BITS-1:0] vecRegDest_o
 );
 	always_ff @(posedge clk_i) begin
 		if (rst_i) begin
             ialu_res_o <= 0;
             valu_res_o <= 0;
+            memo_res_o <= 0;
             enableMem_o <= 0;
             enableReg_o <= 0;
             enableJump_o <= 0;
@@ -51,10 +58,13 @@ module ePipe #(
             isOper2Int_o <= 0;
             writeResultInt_o <= 0;
             writeResultV_o <= 0;
+            intRegDest_o <= 0;
+            vecRegDest_o <= 0;
         end
         else begin
 			ialu_res_o <= ialu_res_i;
 			valu_res_o <= valu_res_i;
+            memo_res_o <= memo_res_i;
             enableMem_o <= enableMem_i;
             enableReg_o <= enableReg_i;
             enableJump_o <= enableJump_i;
@@ -66,6 +76,8 @@ module ePipe #(
             isOper2Int_o <= isOper2Int_i;
             writeResultInt_o <= writeResultInt_i;
             writeResultV_o <= writeResultV_i;
+            intRegDest_o <= intRegDest_i;
+            vecRegDest_o <= vecRegDest_i;
         end
     end
 endmodule
