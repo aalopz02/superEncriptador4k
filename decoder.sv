@@ -8,7 +8,7 @@ module decoder#(
     parameter ELEM_SIZE = 8
 ) (
 	input logic clk,
-	input logic [REGI_SIZE-1:0] instruction,
+	input logic  [REGI_SIZE-1:0] instruction,
 	output logic [REGI_SIZE-1:0] intOper1,
 	output logic [REGI_SIZE-1:0] intOper2,
 	output logic [VECT_BITS-1:0] vOper1,

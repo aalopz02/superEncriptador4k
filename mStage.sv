@@ -8,11 +8,9 @@ module mStage #(
     parameter ELEM_SIZE = 8
 ) (
 	 input logic                 clk_i, rst_i, int_we_i,
-     input logic [REGI_SIZE-1:0] int_a_i, int_wd_i,
-    output logic [REGI_SIZE-1:0] int_rd_o
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_a_i, int_wd_i,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_rd_o
 );
-    dmem int_mem(clk_i, int_we_i, int_a_i, int_wd_i, int_rd_o); 
-
-    //vmem vec_men(clk_i, we,)
+    dmem int_mem(clk_i, int_we_i, int_a_i, int_wd_i, int_rd_o);
     
 endmodule

@@ -13,29 +13,41 @@ module superMemory #(
 	 input logic                 enableJump_i,
      input logic                 flagMemRead_i,
 	 input logic                 flagMemWrite_i,
-     input logic [REGI_SIZE-1:0] int_a_i, int_wd_i,
-    output logic [REGI_SIZE-1:0] int_rd_o,
-    output logic                 enableReg_o,
-	output logic                 enableJump_o,
-    output logic                 flagMemWrite_o
+     input logic                 writeResultInt_i,
+	 input logic                 writeResultV_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_a_i, int_wd_i,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_rd_o,
+    output logic                 enableReg,
+	output logic                 enableJump,
+    output logic                 flagMemRead,
+    output logic                 writeResultInt,
+	output logic                 writeResultV,
 );
-    logic [REGI_SIZE-1:0] int_rd_p;
+    logic [(ELEM_SIZE*VECT_SIZE)-1:0] in_rd_p;
 
-    // TODO VEC Memory
-
-    // Int Memory
+    //  VEC Memoryy
     mStage #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
         mem_stage(.clk_i(clk_i), .rst_i(rst_i),
             .int_we_i(flagMemWrite_i), // Enable Write
             .int_a_i(int_a_i),
             .int_wd_i(int_wd_i),
-            .int_rd_o(int_rd_p)
+            .int_rd_o(in_rd_p)
             );
 
     mPipe #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
         exmem_pipe(.clk_i(clk_i), .rst_i(rst_i),
-            .int_rd_i(int_rd_p),
-            .int_rd_o(int_rd_o)
+            .int_rd_i(in_rd_p),
+            .int_rd_o(int_rd_o),
+            .enableReg_i(enableReg_i),
+            .enableJump_i(enableJump_i),
+            .flagMemRead_i(flagMemRead_i),
+            .writeResultInt_i(writeResultInt_i),
+            .writeResultV_i(writeResultV_i),
+            .enableReg_o(enableReg),
+            .enableJump_o(enableJump),
+            .flagMemRead_o(flagMemRead),
+            .writeResultInt_o(writeResultInt),
+            .writeResultV_o(writeResultV),
             );
             
 endmodule
