@@ -101,10 +101,10 @@ module tbFetchToMemory #(
         decoder(.clk(clk||rst), .rst(rst), 
             .instruction(instr_o),
             .next_pc_i(next_pc_i),
-            .int_dest_i(intRegDest_f),
-            .vec_dest_i(vecRegDest_f),
-            .int_we_i(writeResultInt_f),
-            .vec_we_i(writeResultV_f),
+            //.int_dest_i(intRegDest_f),
+            //.vec_dest_i(vecRegDest_f),
+            //.int_we_i(writeResultInt_f),
+            //.vec_we_i(writeResultV_f),
             .reg_dest_o(reg_dest_o),
             .vec_dest_o(vec_dest_o),
             .vOper1(vOper1), 
@@ -196,12 +196,14 @@ module tbFetchToMemory #(
                 .int_wd_i(memo_res_o),
                 .enableMem(enableMem_o), 
                 .enableJump(enableJump_o), 
+                .flagMemRead(flagMemRead_o),
+                .flagMemWrite(flagMemWrite_o),
                 .enableReg(enableReg_o),
                 .jumpAddress(jumpAddress_o),
                 .flagEnd(flagEnd_o),
                 .flagNop(flagNop_o),
-                .flagMemRead(flagMemRead_o),
-                .flagMemWrite(flagMemWrite_o),
+                .intRegDest(intRegDest_o),
+                .vecRegDest(vecRegDest_o),
                 .writeResultInt(writeResultInt_o),
                 .writeResultV(writeResultV_o),
 
@@ -211,12 +213,11 @@ module tbFetchToMemory #(
                 .jumpAddress_f(jumpAddress_f),
                 .flagEnd_f(flagEnd_f),
                 .flagNop_f(flagNop_f),
-                .flagMemRead_f(flagMemRead),
+                .flagMemRead_f(flagMemRead_f),
                 .writeResultInt_f(writeResultInt_f),
                 .writeResultV_f(writeResultV_f),
                 .intRegDest_f(intRegDest_f),
-                .vecRegDest_f(vecRegDest_f),
-                .memo_res_f(memo_res_f)
+                .vecRegDest_f(vecRegDest_f)
                 );
 
     // jumpAddress_f tiene 10 bits se necesitan 16.

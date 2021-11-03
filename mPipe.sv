@@ -17,7 +17,7 @@ module mPipe #(
 	 input logic                 flagNop_i,
      input logic           [9:0] jumpAddress_i,
      input logic [REGI_BITS-1:0] intRegDest_i,
-	 input logic [VECT_BITS-1:0] vecRegDest_i, memo_res_i,
+	 input logic [VECT_BITS-1:0] vecRegDest_i,
      input logic                 writeResultInt_i,
 	 input logic                 writeResultV_i,
     output logic [(ELEM_SIZE*VECT_SIZE)-1:0] int_rd_o,
@@ -29,7 +29,7 @@ module mPipe #(
 	output logic                 flagNop_o,
     output logic           [9:0] jumpAddress_o,
     output logic [REGI_BITS-1:0] intRegDest_o,
-	output logic [VECT_BITS-1:0] vecRegDest_o, memo_res_o,
+	output logic [VECT_BITS-1:0] vecRegDest_o,
     output logic                 writeResultInt_o,
 	output logic                 writeResultV_o
     
@@ -48,7 +48,6 @@ module mPipe #(
             writeResultV_o <= 0;
             intRegDest_o <= 0;
             vecRegDest_o <= 0;
-            memo_res_o <= 0;
         end
         else begin
 			int_rd_o <= int_rd_i;
@@ -63,7 +62,6 @@ module mPipe #(
             writeResultV_o <= writeResultV_i;
             intRegDest_o <= intRegDest_i;
             vecRegDest_o <= vecRegDest_i;
-            memo_res_o <= memo_res_i;
         end
     end
 endmodule
