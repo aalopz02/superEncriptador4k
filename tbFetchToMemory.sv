@@ -52,7 +52,7 @@ module tbFetchToMemory #(
 	 logic [3:0] alu_flags_to_dec, alu_flags_to_exe;
 
     // Execute Var
-     logic             [ELEM_SIZE-1:0] ialu_res_o;
+     logic             [REGI_SIZE-1:0] ialu_res_o;
      logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o;
      logic                             enableMem_o;
      logic                             enableReg_o;
@@ -219,7 +219,8 @@ module tbFetchToMemory #(
                 .memo_res_f(memo_res_f)
                 );
 
-    mux2 #(ELEM_SIZE) pc_selector(next_pc_i, jumpAddress_f, enableJump_f, next_pc_o);
+    // jumpAddress_f tiene 10 bits se necesitan 16.
+    // mux2 #(REGI_SIZE) pc_selector(next_pc_i, jumpAddress_f, enableJump_f, next_pc_o);
 
     initial begin
         #0 

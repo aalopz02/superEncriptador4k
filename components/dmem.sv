@@ -1,5 +1,5 @@
 module dmem #(
-    parameter MEMO_LINES = 64,
+    parameter DATA_SLOTS = 64,
     parameter VECT_SIZE = 8,
     parameter ELEM_SIZE = 8
 )(

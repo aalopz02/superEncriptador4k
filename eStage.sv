@@ -8,8 +8,8 @@ module eStage #(
     parameter ELEM_SIZE = 8
 ) (
 	 input logic                 clk_i, rst_i,
-	 input logic [ELEM_SIZE-1:0] int_rsa_i,
-	 input logic [ELEM_SIZE-1:0] int_rsb_i,
+	 input logic [REGI_SIZE-1:0] int_rsa_i,
+	 input logic [REGI_SIZE-1:0] int_rsb_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsa_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsb_i,
     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_imm_i,
@@ -32,19 +32,19 @@ module eStage #(
 	 input logic [2:0] swapBitOrigin,
 	 input logic [2:0] swapBitDest,
     input logic [1:0] alu_flags_i,
-    output logic [ELEM_SIZE-1:0] ialu_res_o,
+    output logic [REGI_SIZE-1:0] ialu_res_o,
     output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o, mem_res_o,
     output logic [1:0] alu_flags_o
     
 );
     logic signal_branch;
-	 logic             [ELEM_SIZE-1:0] int_input, iswa_res, ialu_out;
+	 logic             [REGI_SIZE-1:0] int_input, iswa_res, ialu_out;
 	 logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_input, vswa_res, valu_out;
 	 
-    mux2 #(ELEM_SIZE) int_selector(int_rsa_i, ImmOut, flagImm, int_input);
+    mux2 #(REGI_SIZE) int_selector(int_rsa_i, ImmOut, flagImm, int_input);
     
     // Scalar ALU
-    alu #(ELEM_SIZE) 
+    alu #(REGI_SIZE) 
         fu_int_alu(.bus_a_i(int_rsa_i), 
         .bus_b_i(int_input),
         .control_i(aluOpcode),
@@ -81,7 +81,7 @@ module eStage #(
         .pos2(swapBitDest),
         .res(iswa_res)
         );
-    mux2 #(ELEM_SIZE) int_selector_2(ialu_out, iswa_res, enableSwap, ialu_res_o);
+    mux2 #(REGI_SIZE) int_selector_2(ialu_out, iswa_res, enableSwap, ialu_res_o);
 	 
     // Vector Swap
     vSwapperBlock fu_vec_swa(.clk(clk_i),
@@ -90,7 +90,7 @@ module eStage #(
         .dir2(swapBitDest),
         .res(vswa_res)
         );
-    mux2 #(ELEM_SIZE) vec_selector_2(valu_out, vswa_res, enableSwap, valu_res_o);
+    mux2 #(ELEM_SIZE*VECT_SIZE) vec_selector_2(valu_out, vswa_res, enableSwap, valu_res_o);
     
     // Cond Unit
     condUnit cond_unit(clk_i, cond, alu_flags_i, signal_branch);

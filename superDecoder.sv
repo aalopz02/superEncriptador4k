@@ -47,7 +47,7 @@ module superDecoder#(
 	output logic isOper2Int,
 	output logic writeResultInt,
 	output logic writeResultV,
-	output logic [3:0] alu_flags_o
+	output logic [1:0] alu_flags_o
 );
 	logic [VECT_BITS-1:0] voper1_p, voper2_p;
 	logic [REGI_BITS-1:0] ioper1_p, ioper2_p;
