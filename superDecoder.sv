@@ -15,12 +15,14 @@ module superDecoder#(
 	 input logic [VECT_BITS-1:0]             vec_dest_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_wd_i,
 	 input logic [REGI_SIZE-1:0]             int_wd_i,
+	 input logic                       [1:0] alu_flags_i,
 	output logic [REGI_BITS-1:0]             reg_dest_o,
 	output logic [VECT_BITS-1:0]             vec_dest_o,
 	output logic [REGI_SIZE-1:0]             intOper1,
 	output logic [REGI_SIZE-1:0]             intOper2,
 	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1,
-	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOperImm,
+	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper2,
+	output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOperImm, vOperCop,
 	output logic [REGI_BITS-1:0] intRegDest,
 	output logic [VECT_BITS-1:0] vecRegDest, 
 	output logic [1:0] cond,
@@ -44,12 +46,13 @@ module superDecoder#(
 	output logic isOper1Int,
 	output logic isOper2Int,
 	output logic writeResultInt,
-	output logic writeResultV
+	output logic writeResultV,
+	output logic [3:0] alu_flags_o
 );
 	logic [VECT_BITS-1:0] voper1_p, voper2_p;
 	logic [REGI_BITS-1:0] ioper1_p, ioper2_p;
 	logic [REGI_SIZE-1:0] ioper1_data_p, ioper2_data_p;
-	logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1_data_p, vOper2_data_p, vOperImm_p;
+	logic [(ELEM_SIZE*VECT_SIZE)-1:0] vOper1_data_p, vOper2_data_p, vOperImm_p, vOperCop_p, vOperCop_p1, vOperCop_p2;
 
 	decoder  #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
 		miniDecoder(.clk(clk||rst), .instruction(instruction),
@@ -101,7 +104,11 @@ module superDecoder#(
 			.rd2(ioper2_data_p)
 			);
 
-	//intToVec vectorizer(ImmOut, vOperImm_p);
+	//intToVect vectorizer_reg(ioper1_data_p, vOperCop_p1);
+
+	intToVect vectorizer_imm(ImmOut, vOperCop_p);
+
+	//mux2 #(ELEM_SIZE) vec_selct(vOperCop_p1, vOperCop_p2, flagImm , vOperCop_p);
 
 	dPipe #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE)
 		idex_pipe(.clk_i(clk), .rst_i(rst),
@@ -109,9 +116,15 @@ module superDecoder#(
 			.intOper2_i(ioper2_data_p),
 			.vecOper1_i(vOper1_data_p), 
 			.vecOper2_i(vOper2_data_p),
+			.vOperCop_i(vOperCop_p),
+			.vOperImm_i(vOperImm_p),
+			.alu_flags_i(alu_flags_i),
 			.intOper1_o(intOper1), 
 			.intOper2_o(intOper2),
 			.vecOper1_o(vOper1), 
-			.vecOper2_o(vOper2)
+			.vecOper2_o(vOper2),
+			.vOperCop_o(vOperCop),
+			.vOperImm_o(vOperImm),
+			.alu_flags_o(alu_flags_o)
 			);
 endmodule

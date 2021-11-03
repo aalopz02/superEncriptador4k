@@ -8,10 +8,14 @@ module superExecute #(
     parameter ELEM_SIZE = 8
 ) (
 	 input logic                 clk_i, rst_i,
-	 input logic             [REGI_SIZE-1:0] int_rsa_i,
-	 input logic             [REGI_SIZE-1:0] int_rsb_i,
+	 input logic             [ELEM_SIZE-1:0] int_rsa_i,
+	 input logic             [ELEM_SIZE-1:0] int_rsb_i,
+     input logic [ELEM_SIZE-1:0]             int_dest_i,
+     input logic [VECT_BITS-1:0]             vec_dest_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsa_i,
 	 input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_rsb_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_imm_i,
+     input logic [(ELEM_SIZE*VECT_SIZE)-1:0] vec_cop_i,
      input logic [1:0] cond,
 	 input logic enableAluInt,
 	 input logic enableAluV,
@@ -22,6 +26,12 @@ module superExecute #(
 	 input logic flagEnd,
 	 input logic flagNop,
 	 input logic flagImm,
+     input logic isOper1V,
+	 input logic isOper2V,
+     input logic isOper1Int,
+     input logic isOper2Int,
+     input logic writeResultInt,
+	 input logic writeResultV,
 	 input logic [7:0] ImmOut,
 	 input logic [2:0] aluOpcode,
 	 input logic [9:0] jumpAddress,
@@ -30,7 +40,7 @@ module superExecute #(
 	 input logic [2:0] swapBitOrigin,
 	 input logic [2:0] swapBitDest,
      input logic                       [3:0] alu_flags_i,
-    output logic             [REGI_SIZE-1:0] ialu_res_o,
+    output logic             [ELEM_SIZE-1:0] ialu_res_o,
     output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o,
     output logic             [REGI_SIZE-1:0] iswa_res_o,
     output logic [(ELEM_SIZE*VECT_SIZE)-1:0] vswa_res_o,
@@ -39,7 +49,13 @@ module superExecute #(
 	output logic                             enableJump_o,
     output logic                             flagMemRead_o,
 	output logic                             flagMemWrite_o,
-    output logic                       [3:0] alu_flags_o
+    output logic                       [3:0] alu_flags_o,
+    output logic isOper1V_o,
+	output logic isOper2V_o,
+	output logic isOper1Int_o,
+	output logic isOper2Int_o,
+	output logic writeResultInt_o,
+	output logic writeResultV_o
 );
 
     logic [REGI_SIZE-1:0] ialu_res_p, iswa_res_p;
@@ -50,6 +66,7 @@ module superExecute #(
     logic                             flagMemRead_p;
 	logic                             flagMemWrite_p;
 
+    
     eStage #(REGI_BITS, VECT_BITS, VECT_LANES, MEMO_LINES, REGI_SIZE, VECT_SIZE, ELEM_SIZE) 
         ex_stage(.clk_i(clk_i), .rst_i(rst_i),
             .int_rsa_i(int_rsa_i), .int_rsb_i(int_rsb_i),
@@ -58,8 +75,6 @@ module superExecute #(
             .aluOpcode(aluOpcode),
             .ialu_res_o(ialu_res_p),
             .valu_res_o(valu_res_p),
-            .iswa_res_o(iswa_res_p),
-            .vswa_res_o(vswa_res_p),
             .alu_flags_o(alu_flags_o)
             );
 
@@ -67,8 +82,6 @@ module superExecute #(
         exmen_pipe(.clk_i(clk_i), .rst_i(rst_i),
             .ialu_res_i(ialu_res_p),
             .valu_res_i(valu_res_p),
-            .iswa_res_i(iswa_res_p),
-            .vswa_res_i(vswa_res_p),
             .enableMem_i(enableMem_p),
             .enableReg_i(enableReg_p),
             .enableJump_i(enableJump_p),
@@ -76,13 +89,11 @@ module superExecute #(
             .flagMemWrite_i(flagMemWrite_p),
             .ialu_res_o(ialu_res_o),
             .valu_res_o(valu_res_o),
-            .iswa_res_o(iswa_res_o),
-            .vswa_res_o(vswa_res_o),
             .enableMem_o(enableMem_o),
             .enableReg_o(enableReg_o),
             .enableJump_o(enableJump_o),
             .flagMemRead_o(flagMemRead_o),
-            .flagMemWrite_o(flagMemWrite_o)
+            .flagMemWrite_o(flagMemWrite_o),
             );
              
 endmodule
