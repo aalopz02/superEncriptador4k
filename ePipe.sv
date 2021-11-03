@@ -15,7 +15,7 @@ module ePipe #(
 	 input logic                             enableJump_i,
      input logic                             flagMemRead_i,
 	 input logic                             flagMemWrite_i,
-     input logic                       [3:0] alu_flags_i,
+     input logic                       [1:0] alu_flags_i,
     input logic isOper1V_i,
 	input logic isOper2V_i,
 	input logic isOper1Int_i,
@@ -34,8 +34,7 @@ module ePipe #(
 	output logic isOper1Int_o,
 	output logic isOper2Int_o,
 	output logic writeResultInt_o,
-	output logic writeResultV_o,
-    output logic                       [3:0] alu_flags_o
+	output logic writeResultV_o
 );
 	always_ff @(posedge clk_i) begin
 		if (rst_i) begin
