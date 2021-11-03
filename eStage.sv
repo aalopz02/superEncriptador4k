@@ -33,7 +33,7 @@ module eStage #(
 	 input logic [2:0] swapBitDest,
     input logic [1:0] alu_flags_i,
     output logic [ELEM_SIZE-1:0] ialu_res_o,
-    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o, mem_res_o,
     output logic [1:0] alu_flags_o
     
 );
@@ -63,9 +63,9 @@ module eStage #(
     //mux2 #(ELEM_SIZE) vec_selector(vec_rsb_i, ImmOut, flagImm, vec_input);
 	 
     assign elVOper2 = (flagImm == 1'b1) ? vectorOutImmConv : 64'hFFFFFFFFFFFFFFFF;
-	 assign extendedImm[7:0] = ImmOut;
-	 assign extendedImm[15:8] = 8'd0;
-	 
+	assign extendedImm[7:0] = ImmOut;
+	assign extendedImm[15:8] = 8'd0;
+	assign mem_res_o = vec_rsb_i;
     // Vector ALU
     vAluBlock #(ELEM_SIZE, VECT_SIZE)
         fu_vec_alu(.clk(clk_i),

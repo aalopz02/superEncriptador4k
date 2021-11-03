@@ -184,7 +184,7 @@ module tbFetchToMemory #(
             .writeResultV_o(writeResultV_o),
             .intRegDest_o(intRegDest_o),
             .vecRegDest_o(vecRegDest_o),
-            .memo_res_o(memo_res_o)
+            .mem_res_o(memo_res_o)
             );
     
 

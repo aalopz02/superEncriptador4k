@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY superDecoder
+set_global_assignment -name TOP_LEVEL_ENTITY tbFetchToMemory
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:02  OCTOBER 02, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -59,6 +59,9 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE components/dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE components/condUnit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tbFetchToMemory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE vSwapperBlock.sv
 set_global_assignment -name MIF_FILE compilador/inst.mif
 set_global_assignment -name SYSTEMVERILOG_FILE superExecute.sv

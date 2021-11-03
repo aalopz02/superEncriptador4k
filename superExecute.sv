@@ -39,9 +39,11 @@ module superExecute #(
 	 input logic flagMemWrite,
 	 input logic [2:0] swapBitOrigin,
 	 input logic [2:0] swapBitDest,
+     input logic [REGI_BITS-1:0] intRegDest_i,
+	 input logic [VECT_BITS-1:0] vecRegDest_i,
      input logic                       [1:0] alu_flags_i,
     output logic             [ELEM_SIZE-1:0] ialu_res_o,
-    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o,
+    output logic [(ELEM_SIZE*VECT_SIZE)-1:0] valu_res_o, mem_res_o,
     output logic                             enableMem_o,
     output logic                             enableReg_o,
 	output logic                             enableJump_o,
@@ -53,7 +55,9 @@ module superExecute #(
 	output logic isOper2Int_o,
 	output logic writeResultInt_o,
 	output logic writeResultV_o,
-    output logic                       [1:0] alu_flags_o
+    output logic                       [1:0] alu_flags_o,
+    output logic [REGI_BITS-1:0] intRegDest_o,
+	output logic [VECT_BITS-1:0] vecRegDest_o
 );
 
     logic [REGI_SIZE-1:0] ialu_res_p;
